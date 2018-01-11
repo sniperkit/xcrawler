@@ -1,0 +1,33 @@
+hash: 095151cdae091035a8654eb6e6dec90515fb833349166563b38e349554defb24
+updated: 2017-12-30T10:02:57.440414694+01:00
+imports:
+- name: github.com/alecthomas/template
+  version: a0175ee3bccc567396460bf5acd36800cb10c49c
+  subpackages:
+  - parse
+- name: github.com/alecthomas/units
+  version: 2efee857e7cfd4f3d0138cc3cbb1b4966962b93a
+- name: github.com/andybalholm/cascadia
+  version: 349dd0209470eabd9514242c688c403c0926d266
+- name: github.com/gizak/termui
+  version: 72304ddb9b4e9838426a021aad64a5a860e98324
+- name: github.com/maruel/panicparse
+  version: c0182c169410cfa80c7e8f046dad208eaef91338
+  subpackages:
+  - stack
+- name: github.com/mattn/go-runewidth
+  version: 97311d9f7767e3d6f422ea06661bc2c7a19e8a5d
+- name: github.com/mitchellh/go-wordwrap
+  version: ad45545899c7b13c020ea92b2072220eefad42b8
+- name: github.com/nsf/termbox-go
+  version: aa4a75b1c20a2b03751b1a9f7e41d58bd6f71c43
+- name: github.com/PuerkitoBio/goquery
+  version: bc4e06eb0792d1a14661d19dd7822163c25bb6bd
+- name: golang.org/x/net
+  version: d866cfc389cec985d6fda2859936a575a55a3ab6
+  subpackages:
+  - html
+  - html/atom
+- name: gopkg.in/alecthomas/kingpin.v2
+  version: 947dcec5ba9c011838740e680966fd7087a71d0d
+testImports: []

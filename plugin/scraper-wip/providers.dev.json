@@ -1,0 +1,1492 @@
+{
+  "port": 3000,
+  "debug": true,
+  "migrate": true,
+  "truncate": true,
+  "dashboard": true,
+  "env": {
+    "debug": true,
+    "files": [
+      ".env"
+    ]
+  },
+  "templates": {
+    "rss/default": {
+        "result": {
+          "cache": true,
+          "strict_mode": false,
+          "debug": false,
+          "details": {
+            "title": "title",
+            "desc": "description",
+            "url": "link"
+          }
+        }
+    }
+  },
+  "routes": [
+    {
+      "route": "/fdroid",
+      "name": "fdroid",
+      "provider": "f-droid.org",
+      "base_url": "https://f-droid.org",
+      "url": "/packages/#q={{query}}",
+      "timeout": 3,
+      "selector": "css",
+      "method": "GET",
+      "cache": false,
+      "debug": true,
+      "strict_mode": false,
+      "blocks": {
+        "result": {
+          "cache": false,
+          "strict_mode": false,
+          "debug": true,
+          "items": "ul.results > * > a.package-header", 
+          "details": { 
+            "link": ["@href"],
+            "title": "a, div, h4",
+            "img": ["img", "@src"],
+            "desc": "a, div, div, span"
+          }
+        }
+      }
+    },
+    {
+      "route": "/trello",
+      "name": "trello",
+      "provider": "trello.com",
+      "base_url": "https://api.trello.com",
+      "url": "/1",
+      "timeout": 3,
+      "selector": "json",
+      "method": "GET",
+      "cache": false,
+      "debug": true,
+      "strict_mode": false,
+      "blocks": {
+        "result": {
+          "cache": false,
+          "strict_mode": false,
+          "items": "results",
+          "details": {
+            "title": "name",
+            "desc": "description",
+            "stars": "star_count",
+            "is_trusted": "is_trusted",
+            "is_automated": "is_automated",
+            "is_official": "is_official"
+          }
+        }
+      }
+    },
+    {
+      "route": "/docker.io",
+      "name": "docker-io",
+      "provider": "docker.com",
+      "base_url": "https://index.docker.io",
+      "url": "/v1/search?q={{query}}",
+      "timeout": 3,
+      "selector": "json",
+      "method": "GET",
+      "cache": true,
+      "debug": false,
+      "strict_mode": false,
+      "blocks": {
+        "result": {
+          "cache": true,
+          "strict_mode": false,
+          "items": "results",
+          "details": {
+            "title": "name",
+            "desc": "description",
+            "stars": "star_count",
+            "is_trusted": "is_trusted",
+            "is_automated": "is_automated",
+            "is_official": "is_official"
+          }
+        }
+      }
+    },
+    {
+      "route": "/xkcd",
+      "name": "xkcd",
+      "provider": "xkcd.com",
+      "base_url": "http://what-if.xkcd.com",
+      "url": "/feed.atom",
+      "timeout": 3,
+      "selector": "rss",
+      "method": "GET",
+      "cache": true,
+      "debug": false,
+      "strict_mode": false,
+      "template": "rss/default"
+    },
+    {
+      "route": "/whatif",
+      "name": "whatif",
+      "provider": "xkcd.com",
+      "base_url": "hhttp://what-if.xkcd.com",
+      "url": "/feed.atom",
+      "timeout": 3,
+      "selector": "rss",
+      "method": "GET",
+      "cache": true,
+      "debug": false,
+      "strict_mode": false,
+      "template": "rss/default"
+    },
+    {
+      "route": "/webcomicname",
+      "name": "webcomicname",
+      "provider": "webcomicname.com",
+      "base_url": "http://webcomicname.com",
+      "url": "/rss",
+      "timeout": 3,
+      "selector": "rss",
+      "method": "GET",
+      "cache": true,
+      "debug": false,
+      "strict_mode": false,
+      "template": "rss/default"
+    },
+    {
+      "route": "/smbc",
+      "name": "smbc",
+      "provider": "smbc-comics.com",
+      "base_url": "http://www.smbc-comics.com",
+      "url": "/rss.php",
+      "timeout": 3,
+      "selector": "rss",
+      "method": "GET",
+      "cache": true,
+      "debug": false,
+      "strict_mode": false,
+      "template": "rss/default"
+    },
+    {
+      "route": "/sarahs_doodles",
+      "name": "sarahs_doodles",
+      "provider": "tapastic.com",
+      "base_url": "https://tapastic.com",
+      "url": "/rss/series/2007",
+      "timeout": 3,
+      "selector": "rss",
+      "method": "GET",
+      "cache": true,
+      "debug": false,
+      "strict_mode": false,
+      "template": "rss/default"
+    },
+    {
+      "route": "/questionablecontent",
+      "name": "questionablecontent",
+      "provider": "questionablecontent.net",
+      "base_url": "http://www.questionablecontent.net",
+      "url": "/QCRSS.xml",
+      "timeout": 3,
+      "selector": "rss",
+      "method": "GET",
+      "cache": true,
+      "debug": false,
+      "strict_mode": false,
+      "template": "rss/default"
+    },
+    {
+      "route": "/pennyarcade",
+      "name": "pennyarcade",
+      "provider": "penny-arcade.com",
+      "base_url": "https://penny-arcade.com",
+      "url": "/feed",
+      "timeout": 3,
+      "selector": "rss",
+      "method": "GET",
+      "cache": true,
+      "debug": false,
+      "strict_mode": false,
+      "template": "rss/default"
+    },
+    {
+      "route": "/pbfcomics",
+      "name": "pbfcomics",
+      "provider": "pbfcomics.com",
+      "base_url": "http://www.pbfcomics.com",
+      "url": "/feed/feed.xml",
+      "timeout": 3,
+      "selector": "rss",
+      "method": "GET",
+      "cache": true,
+      "debug": false,
+      "strict_mode": false,
+      "template": "rss/default"
+    },
+    {
+      "route": "/orderofthestick",
+      "name": "orderofthestick",
+      "provider": "giantitp.com",
+      "base_url": "http://www.giantitp.com",
+      "url": "/comics/oots.rss",
+      "timeout": 3,
+      "selector": "rss",
+      "method": "GET",
+      "cache": true,
+      "debug": false,
+      "strict_mode": false,
+      "template": "rss/default"
+    },
+    {
+      "route": "/fowllanguage",
+      "name": "fowllanguage",
+      "provider": "tumblr.com",
+      "base_url": "http://www.fowllanguagecomics.com",
+      "url": "/feed/",
+      "timeout": 3,
+      "selector": "rss",
+      "method": "GET",
+      "cache": true,
+      "debug": false,
+      "strict_mode": false,
+      "template": "rss/default"
+    },
+    {
+      "route": "/flashboardwars",
+      "name": "flashboardwars",
+      "provider": "tumblr.com",
+      "base_url": "http://theagevsheraldsun.tumblr.com",
+      "url": "/rss",
+      "timeout": 3,
+      "selector": "rss",
+      "method": "GET",
+      "cache": true,
+      "debug": false,
+      "strict_mode": false,
+      "template": "rss/default"
+    },
+    {
+      "route": "/dilbert",
+      "name": "dilbert",
+      "provider": "dilbert.com",
+      "base_url": "http://feed.dilbert.com",
+      "url": "/dilbert/daily_strip",
+      "timeout": 3,
+      "selector": "rss",
+      "method": "GET",
+      "cache": true,
+      "debug": false,
+      "strict_mode": false,
+      "template": "rss/default"
+    },
+    {
+      "route": "/dailywtf",
+      "name": "dailywtf",
+      "provider": "dailywtf.com",
+      "base_url": "http://syndication.thedailywtf.com",
+      "url": "/TheDailyWtf",
+      "timeout": 3,
+      "selector": "rss",
+      "method": "GET",
+      "cache": true,
+      "debug": false,
+      "strict_mode": false,
+      "template": "rss/default"
+    },
+    {
+      "route": "/amazingsuperpowers",
+      "name": "amazingsuperpowers",
+      "provider": "amazingsuperpowers.com",
+      "base_url": "http://feeds.feedburner.com",
+      "url": "/amazingsuperpowers?format=xml",
+      "timeout": 3,
+      "selector": "rss",
+      "method": "GET",
+      "cache": true,
+      "debug": false,
+      "strict_mode": false,
+      "template": "rss/default"
+    },
+    {
+      "route": "/alicegrove",
+      "name": "alicegrove",
+      "provider": "alicegrove.com",
+      "base_url": "http://www.alicegrove.com",
+      "url": "/rss",
+      "timeout": 3,
+      "selector": "rss",
+      "method": "GET",
+      "cache": true,
+      "debug": false,
+      "strict_mode": false,
+      "template": "rss/default"
+    },
+    {
+      "route": "/thecodelesscode",
+      "name": "thecodelesscode",
+      "provider": "thecodelesscode.com",
+      "base_url": "http://thecodelesscode.com",
+      "url": "/rss",
+      "timeout": 3,
+      "selector": "rss",
+      "method": "GET",
+      "cache": true,
+      "debug": false,
+      "strict_mode": false,
+      "template": "rss/default"
+    },
+    {
+      "route": "/youtube/api",
+      "debug": true,
+      "disabled": false,
+      "cache": false,
+      "strict_mode": false,
+      "name": "youtube-api",
+      "provider": "youtube.com",
+      "base_url": "https://www.googleapis.com",
+      "url": "/youtube/v3/search?part=snippet&query={{query}}&maxResults=20&key={{YOUTUBE_API_KEY}}",
+      "timeout": 3,
+      "selector": "json",
+      "method": "GET",
+      "blocks": {
+        "result": {
+          "cache": false,
+          "strict_mode": false,
+          "items": "items",
+          "details": {
+            "title": "title",
+            "desc": "content",
+            "img": "snippet.thumbnails.high.url",
+            "pubdate": "snippet.publishedAt",
+            "uuid": "id.videoid"
+          }
+        }
+      },
+      "examples": {
+        "remote": {
+          "link": "https://www.googleapis.com/youtube/v3/search?part=snippet&query={{query}}&maxResults=20&key={{YOUTUBE_API_KEY}}"
+        },
+        "local": {
+          "link": "http://localhost:3000/youtube/api?query=dlib"
+        }
+      }
+    },
+    {
+      "route": "/youtube/noapi",
+      "debug": true,
+      "disabled": false,
+      "cache": false,
+      "strict_mode": false,
+      "name": "youtube-noapi",
+      "provider": "youtube.com",
+      "base_url": "https://www.youtube.com",
+      "url": "/results?search_query={{query}}&page={{page}}",
+      "timeout": 10,
+      "concurrency": 2,
+      "selector": "xpath",
+      "method": "GET",
+      "blocks": {
+        "result": {
+          "cache": false,
+          "strict_mode": false,
+          "items": "//ol/li/div[contains(@class, 'yt-lockup yt-lockup-tile yt-lockup-video vve-check')]",
+          "details": {
+            "title": "div[@class=\"yt-lockup-content\"]/h3/a",
+            "desc": "div[@class=\"yt-lockup-content\"]/div[@class=\"yt-lockup-description yt-ui-ellipsis yt-ui-ellipsis-2\"]",
+            "url": ".//h3/a/@href"
+          }
+        }
+      },
+      "examples": {
+        "remote": {
+          "link": "https://www.youtube.com/results?search_query=dlib&page=1"
+        },
+        "local": {
+          "link": "http://localhost:3000/youtube/noapi?query=dlib&page=1"
+        }
+      },
+      "staging": {
+        "disabled": "false",
+        "max": "25",
+        "offset": "1",
+        "limit": "100",
+        "offset_var": "page",
+        "limit_var": "per_page",
+        "limit_checker": "per_page",
+        "time_range_dict": [
+          "day=Ag",
+          "week=Aw",
+          "month=BA",
+          "year=BQ"
+        ],
+        "urls": {
+          "results": "/results?search_query={{query}}&page={{page}}&sp=EgII{time_range}%253D%253D"
+        },
+        "xpath": {
+          "results": "//ol/li/div[contains(@class, 'yt-lockup yt-lockup-tile yt-lockup-video vve-check')]",
+          "url": ".//h3/a/@href",
+          "title": ".//div[@class='yt-lockup-content']/h3/a",
+          "content": ".//div[@class='yt-lockup-content']/div[@class='yt-lockup-description yt-ui-ellipsis yt-ui-ellipsis-2']"
+        },
+        "vars": {
+          "embedded_url": "<iframe width=\"540\" height=\"304\" data-src=\"//www.youtube-nocookie.com/embed/{videoid}\" frameborder=\"0\" allowfullscreen></iframe>",
+          "base_youtube_url": "https://www.youtube.com/watch?v={{videoid}}",
+          "video": {
+            "url": "{{base_youtube_url}}{{videoid}}",
+            "thumbnail": "https://i.ytimg.com/vi/{{videoid}}/hqdefault.jpg"
+          }
+        }
+      }
+    },
+    {
+      "route": "/duckduckgo/web",
+      "debug": true,
+      "disabled": false,
+      "cache": false,
+      "strict_mode": false,
+      "name": "duckduckgo-web",
+      "provider": "duckduckgo.com",
+      "base_url": "https://www.duckduckgo.com",
+      "url": "/html?q={{query}}&t=hf&df=m&ia=web",
+      "timeout": 10,
+      "selector": "css",
+      "method": "GET",
+      "blocks": {
+        "result": {
+          "cache": false,
+          "strict_mode": false,
+          "items": "#links > .results_links > .links_main",
+          "no-results": ".no-results",
+          "details": {
+            "title": "a.result__a",
+            "desc": ".result__snippet",
+            "icon": [
+              "img.result__icon__img",
+              "@src",
+              "prepend(https:)"
+            ],
+            "url": [
+              "a.result__a",
+              "@href",
+              "query-param(uddg)"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "route": "/stackoverflow/search",
+      "debug": true,
+      "disabled": false,
+      "cache": false,
+      "strict_mode": false,
+      "name": "stackoverflow-search",
+      "provider": "stackoverflow.com",
+      "base_url": "https://stackoverflow.com",
+      "url": "/search?q={{query}}&page=0",
+      "timeout": 10,
+      "selector": "css",
+      "method": "GET",
+      "blocks": {
+        "result": {
+          "cache": false,
+          "strict_mode": false,
+          "items": "#mainbar > div.search-results.js-search-results",
+          "details": {
+            "title": "div.summary > div.result-link > span > a",
+            "desc": "div.summary > div.excerpt",
+            "url": ["div.summary > div.result-link > span > a", "@href"]
+          }
+        }
+      }
+    },
+    {
+      "route": "/stackoverflow/tagged",
+      "debug": false,
+      "disabled": false,
+      "cache": false,
+      "strict_mode": false,
+      "name": "stackoverflow-tagged",
+      "provider": "stackoverflow.com",
+      "base_url": "https://stackoverflow.com",
+      "url": "/questions/tagged/{{query}}",
+      "timeout": 10,
+      "selector": "css",
+      "method": "GET",
+      "blocks": {
+        "result": {
+          "cache": false,
+          "strict_mode": false,
+          "items": "#questions .question-summary",
+          "details": {
+            "title": ".summary h3 a",
+            "desc": ".excerpt",
+            "img": ["img", "@src"],
+            "url": [".summary h3 a", "@href"]
+          }
+        }
+      }
+    },
+    {
+      "route": "/wikipedia/en",
+      "debug": true,
+      "disabled": false,
+      "cache": false,
+      "strict_mode": false,
+      "name": "wikipedia-en",
+      "provider": "wikipedia.org",
+      "base_url": "https://en.wikipedia.org",
+      "url": "/w/api.php?format=json&action=query&generator=search&gsrnamespace=0&gsrsearch={{query}}&gsrlimit=10&prop=pageimages|extracts&pilimit=max&exintro&explaintext&exsentences=1&exlimit=max",
+      "supported_languages": "https://meta.wikimedia.org/wiki/List_of_Wikipedias",
+      "timeout": 10,
+      "selector": "json",
+      "method": "GET",
+      "blocks": {
+        "result": {
+          "cache": false,
+          "strict_mode": false,
+          "items": "query.pages.*",
+          "details": {
+            "title": "title",
+            "thumbnail": "thumbnail.source",
+            "desc": "extract",
+            "url": "url"
+          }
+        }
+      }
+    },
+    {
+      "route": "/duckduckgo/images",
+      "debug": true,
+      "disabled": false,
+      "cache": false,
+      "strict_mode": false,
+      "name": "duckduckgo-images",
+      "provider": "duckduckgo.com",
+      "base_url": "https://duckduckgo.com",
+      "url": "/i.js?q={{query}}&s=0&p=true&o=json&vqd=12345",
+      "timeout": 10,
+      "selector": "json",
+      "method": "GET",
+      "blocks": {
+        "result": {
+          "cache": false,
+          "strict_mode": false,
+          "items": "results",
+          "details": {
+            "title": "title",
+            "thumbnail": "thumbnail",
+            "img": "image",
+            "url": "url"
+          }
+        }
+      }
+    },
+    {
+      "route": "/duckduckgo/videos",
+      "debug": true,
+      "disabled": false,
+      "cache": false,
+      "strict_mode": false,
+      "name": "duckduckgo-videos",
+      "provider": "duckduckgo.com",
+      "base_url": "https://duckduckgo.com",
+      "url": "/v.js?q={{query}}&s=0&p=true&o=json&vqd=12345",
+      "timeout": 10,
+      "selector": "json",
+      "method": "GET",
+      "blocks": {
+        "result": {
+          "cache": false,
+          "strict_mode": false,
+          "items": "results",
+          "details": {
+            "title": "title",
+            "thumbnail": "thumbnail",
+            "img": "image",
+            "url": "url"
+          }
+        }
+      }
+    },
+    {
+      "route": "/programme-tv/schedule",
+      "debug": true,
+      "disabled": false,
+      "cache": false,
+      "strict_mode": false,
+      "name": "programme-tv-schedule",
+      "provider": "programme-tv.net",
+      "base_url": "https://www.programme-tv.net",
+      "url": "/",
+      "timeout": 10,
+      "selector": "xpath",
+      "method": "GET",
+      "blocks": {
+        "result": {
+          "cache": false,
+          "strict_mode": false,
+          "items": "//*[@id='zci-images']/div/div[2]/div/div",
+          "details": {
+            "title": [
+              "div[class='tile--img__media'] span[class='tile--img__media__i'] img[class='tile--img__img  js-lazyload']",
+              "@alt"
+            ],
+            "desc": "div[class='tile--img__details'] div[class='tile--img__dimensions']",
+            "img": [
+              "div span img[class='tile--img__img  js-lazyload']",
+              "@src"
+            ],
+            "url": [
+              "div a[class='result__snippet']",
+              "@href",
+              "query-param(uddg)"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "route": "/programme-tv/videos",
+      "debug": true,
+      "disabled": false,
+      "cache": false,
+      "strict_mode": false,
+      "name": "programme-tv-videos",
+      "provider": "programme-tv.net",
+      "base_url": "https://www.programme-tv.net/",
+      "url": "",
+      "timeout": 10,
+      "selector": "xpath",
+      "method": "GET",
+      "blocks": {
+        "result": {
+          "cache": false,
+          "strict_mode": false,
+          "items": "//*[@id='zci-images']/div/div[2]/div/div",
+          "details": {
+            "title": [
+              "div[class='tile--img__media'] span[class='tile--img__media__i'] img[class='tile--img__img  js-lazyload']",
+              "@alt"
+            ],
+            "desc": "div[class='tile--img__details'] div[class='tile--img__dimensions']",
+            "img": [
+              "div span img[class='tile--img__img  js-lazyload']",
+              "@src"
+            ],
+            "url": [
+              "div a[class='result__snippet']",
+              "@href",
+              "query-param(uddg)"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "route": "/github/stars",
+      "debug": false,
+      "disabled": false,
+      "cache": true,
+      "extract_paths": true,
+      "name": "github-stars",
+      "provider": "github.com",
+      "base_url": "https://api.github.com",
+      "url": "/users/{{username}}/starred?per_page={{per_page}}&page={{page}}&order=desc&direction=desc",
+      "examples": {
+        "docs": {
+          "desc": "ListStarred lists all the repos starred by a user.",
+          "link": "https://developer.github.com/v3/activity/starring/#list-repositories-being-starred"
+        },
+        "remote": {
+          "desc": "",
+          "link": "https://api.github.com/users/{{GITHUB_ACCOUNT}}/starred?per_page=5&page=1&order=desc&direction=desc"
+        },
+        "local": {
+          "desc": "",
+          "link": "http://localhost:3000/github/search?query=dlib"
+        }
+      },
+      "timeout": 3,
+      "concurrency": 20,
+      "collection": true,
+      "pager": {
+        "disabled": "false",
+        "max": "500",
+        "offset": "0",
+        "limit": "100",
+        "offset_var": "page",
+        "limit_var": "per_page",
+        "limit_checker": "per_page"
+      },
+      "selector": "json",
+      "method": "GET",
+      "headers": {
+        "Authorization": " token {{GITHUB_TOKEN}}",
+        "Accept": "application/vnd.github.mercy-preview+json"
+      },
+      "resp_headers_intercept": [
+        "Link",
+        "X-Github-Media-Type",
+        "X-Ratelimit-Limit",
+        "X-Ratelimit-Remaining",
+        "X-Ratelimit-Reset",
+        "Content-Length"
+      ],
+      "blocks": {
+        "result": {
+          "items": "items",
+          "cache": true,
+          "details": {
+            "id": "id",
+            "name": "name",
+            "desc": "description",
+            "owner": [
+              "owner.avatar_url",
+              "owner.id",
+              "owner.login"
+            ],
+            "full_name": "full_name",
+            "topics": "topics"
+          }
+        }
+      }
+    },
+    {
+      "route": "/github/search",
+      "debug": false,
+      "disabled": false,
+      "extract_paths": true,
+      "cache": true,
+      "name": "github-search",
+      "provider": "github.com",
+      "base_url": "https://api.github.com",
+      "url": "/search/repositories?q={{query}}&per_page={{per_page}}&page={{page}}&order=desc&sort=stars",
+      "examples": {
+        "remote": {
+          "desc": "",
+          "link": "https://api.github.com/search/repositories?q=dlib&per_page=1&page=1&order=desc&sort=stars"
+        },
+        "local": {
+          "desc": "",
+          "link": "http://localhost:3000/github/search?query=dlib"
+        }
+      },
+      "concurrency": 20,
+      "pager": {
+        "disabled": "false",
+        "max": "20",
+        "offset": "1",
+        "limit": "100",
+        "offset_var": "page",
+        "limit_var": "per_page"
+      },
+      "timeout": 3,
+      "selector": "json",
+      "method": "GET",
+      "headers": {
+        "Authorization": " token {{GITHUB_TOKEN}}",
+        "Accept": "application/vnd.github.mercy-preview+json"
+      },
+      "parameters": {
+        "per_page": {
+          "default": "100",
+          "max": "100",
+          "type": "query_string"
+        },
+        "page": {
+          "default": 1,
+          "max": 10,
+          "type": "query_string"
+        }
+      },
+      "openapi": {
+        "defs": [
+          {
+            "link": "",
+            "version": 3
+          }
+        ]
+      },
+      "resp_headers_intercept": [
+        "Link",
+        "X-Github-Media-Type",
+        "X-Ratelimit-Limit",
+        "X-Ratelimit-Remaining",
+        "X-Ratelimit-Reset",
+        "Content-Length"
+      ],
+      "blocks": {
+        "result": {
+          "cache": true,
+          "items": "items",
+          "details": {
+            "id": "id",
+            "name": "name",
+            "desc": "description",
+            "owner": [
+              "owner.avatar_url",
+              "owner.id",
+              "owner.login"
+            ],
+            "project": "full_name",
+            "topics": "topics"
+          }
+        }
+      }
+    },
+    {
+      "route": "/github/notifications",
+      "debug": false,
+      "disabled": false,
+      "extract_paths": true,
+      "cache": true,
+      "name": "github-notifications-rss",
+      "provider": "github.com",
+      "base_url": "https://github.com",
+      "url": "/{{username}}.private.atom?token={{token}}",
+      "example": "https://github.com/{{GITHUB_ACCOUNT}}.private.atom?token={{GITHUB_NOTIFICATION_TOKEN}}",
+      "examples": {
+        "remote": {
+          "desc": "",
+          "link": "https://github.com/{{GITHUB_ACCOUNT}}.private.atom?token={{GITHUB_NOTIFICATION_TOKEN}}"
+        },
+        "local": {
+          "desc": "",
+          "link": "http://localhost:3000/github/notifications?token={{GITHUB_NOTIFICATION_TOKEN}}&username={{GITHUB_ACCOUNT}}"
+        }
+      },
+      "timeout": 3,
+      "selector": "xml",
+      "method": "GET",
+      "blocks": {
+        "result": {
+          "items": "feed.entry",
+          "cache": true,
+          "details": {
+            "title": "title.#text",
+            "type": "title.-type",
+            "author": [
+              "author.name",
+              "author.uri",
+              "author.email"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "route": "/deezer",
+      "debug": false,
+      "disabled": true,
+      "cache": true,
+      "name": "deezer",
+      "provider": "deezer.com",
+      "base_url": "https://api.deezer.com",
+      "url": "/search?q={{query}}",
+      "timeout": 3,
+      "concurrency": 3,
+      "pager": {
+        "disabled": "false",
+        "max": "10",
+        "offset": "1",
+        "limit": "100",
+        "offset_var": "index"
+      },
+      "examples": {
+        "remote": {
+          "desc": "",
+          "link": "https://api.deezer.com/search?q=justice&index=0"
+        },
+        "local": {
+          "desc": "",
+          "link": "http://localhost:3000/deezer?query=justice"
+        }
+      },
+      "selector": "json",
+      "method": "GET",
+      "blocks": {
+        "result": {
+          "cache": true,
+          "items": "data",
+          "details": {
+            "title": "title",
+            "content": [
+              "artist.name",
+              "album.title"
+            ],
+            "url": "link"
+          }
+        }
+      }
+    },
+    {
+      "route": "/google/search",
+      "debug": false,
+      "disabled": true,
+      "cache": true,
+      "name": "google-search",
+      "provider": "google.com",
+      "base_url": "https://www.google.com",
+      "url": "/search?q={{query}}",
+      "timeout": 10,
+      "selector": "css",
+      "method": "GET",
+      "blocks": {
+        "result": {
+          "cache": true,
+          "items": "#res div[class=g]",
+          "count": "#resultStats",
+          "details": {
+            "title": "h3 a",
+            "url": [
+              "h3 a",
+              "@href",
+              "query-param(q)"
+            ]
+          }
+        },
+        "extra": {
+          "cache": true,
+          "items": "#brs .g-section-with-header div div, p",
+          "details": {
+            "title": "a",
+            "url": [
+              "a",
+              "@href"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "route": "/ccc-tv",
+      "debug": false,
+      "disabled": true,
+      "cache": true,
+      "name": "ccc-tv",
+      "provider": "media.ccc.de",
+      "base_url": "https://media.ccc.de",
+      "url": "/search/?q={{query}}",
+      "method": "GET",
+      "timeout": 10,
+      "selector": "css",
+      "blocks": {
+        "result": {
+          "cache": true,
+          "items": "div[class='container-fluid'] div[class='event-previews'] div[class='caption']",
+          "count": "span[class='sb_count']",
+          "details": {
+            "title": "h4",
+            "desc": "h3 a",
+            "url": [
+              "h3 a",
+              "@href"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "route": "/9docu",
+      "debug": false,
+      "cache": true,
+      "strict_mode": false,
+      "name": "golanglibs",
+      "provider": "9docu.com",
+      "base_url": "http://9docu.com",
+      "method": "GET",
+      "concurrency": 10,
+      "url": "/page/{{page}}/?s={{query}}",
+      "pager": {
+        "max": "10",
+        "offset": "1",
+        "offset_var": "page"
+      },
+      "timeout": 3,
+      "selector": "css",
+      "blocks": {
+        "result": {
+          "strict_mode": false,
+          "cache": true,
+          "items": ".item-post",
+          "count": "i[class='count']",
+          "details": {
+            "title": ".entry-title a",
+            "desc": "p:nth-child(3)",
+            "img": [
+              "img",
+              "@src"
+            ],
+            "url": [
+              ".entry-title a",
+              "@href"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "route": "/golanglibs",
+      "debug": false,
+      "strict_mode": false,
+      "cache": true,
+      "name": "golanglibs",
+      "provider": "golanglibs.com",
+      "base_url": "https://golanglibs.com",
+      "method": "GET",
+      "url": "/search?q={{query}}",
+      "timeout": 10,
+      "selector": "xpath",
+      "blocks": {
+        "result": {
+          "strict_mode": false,
+          "cache": true,
+          "items": "/html/body/div[1]/div[3]/div[1]/div",
+          "details": {
+            "title": "div[2]/div/a",
+            "desc": "div[2]/div",
+            "url": [
+              "div[2]/div/a",
+              "@href"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "route": "/crunchbase/news",
+      "debug": false,
+      "strict_mode": false,
+      "cache": false,
+      "name": "news crunchbase",
+      "provider": "crunchbase.com",
+      "base_url": "https://news.crunchbase.com",
+      "method": "GET",
+      "url": "/news/feed/",
+      "timeout": 10,
+      "selector": "rss",
+      "template": "rss/default"
+    },
+    {
+      "route": "/bitbucket",
+      "debug": true,
+      "disabled": true,
+      "cache": true,
+      "name": "bitbucket",
+      "provider": "bitbucket.org",
+      "base_url": "https://bitbucket.org",
+      "url": "/repo/all/1?name={{query}}",
+      "method": "GET",
+      "timeout": 10,
+      "selector": "css",
+      "headers": {
+        "Accept": "application/vnd.github.mercy-preview+json"
+      },
+      "blocks": {
+        "result": {
+          "items": "#repositories li",
+          "count": "span[class='sb_count']",
+          "cache": true,
+          "details": {
+            "title": "article[class='repo-summary'] h1 a[class='repo-link']",
+            "desc": "article, p",
+            "url": [
+              "article[class='repo-summary'] a[class='repo-link']",
+              "@href"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "route": "/archive.is",
+      "debug": true,
+      "disabled": true,
+      "cache": true,
+      "name": "arch linux wiki",
+      "provider": "archive.is",
+      "base_url": "https://archive.is",
+      "method": "GET",
+      "url": "{{query}}",
+      "timeout": 10,
+      "selector": "css",
+      "blocks": {
+        "result": {
+          "cache": true,
+          "items": "div[class='TEXT-BLOCK'] ul li",
+          "count": "span[class='sb_count']",
+          "details": {
+            "title": "div[class='TEXT-BLOCK'] a",
+            "desc": "div span",
+            "url": [
+              "div[class='TEXT-BLOCK'] a",
+              "@href"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "route": "/archlinux/all",
+      "debug": true,
+      "disabled": true,
+      "cache": true,
+      "name": "arch linux wiki",
+      "provider": "archlinux.org",
+      "method": "GET",
+      "base_url": "https://wiki.archlinux.org",
+      "url": "/index.php?title=Special:Search&offset=1&{{query}}",
+      "timeout": 10,
+      "selector": "css",
+      "blocks": {
+        "result": {
+          "cache": true,
+          "count": "span[class='sb_count']",
+          "items": "#mw-content-text div > ul[2] li",
+          "details": {
+            "title": ".mw-search-result-heading a",
+            "desc": "div span",
+            "url": [
+              "div a",
+              "@href"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "route": "/voat",
+      "debug": true,
+      "disabled": true,
+      "cache": true,
+      "provider": "searchvoat.co",
+      "base_url": "https://searchvoat.co",
+      "url": "/?t={{query}}",
+      "method": "GET",
+      "timeout": 10,
+      "selector": "css",
+      "blocks": {
+        "result": {
+          "cache": true,
+          "count": "span[class='sb_count']",
+          "items": "#timeline table tr td",
+          "details": {
+            "title": "div[class='entry'] p a[class='title']",
+            "desc": "div[class='entry'] p span[class='domain']",
+            "url": [
+              "div[@class='entry'] p a[class='title']",
+              "@href"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "route": "/bing/news",
+      "debug": false,
+      "cache": true,
+      "base_url": "https://www.bing.com",
+      "provider": "bing.com",
+      "method": "GET",
+      "url": "/news/search?{{query}}&first=1",
+      "selector": "css",
+      "blocks": {
+        "result": {
+          "cache": true,
+          "count": "span[class='sb_count']",
+          "items": "#algocore .newsitem",
+          "details": {
+            "title": "div[class=t_t] a",
+            "image": [
+              "div[class=image] a img",
+              "@src"
+            ],
+            "desc": "div[class=snippet]",
+            "url": [
+              "div[class=t_t] a",
+              "@href"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "route": "/bing/images",
+      "debug": true,
+      "cache": false,
+      "strict_mode": false,
+      "base_url": "https://www.bing.com",
+      "provider": "bing.com",
+      "method": "GET",
+      "url": "/images/search?q={{query}}&qs=n&form=QBLH&scope=images&sp=-1&count=100&first=1",
+      "selector": "css",
+      "blocks": {
+        "result": {
+          "debug": true,
+          "cache": false,
+          "strict_mode": false,
+          "items": "div.imgpt",
+          "details": {
+            "title": [
+              "img",
+              "@alt"
+            ],
+            "image": [
+              "img",
+              "@src"
+            ],
+            "desc": "div[class=snippet]",
+            "url": [
+              "a",
+              "@href"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "route": "/bing",
+      "debug": false,
+      "strict_mode": true,
+      "cache": true,
+      "base_url": "https://www.bing.com",
+      "provider": "bing.com",
+      "url": "/search?q={{query}}",
+      "selector": "css",
+      "method": "GET",
+      "blocks": {
+        "result": {
+          "cache": true,
+          "count": "span[class='sb_count']",
+          "items": "#b_results li.b_algo, #b_results li.b_ans",
+          "details": {
+            "title": "li[class=b_algo] h2",
+            "desc": "div[class='b_caption'] p",
+            "url": [
+              "li[class=b_algo] h2 a",
+              "@href"
+            ]
+          }
+        },
+        "extra": {
+          "items": "#b_context li div ul li",
+          "cache": true,
+          "details": {
+            "title": "li a",
+            "url": [
+              "li a",
+              "@href"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "route": "/google/play/apps",
+      "debug": false,
+      "cache": true,
+      "selector": "css",
+      "name": "google play apps",
+      "provider": "google.com",
+      "method": "GET",
+      "base_url": "https://play.google.com",
+      "url": "/store/search?q={{query}}&c=apps",
+      "blocks": {
+        "result": {
+          "cache": true,
+          "items": "div[class='id-card-list card-list two-cards'] div[class='details']",
+          "count": "//span[@class='sb_count']",
+          "details": {
+            "title": "a[class='title']",
+            "desc": "div[class='subtitle-container'] a[class='subtitle']",
+            "url": [
+              "a[class='title']",
+              "@href"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "route": "/habrahabr",
+      "debug": true,
+      "cache": true,
+      "name": "habrahabr",
+      "base_url": "https://habrahabr.ru",
+      "provider": "habrahabr.ru",
+      "method": "GET",
+      "url": "/search/page1/?q={{query}}&target_type=posts&flow=&order_by=relevance",
+      "selector": "xpath",
+      "blocks": {
+        "results": {
+          "cache": true,
+          "items": "//ul[contains(@class, 'content-list_posts')]/li",
+          "details": {
+            "title": "//a[contains(@class, 'post__title_link')]",
+            "cat": "//ul[contains(@class, 'post__hubs')]",
+            "desc": "//div[contains(@class, 'post__text')]",
+            "url": [
+              "//a[@class='post__title_link']/@href"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "route": "/google/play/movies",
+      "debug": false,
+      "cache": true,
+      "name": "google play movies",
+      "provider": "google.com",
+      "method": "GET",
+      "base_url": "https://play.google.com",
+      "url": "/store/search?q={{query}}&c=movies",
+      "selector": "xpath",
+      "blocks": {
+        "movies": {
+          "cache": true,
+          "items": "//*[@id='body-content']/div/div/div[1]/div/div[1]/div/div[2]/div",
+          "details": {
+            "title": "//a[@class='title']",
+            "cat": "//a[@class='subtitle subtitle-movie-category']",
+            "desc": "//a[@class='subtitle']",
+            "url": [
+              "//a[@class='title']/@href"
+            ]
+          }
+        },
+        "tv-shows": {
+          "items": "//*[@id='body-content']/div/div/div[1]/div/div[2]/div/div[2]/div",
+          "cache": true,
+          "details": {
+            "title": "//a[@class='title']",
+            "cat": "//a[@class='subtitle subtitle-movie-category']",
+            "desc": "//a[@class='subtitle']",
+            "url": [
+              "//a[@class='title']/@href"
+            ]
+          }
+        },
+        "tv-episodes": {
+          "items": "//*[@id='body-content']/div/div/div[1]/div/div[3]/div/div[2]/div",
+          "cache": true,
+          "details": {
+            "title": "//a[@class='title']",
+            "cat": "//a[@class='subtitle subtitle-movie-category']",
+            "desc": "//a[@class='subtitle']",
+            "url": [
+              "//a[@class='title']/@href"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "route": "/google/play/music",
+      "debug": false,
+      "cache": true,
+      "name": "google play music",
+      "base_url": "https://play.google.com",
+      "provider": "google.com",
+      "method": "GET",
+      "url": "/store/search?q={{query}}&c=music",
+      "selector": "xpath",
+      "blocks": {
+        "artists": {
+          "cache": true,
+          "items": "//*[@id='body-content']/div/div/div[1]/div/div[1]/div/div[2]/div",
+          "details": {
+            "title": "//a[@class='title']",
+            "cat": "//a[@class='subtitle subtitle-movie-category']",
+            "desc": "//a[@class='subtitle']",
+            "url": [
+              "//a[@class='title']/@href"
+            ]
+          }
+        },
+        "albums": {
+          "items": "//*[@id='body-content']/div/div/div[1]/div/div[2]/div/div[2]/div",
+          "cache": true,
+          "details": {
+            "title": "//a[@class='title']",
+            "cat": "//a[@class='subtitle subtitle-movie-category']",
+            "desc": "//a[@class='subtitle']",
+            "url": [
+              "//a[@class='title']/@href"
+            ]
+          }
+        },
+        "songs": {
+          "items": "//*[@id='body-content']/div/div/div[1]/div/div[3]/div/div[2]/div",
+          "cache": true,
+          "details": {
+            "title": "//a[@class='title']",
+            "cat": "//a[@class='subtitle subtitle-movie-category']",
+            "desc": "//a[@class='subtitle']",
+            "url": [
+              "//a[@class='title']/@href"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "route": "/google/scholar",
+      "debug": false,
+      "cache": true,
+      "selector": "css",
+      "provider": "google.com",
+      "name": "Google Scholar",
+      "method": "GET",
+      "base_url": "https://scholar.google.com",
+      "url": "/scholar?hl=en&as_sdt=0%2C5&as_vis=1&q={{query}}&btnG=",
+      "blocks": {
+        "result": {
+          "cache": true,
+          "items": "#gs_res_ccl_mid div",
+          "count": "//span[@class='sb_count']",
+          "details": {
+            "title": "#gs_res_ccl_mid div[class=gs_ri] h3",
+            "desc": "#gs_res_ccl_mid div[class=gs_ri] div[class=gs_rs]",
+            "url": [
+              "#gs_res_ccl_mid div[class=gs_ri] h3 a",
+              "@href"
+            ]
+          }
+        },
+        "extra": {
+          "cache": true,
+          "items": "#gs_qsuggest ul li",
+          "details": {
+            "title": "li a",
+            "url": [
+              "li a",
+              "@href"
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "etcd": {
+    "disabled": false,
+    "debug": true,
+    "init_check": true,
+    "root_key": "sniperkit"
+  },
+  "cache": {
+    "disabled": false,
+    "engine": "diskv",
+    "valid": [
+      "diskv",
+      "redis",
+      "memcache",
+      "couchdb",
+      "leveldbcache",
+      "disks3cache",
+      "staticfilecache",
+      "boltdbcache"
+    ],
+    "listen_addr": "localhost",
+    "expiration_time": 3600,
+    "prefix_path": "./shared/cache"
+  }
+}

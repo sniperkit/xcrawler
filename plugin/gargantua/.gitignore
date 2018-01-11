@@ -1,0 +1,10 @@
+vendor
+vendor/
+vendor/**
+files
+files/
+files/**
+bin
+bin/
+bin/**
+gargantua

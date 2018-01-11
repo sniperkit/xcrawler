@@ -1,0 +1,31 @@
+scrapely>=0.12.0
+numpy>=1.9.2
+scipy>=0.15.1
+scikit-learn>=0.17
+pandas>=0.20.3
+cython>=0.23.3
+networkx>=1.10
+pulp>=1.6.0
+-e git+https://github.com/scrapinghub/portia.git@slybot-0.12.0#egg=slyd&subdirectory=slyd
+-e git+https://github.com/scrapinghub/portia.git@nui-develop-backup#egg=slybot&subdirectory=slybot
+# For demo2
+matplotlib>=1.4.3
+ete2>=2.3.10
+keras
+h5py
+six 
+wheel 
+protobuf>=3.1.0
+tensorflow
+sklearn-crfsuite==0.3.6
+pandas
+dawg==0.7.8
+eli5==0.7
+joblib
+tqdm==4.15.0
+pathlib2
+requests
+# pip install /data/pip/wheel/tensorflow_pkg/tensorflow-1.3.0-py2-none-any.whl
+# pip3 install --upgrade \ https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-1.3.0-py2-none-any.whl.
+# pip install --upgrade https://storage.googleapis.com/tensorflow/linux/cpu/protobuf-3.1.0-cp27-none-linux_x86_64.whl
+# pip install --upgrade https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-1.3.0-cp27-cp34m-linux_x86_64.whl

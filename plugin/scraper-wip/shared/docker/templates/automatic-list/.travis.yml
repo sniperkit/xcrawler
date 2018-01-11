@@ -1,0 +1,25 @@
+language: python
+python: 2.7
+
+install:
+    # All these conda hoops are just there to install pandas, which is
+    # very little used. If panda usage does not increase I guess it
+    # should be removed.
+    - wget https://repo.continuum.io/miniconda/Miniconda-latest-Linux-x86_64.sh -O miniconda.sh;
+    - bash miniconda.sh -b -p /opt/conda
+    - export CONDA_HOME="/opt/conda"
+    - export PATH="$CONDA_HOME/bin:$PATH"
+    - hash -r
+    - conda config --set always_yes yes --set changeps1 no
+    - conda update -q conda
+    - conda install pandas numpy cython
+    - pip install -U -r requirements.txt
+    - pip install -U -r requirements.travis.txt
+
+env:
+  global:
+    - CONDA_HOME=/opt/conda
+    - TZ=Europe/Paris
+
+script:
+  - travis_wait tox -vvv

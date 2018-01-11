@@ -1,0 +1,5 @@
+# ScrapingHub addons
+git+https://github.com/scrapinghub/mdr.git#egg=mdr
+git+https://github.com/scrapinghub/webstruct.git#egg=webstruct
+git+https://github.com/scrapinghub/exporters.git#egg=exporters
+git+https://github.com/scrapinghub/dateparser.git#egg=dateparser

@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "ng-admin": "^1.0.7"
+  },
+  "scripts": {
+    "build": "./node_modules/webpack/bin/webpack.js",
+    "watch": "npm run build -- --watch",
+    "publish": "NODE_ENV=production npm run build -- --optimize-minimize"
+  }
+}

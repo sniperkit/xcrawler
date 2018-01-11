@@ -1,0 +1,55 @@
+{
+	"host": "",
+	"port": "8086",
+	"auth": false,
+	"etcd_root_key": "root",
+	"etcd_endpoints": [
+		"etcd1:2379",
+		"etcd2:2379",
+		"etcd3:2379"
+	],
+	"etcd_username": "",
+	"etcd_password": "",
+	"dir_value": "",
+	"cert_file": "",
+	"key_file": "",
+	"trusted_ca_file": "",
+	"server": {
+		"host": "",
+		"port": "",
+		"auth": false
+	},
+	"front": {
+		"disabled": false,
+		"debug": false,
+		"host": "",
+		"port": 0,
+		"dev": {
+			"disabled": false,
+			"debug": false,
+			"dir": ""
+		},
+		"dist": {
+			"disabled": false,
+			"debug": false,
+			"dir": "/data/static/dist"
+		}
+	},
+	"etcd": {
+		"disabled": false,
+		"debug": false,
+		"version": 0,
+		"root_key": "",
+		"endpoints": null,
+		"username": "",
+		"password": "",
+		"dir_value": "",
+		"tls": {
+			"disabled": false,
+			"debug": false,
+			"cert_file": "",
+			"key_file": "",
+			"trusted_ca_file": ""
+		}
+	}
+}

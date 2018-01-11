@@ -1,0 +1,99 @@
+package: github.com/roscopecoltran/scraper
+ignore:
+- github.com/qor/media
+- github.com/qor/session
+- golang.org/x/net
+- github.com/qor/action_bar
+- github.com/qor/help
+- github.com/roscopecoltran/admin
+- github.com/qor/qor
+- github.com/qor/admin
+- github.com/qor/serializable_meta
+- github.com/qor/worker
+- github.com/qor/publish
+- github.com/qor/roles
+- github.com/qor/publish2
+- github.com/jinzhu/gorm
+import:
+- package: github.com/Machiel/slugify
+- package: github.com/Onefootball/entity-rest-api
+  subpackages:
+  - api
+  - manager
+- package: github.com/PuerkitoBio/goquery
+- package: github.com/ant0ine/go-json-rest
+  subpackages:
+  - rest
+- package: github.com/antchfx/xquery
+  subpackages:
+  - html
+- package: github.com/astaxie/beego
+- package: github.com/bobesa/go-domain-util
+  subpackages:
+  - domainutil
+- package: github.com/coreos/etcd
+  subpackages:
+  - auth/authpb
+  - clientv3
+  - etcdserver/etcdserverpb
+  - pkg/transport
+  - version
+- package: github.com/gebv/typed
+- package: github.com/gin-contrib/cache
+  subpackages:
+  - persistence
+- package: github.com/gin-gonic/gin
+- package: github.com/jinzhu/gorm
+  subpackages:
+  - dialects/mysql
+  - dialects/postgres
+  - dialects/sqlite
+- package: github.com/joho/godotenv
+- package: github.com/jpillora/opts
+- package: github.com/k0kubun/pp
+- package: github.com/karlseguin/cmap
+- package: github.com/leebenson/conform
+- package: github.com/linkosmos/tokeq
+- package: github.com/mattn/go-sqlite3
+- package: github.com/mcuadros/go-jsonschema-generator
+- package: github.com/mgbaozi/gomerge
+- package: github.com/microcosm-cc/bluemonday
+- package: github.com/mmcdole/gofeed
+- package: github.com/moovweb/gokogiri
+  subpackages:
+  - html
+  - xml
+- package: github.com/qor/action_bar
+- package: github.com/qor/admin
+- package: github.com/qor/help
+- package: github.com/qor/media
+  subpackages:
+  - media_library
+- package: github.com/qor/media_library
+- package: github.com/qor/qor
+- package: github.com/qor/sorting
+- package: github.com/qor/validations
+- package: github.com/rakanalh/goscrape
+  subpackages:
+  - extractor
+  - processors
+- package: github.com/roscopecoltran/admin
+- package: github.com/roscopecoltran/configor
+- package: github.com/roscopecoltran/e3ch
+- package: github.com/roscopecoltran/e3w
+  subpackages:
+  - conf
+  - e3ch
+  - routers
+- package: github.com/roscopecoltran/mxj
+- package: github.com/soyking/e3ch
+- package: github.com/therealbill/libredis
+  subpackages:
+  - client
+- package: github.com/wantedly/gorm-zap
+- package: go.uber.org/zap
+- package: golang.org/x/net
+  subpackages:
+  - context
+  - html
+- package: gopkg.in/ini.v1

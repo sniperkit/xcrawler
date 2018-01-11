@@ -1,0 +1,42 @@
+FROM alpine:3.6
+MAINTAINER Rosco Pecoltran <https://github.com/roscopecoltran>
+
+# build: docker build -t scraper:alpine -f scraper-alpine.dockerfile --no-cache .
+# run: docker run --rm -ti -p 3000:3000 -v `pwd`:/app scraper:alpine
+
+ARG GOPATH=${GOPATH:-"/go"}
+ARG APK_INTERACTIVE=${APK_INTERACTIVE:-"bash nano tree"}
+ARG APK_RUNTIME=${APK_RUNTIME:-"git openssl ca-certificates go nodejs"}
+ARG APK_BUILD=${APK_BUILD:-"nodejs-npm make musl-dev g++ gcc"} 
+
+ENV APP_BASENAME=${APP_BASENAME:-"e3w"} \
+    PATH="${GOPATH}/bin:/app:$PATH" \
+    GOPATH=${GOPATH:-"/go"}
+
+COPY . /go/src/github.com/roscopecoltran/e3w
+WORKDIR /go/src/github.com/roscopecoltran/e3w
+
+RUN \
+        echo "http://dl-4.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories && \
+        apk upgrade && \
+        apk add --update --no-cache ${APK_RUNTIME} && \
+        apk add --update --no-cache --virtual=.interactive-dependencies ${APK_INTERACTIVE} && \
+        apk add --update --no-cache --virtual=.build-dependencies ${APK_BUILD} && \
+    \ 
+        cd ./static && \
+        npm install && \
+        npm run publish && \
+        ls -l && \        
+    \
+        cd .. && \
+        go get -v -u github.com/Masterminds/glide && \
+        go get -v -u github.com/mitchellh/gox && \
+        glide install --strip-vendor && \
+        gox -verbose -os="linux" -arch="amd64" -output="/app/bin/{{.Dir}}-{{.OS}}" $(glide novendor)
+
+VOLUME ["/data", "/app"]
+
+EXPOSE 8086 3002 3003
+
+CMD ["/bin/bash"]
+# CMD ["/app/e3w", "-conf", "/data/conf.d/e3w/config.ini"]

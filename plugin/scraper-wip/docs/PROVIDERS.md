@@ -1,0 +1,17 @@
+Providers:
+- ccc-tv
+- bitbucket
+- bing
+- google/play/movies
+- google/play/music
+- google/search
+- archive.is
+- archlinux/all
+- voat
+- bing/news
+- google/play/apps
+- habrahabr
+- google/scholar
+- ccc-tv
+- bitbucket
+- bing

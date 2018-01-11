@@ -1,0 +1,66 @@
+---
+version: '2.1'
+services:
+
+  data:
+    image: tianon/true
+    container_name: scraphub-aile-data
+    volumes:
+    - "$PWD:/app/src"
+    - "./shared/data:/data"
+    - "./shared/conf.d:/app/conf.d"
+
+  aile:
+    container_name: scraphub-scraphub-aile
+    build:
+      context: .
+      dockerfile: "$PWD/aile-alpine.dockerfile"
+    ports:
+    - 8000:8000
+    - 8888:8888
+    volumes:
+    # - "${PWD}:/app/code" # change it for "$PWD:/app", if you want to share the source code with the container
+    - "./shared/data:/data"
+    - "./shared/conf.d:/app/conf.d"
+    - "./shared/data/annotated:/data/annotated"
+    - "./shared/data/projects:/data/projects"
+    - "./cmd:/app/cmd"
+    #- "/tmp/.X11-unix:/tmp/.X11-unix:ro"
+    #- "$XAUTHORITY:/root/.Xauthority"
+    # demo1.py https://news.ycombinator.com
+    # demo3.py https://news.ycombinator.com
+    # command: ["server.py"]
+    # command: ["demo1.py","https://news.ycombinator.com"]
+    # command: ["demo2.py","https://news.ycombinator.com"]
+    # command: ["demo3.py","https://news.ycombinator.com"]
+    command: ["/bin/bash"]
+
+  py3-ml:
+    container_name: scraphub-aile-dev-py3
+    build:
+      context: "$PWD/shared/docker/templates/alpine/py3/machinelearning"
+      dockerfile: Dockerfile
+    ports:
+    - 8001:8000
+    volumes:
+    - "$PWD:/app/code" # change it for "$PWD:/app", if you want to share the source code with the container
+    - "./shared/data:/data"
+    - "./shared/conf.d:/app/conf.d"
+    #- "/tmp/.X11-unix:/tmp/.X11-unix:ro"
+    #- "$XAUTHORITY:/root/.Xauthority"
+    command: ["/bin/bash"]
+
+  py2-ml:
+    container_name: scraphub-aile-dev-py2
+    build:
+      context: "$PWD/shared/docker/templates/alpine/py2/machinelearning"
+      dockerfile: Dockerfile
+    ports:
+    - 8002:8000
+    volumes:
+    - "$PWD:/app/code" # change it for "$PWD:/app", if you want to share the source code with the container
+    - "./shared/data:/data"
+    - "./shared/conf.d:/app/conf.d"
+    #- "/tmp/.X11-unix:/tmp/.X11-unix:ro"
+    #- "$XAUTHORITY:/root/.Xauthority"
+    command: ["/bin/bash"]

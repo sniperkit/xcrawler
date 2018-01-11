@@ -1,0 +1,23 @@
+localhost:5050 {
+    bind 0.0.0.0
+    browse
+    header / Cache-Control "no-cache, no-store, must-revalidate"
+
+     jwt {
+        # Protected Path and all its children will be protected also
+        path /
+
+        redirect /login
+     }
+
+     login {
+            # Path to be redirected to if login success
+            success_url /
+
+            # Github Oauth Credentials from environment variables
+            github client_id={$github_client_id},client_secret={$github_client_secret}
+
+            # The optional login page template path. if omitted, the plugin will use a default one
+            template login.html
+     }
+}

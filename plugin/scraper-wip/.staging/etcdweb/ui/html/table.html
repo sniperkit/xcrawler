@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>etcd web</title>
+    <script src="http://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/datatables/1.10.13/js/jquery.dataTables.min.js"></script>
+    <script src="http://cdn.bootcss.com/datatables/1.10.15/js/dataTables.semanticui.js"></script>
+    <script src="http://cdn.bootcss.com/semantic-ui/2.2.10/semantic.min.js"></script>
+    <link href="http://cdn.bootcss.com/semantic-ui/2.2.10/semantic.min.css" rel="stylesheet">
+    <link href="http://cdn.bootcss.com/datatables/1.10.13/css/dataTables.semanticui.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="ui inverted huge menu">
+        <a class="green item" href="/">Config </a>
+        <a class="green item" href="/web//">Root </a>
+    </div>
+    <table id="data-table" class="ui celled table" cellspacing="0" width="100%">
+        <thead>
+            <tr>
+                <th>Key</th>
+                <th>Value</th>
+                <th>Dir</th>
+                <th>CreateIndex</th>
+                <th>ModifyIndex</th>
+                <th>DEL</th>
+            </tr>
+        </thead>
+    </table>
+    <script>
+        $(document).ready(function() {
+            $('#data-table').DataTable({
+                "autoWidth": true,
+                "ajax": "/raw/{{.key}}",
+                "columns": [{
+                    "data": "Key",
+                    "render": function(data, type, row, meta) {
+                        if (type === 'display') {
+                            return $('<a>')
+                                .attr('href', "/web" + data)
+                                .text(data)
+                                .wrap('<div></div>')
+                                .parent()
+                                .html();
+
+                        } else {
+                            return data;
+                        }
+                    }
+                }, {
+                    "data": "Value",
+                    "render": function(data, type, row, meta) {
+                        if (type === 'display') {
+                            try {
+                                var jsondata = JSON.parse(data)
+                                return $('<pre style="font-family:consolas">')
+                                    .text(JSON.stringify(jsondata, undefined, 4))
+                                    .wrap('<div></div>')
+                                    .parent()
+                                    .html();
+                            } catch (e) {
+                                return data;
+                            }
+                        } else {
+                            return data;
+                        }
+                    }
+                }, {
+                    "data": "Dir"
+                }, {
+                    "data": "CreateIndex",
+                }, {
+                    "data": "ModifyIndex"
+                }, {
+                    "data": "Key",
+                    "render": function(data, type, row, meta) {
+                        if (type === 'display') {
+                            return $('<a>')
+                                .attr('onClick', "deleteKey(this)")
+                                .attr('id', "/raw" + data)
+                                .append('<i class="trash icon"></i>')
+                                .wrap('<div></div>')
+                                .parent()
+                                .html();
+                        } else {
+                            return data;
+                        }
+                    }
+                }]
+            });
+        });
+
+        function deleteKey(elem) {
+            var key = $(elem).attr("id");
+            $.ajax({
+                url: key,
+                type: 'DELETE',
+                success: function() {
+                    location.reload();
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

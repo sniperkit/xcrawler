@@ -1,0 +1,23 @@
+# services:
+
+groups:
+  dev:
+  - scraper
+  - aile
+  - etcd_browser
+  - e3w_dev
+  - etcd1
+  dist:
+  - scraper_dist
+  - etcd1
+  web:
+  - nginx
+  # - caddy
+  bench:
+  - elk5
+  - elk5
+  ai:
+  - aile
+  deep:
+  - deepdetect
+  - deepdetect-tf

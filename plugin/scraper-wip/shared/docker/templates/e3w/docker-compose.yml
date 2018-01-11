@@ -1,0 +1,96 @@
+---
+version: '3'
+services:
+
+  e3w_dist:
+    container_name: e3w-dist
+    build:
+      context: ./shared/dist/
+      dockerfile: "e3w-alpine3.6.dockerfile" # available: e3w-alpine3.6.dockerfile, e3w-scratch.dockerfile, e3w-tianon.dockerfile
+    # network_mode: "host"
+    hostname: e3w
+    ports:
+    - 8086:8086
+    - 3002:3002
+    - 3003:3003
+    volumes:
+    - "./shared/conf.d/e3w:/data/conf.d/e3w"
+    environment:
+    # - GIN_MODE=release
+    - ETCDCTL_API=3 # etcdctl auth enable
+    # ETCDCTL_API=3 etcdctl set /vulcand/backends/b1/backend '{"Type": "http"}'
+    links:
+    - etcd1
+    command: ["/app/bin/e3w-linux", "-conf", "/data/conf.d/e3w/config.ini"]
+
+  e3w_dev:
+    container_name: e3w-dev
+    build:
+      context: .
+      dockerfile: "e3w.alpine-dockerfile"
+    # network_mode: "host"
+    hostname: e3w-dev
+    ports:
+    # "127.0.0.1:8086:8086"
+    - 8086:8086
+    - 3002:3002
+    - 3003:3003
+    volumes:
+    - "$PWD:/go/src/github.com/roscopecoltran/e3w" # change it for "$PWD:/app", if you want to share the source code with the container
+    - "./shared/dist:/app"
+    - "./shared/conf.d/e3w:/data/conf.d/e3w"
+    environment:
+    # - CONFIGOR_ENV=production
+    #   // $ CONFIGOR_ENV=production go run config.go
+    #   // Will load `config.json`, `config.production.json` if it exists `config.production.json` will overwrite `config.json`'s configuration
+    # - GIN_MODE=release
+    - ETCDCTL_API=3 # etcdctl auth enable
+    links:
+    - etcd1
+    working_dir: /go/src/github.com/roscopecoltran/e3w
+    # gox -verbose -os="linux" -arch="amd64" -output="./dist/e3w-{{.OS}}" $(glide novendor)
+    command: ["go", "run", "main.go", "-conf", "/data/conf.d/e3w/config.ini", "-front-dir", "/go/src/github.com/roscopecoltran/e3w/static/dist"]
+    # command: ["/bin/bash"]
+
+  etcd_browser:
+    container_name: etcd-browser
+    image: kiodo/etcd-browser:latest
+    # network_mode: "host"
+    ports:
+    - 8070:8070 
+    depends_on:
+    - etcd1
+    environment:
+    - ETCD_HOST=etcd1
+    - ETCD_PORT=2379
+    - SERVER_PORT=8070
+    # - ETCDCTL_CA_FILE
+    # - ETCDCTL_CERT_FILE
+    # - ETCDCTL_KEY_FILE 
+    # - AUTH_PASS=doe
+    # - AUTH_USER=
+    links:
+    - etcd1
+    # command: ["bash"]
+
+
+  etcd1:
+    image: quay.io/coreos/etcd:v3.2.4
+    hostname: etcd1
+    ports:
+      - "2379:2379"
+      - "2380:2380"
+    volumes:
+      - ./shared/data/etcd/unit_1:/etcd-data
+    restart: always
+    environment:
+      - ETCD_NAME=etcd1
+      - ETCD_INITIAL_ADVERTISE_PEER_URLS=http://192.168.1.200:2380
+      - ETCD_LISTEN_PEER_URLS=http://0.0.0.0:2380
+      - ETCD_ADVERTISE_CLIENT_URLS=http://192.168.1.200:2379
+      - ETCD_LISTEN_CLIENT_URLS=http://0.0.0.0:2379
+      - ETCD_INITIAL_CLUSTER=etcd1=http://192.168.1.200:2380
+      - ETCD_DATA_DIR=/etcd-data
+      - ETCD_INITIAL_CLUSTER_TOKEN=etcd-cluster-1
+      - ETCD_INITIAL_CLUSTER_STATE=new
+

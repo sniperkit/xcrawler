@@ -1,0 +1,54 @@
+[general]
+timeout = "1m"
+formatJSON = true
+insecure = false
+preserveScrollPosition = true
+followRedirects = true
+defaultURLScheme = "https"
+statusLine = "[wuzz {{.Version}}] [Response time: {{.Duration}}]"
+editor = "vim"
+
+# KEYBINDINGS
+[keys.global]
+CtrlR = "submit"
+CtrlC = "quit"
+CtrlS = "saveResponse"
+CtrlD = "deleteLine"
+CtrlW = "deleteWord"
+CtrlF = "loadRequest"
+CtrlE = "saveRequest"
+CtrlT = "toggleContextSpecificSearch"
+CtrlX = "clearHistory"
+Tab = "nextView"
+CtrlJ = "nextView"
+CtrlK = "prevView"
+AltH = "history"
+F2 = "focus url"
+F3 = "focus get"
+F4 = "focus method"
+F5 = "focus data"
+F6 = "focus headers"
+F7 = "focus search"
+F8 = "focus response-headers"
+F9 = "focus response-body"
+
+[keys.url]
+Enter = "submit"
+
+[keys.response-headers]
+ArrowUp = "scrollUp"
+ArrowDown = "scrollDown"
+PageUp = "pageUp"
+PageDown = "pageDown"
+
+[keys.response-body]
+ArrowUp = "scrollUp"
+ArrowDown = "scrollDown"
+PageUp = "pageUp"
+PageDown = "pageDown"
+
+[keys.help]
+ArrowUp = "scrollUp"
+ArrowDown = "scrollDown"
+PageUp = "pageUp"
+PageDown = "pageDown"

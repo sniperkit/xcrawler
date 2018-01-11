@@ -1,0 +1,175 @@
+---
+version: '3'
+services:
+
+  data:
+    image: tianon/true
+    container_name: scraper-data
+    volumes:
+    - "$PWD:/app/src"
+    - "./shared/data:/data"
+    - "./shared/conf.d:/app/conf.d"
+    - "./shared/data/deepdetect:/data"
+    - "./shared/models:/opt/models"
+
+  # http://localhost:3000/bing?query=opencv
+  scraper:
+    container_name: scraper
+    build:
+      context: .
+      dockerfile: "scraper-alpine.dockerfile"
+    # network_mode: "host"
+    ports:
+    - 3000:3000
+    links:
+    - etcd1
+    - etcd2
+    - etcd3
+    volumes:
+    - "${PWD}:/go/src/github.com/roscopecoltran/scraper" # change it for "$PWD:/app", if you want to share the source code with the container
+    - "./shared/cache:/data/cache"
+    - "./shared/conf.d:/app/conf.d"
+    # command: ["/bin/bash"]
+    command: ["/app/scraper-server","/app/conf.d/providers.list.json"]
+
+  aile:
+    container_name: scraphub-aile
+    build:
+      context: shared/docker/templates/automatic-list
+      dockerfile: "aile-alpine.dockerfile"
+    ports:
+    - 8000:8000
+    - 8888:8888
+    # network_mode: "host"
+    volumes:
+    # - "${PWD}:/app/code" # change it for "$PWD:/app", if you want to share the source code with the container
+    - "./shared/data:/data"
+    - "./shared/conf.d:/app/conf.d"
+    - "./shared/data/annotated:/data/annotated"
+    - "./shared/data/projects:/data/projects"
+    - "./cmd:/app/cmd"
+    #- "/tmp/.X11-unix:/tmp/.X11-unix:ro"
+    #- "$XAUTHORITY:/root/.Xauthority"
+    command: ["/bin/bash"]
+
+  deepdetect:
+    container_name: deepdetect-cpu
+    image: beniz/deepdetect_cpu
+    # network_mode: "host"
+    ports:
+    - 8890:8890
+    volumes:
+    - "./shared/data/deepdetect:/data"
+    - "./shared/models:/opt/models"
+    command: ["./dede", "-host", "0.0.0.0", "-port", "8890"]
+
+  deepdetect-tf:
+    container_name: deepdetect-tf-cpu
+    build:
+      context: shared/docker/templates/deepdetect/docker/cpu-caffe-tf
+      dockerfile: Dockerfile
+    # network_mode: "host"
+    ports:
+    - 8895:8895
+    volumes:
+    - "./shared/data/deepdetect:/data"
+    - "./shared/models:/opt/models"
+    command: ["./dede", "-host", "0.0.0.0", "-port", "8895"] 
+
+  elk5:
+    container_name: elk-v5.x
+    image: cdrocker/elk5:latest
+    # network_mode: "host"
+    ports:
+    - 5601:5601
+    - 9200:9200
+    - 5044:5044
+    volumes:
+    - "./shared/data/elasticsearch:/var/lib/elasticsearch"
+
+  etcd_browser:
+    container_name: etcd-browser
+    image: kiodo/etcd-browser:latest
+    ports:
+    - 8070:8070 
+    depends_on:
+    - etcd1
+    - etcd2
+    - etcd3
+    environment:
+    - ETCD_HOST=etcd-1
+    - ETCD_PORT=2379
+    - SERVER_PORT=8070
+    # - ETCDCTL_CA_FILE
+    # - ETCDCTL_CERT_FILE
+    # - ETCDCTL_KEY_FILE 
+    # - AUTH_PASS=doe
+    # - AUTH_USER=
+    links:
+    - etcd1
+    - etcd2
+    - etcd3
+
+  etcd1:
+    container_name: etcd-1
+    image: quay.io/coreos/etcd:v3.1.10
+    entrypoint: /usr/local/bin/etcd
+    environment:
+    - ETCD_DATA_DIR=/data
+    volumes:
+    - ./shared/data/etcd:/data
+    command:
+    - '--name=etcd-1'
+    - '--initial-advertise-peer-urls=http://etcd-1:2380'
+    - '--listen-peer-urls=http://etcd-1:2380'
+    - '--listen-client-urls=http://etcd-1:2379,http://localhost:2379'
+    - '--advertise-client-urls=http://etcd-1:2379'
+    - '--initial-cluster-token=mys3cr3ttok3n'
+    - '--heartbeat-interval=250'
+    - '--election-timeout=1250'
+    - '--initial-cluster=etcd-1=http://etcd-1:2380,etcd-2=http://etcd-2:2380,etcd-3=http://etcd-3:2380'
+    - '--initial-cluster-state=new'
+
+  etcd2:
+    container_name: etcd-2
+    image: quay.io/coreos/etcd:v3.1.10
+    entrypoint: /usr/local/bin/etcd
+    # extra_hosts:
+    #   - "dockerhost:$DOCKERHOST"
+    environment:
+    - ETCD_DATA_DIR=/data
+    volumes:
+    - ./shared/data/etcd:/data
+    command:
+    - '--name=etcd-2'
+    - '--initial-advertise-peer-urls=http://etcd-2:2380'
+    - '--listen-peer-urls=http://etcd-2:2380'
+    - '--listen-client-urls=http://etcd-2:2379,http://localhost:2379'
+    - '--advertise-client-urls=http://etcd-2:2379'
+    - '--initial-cluster-token=mys3cr3ttok3n'
+    - '--heartbeat-interval=250'
+    - '--election-timeout=1250'
+    - '--initial-cluster=etcd-1=http://etcd-1:2380,etcd-2=http://etcd-2:2380,etcd-3=http://etcd-3:2380'
+    - '--initial-cluster-state=new'
+
+  etcd3:
+    container_name: etcd-3
+    image: quay.io/coreos/etcd:v3.1.10
+    entrypoint: /usr/local/bin/etcd
+    # extra_hosts:
+    #   - "dockerhost:$DOCKERHOST"
+    environment:
+    - ETCD_DATA_DIR=/data
+    volumes:
+    - ./shared/data/etcd:/data
+    command:
+    - '--name=etcd-3'
+    - '--initial-advertise-peer-urls=http://etcd-3:2380'
+    - '--listen-peer-urls=http://etcd-3:2380'
+    - '--listen-client-urls=http://etcd-3:2379,http://localhost:2379'
+    - '--advertise-client-urls=http://etcd-3:2379'
+    - '--initial-cluster-token=mys3cr3ttok3n'
+    - '--heartbeat-interval=250'
+    - '--election-timeout=1250'
+    - '--initial-cluster=etcd-1=http://etcd-1:2380,etcd-2=http://etcd-2:2380,etcd-3=http://etcd-3:2380'
+    - '--initial-cluster-state=new'

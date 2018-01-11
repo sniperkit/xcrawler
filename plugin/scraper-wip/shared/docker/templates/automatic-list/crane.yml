@@ -1,0 +1,103 @@
+services:
+  # ref: https://www.craneup.tech/docs
+  aile:
+    container_name: scraphub-aile
+    env_file: .env
+    build:
+      context: .
+      file: aile-alpine.dockerfile
+      # build-arg: []
+    # add-host:
+    # hostname:
+    # link: []
+    # privileged: true
+    # memory: 1024m
+    rm: true
+    interactive: true
+    tty: true
+    ports:
+    - 8000:8000
+    - 8888:8888
+    workdir: /app/cmd/server
+    volume:
+    - "$PWD:/app/code"
+    - "./shared/data:/data"
+    - "./shared/conf.d:/app/conf.d" # change it for "$PWD:/app", if you want to share the source code with the container
+    #- "/tmp/.X11-unix:/tmp/.X11-unix:ro"
+    #- "$XAUTHORITY:/root/.Xauthority"
+    # entrypoint: ""
+    # cmd: ["python", "server.py"]
+    cmd: ["/bin/bash"]
+
+  py3-ml:
+    container_name: scraphub-aile-dev-py3
+    env_file: .env
+    build:
+      context: docker/templates/alpine/py3/machinelearning
+      file: Dockerfile
+      # build-arg: []
+    # add-host:
+    # hostname:
+    # link: []
+    # privileged: true
+    # memory: 1024m
+    rm: true
+    interactive: true
+    tty: true
+    workdir: /app/src
+    ports:
+    - 8001:8000
+    volume:
+    - "$PWD:/app/code"
+    - "./shared/data:/data"
+    - "./shared/conf.d:/app/conf.d" # change it for "$PWD:/app", if you want to share the source code with the container
+    #- "/tmp/.X11-unix:/tmp/.X11-unix:ro"
+    #- "$XAUTHORITY:/root/.Xauthority"
+    # entrypoint: ""
+    cmd: ["/bin/bash"]
+
+  py2-ml:
+    container_name: scraphub-aile-dev-py2
+    env_file: .env
+    build:
+      context: docker/templates/alpine/py2/machinelearning
+      file: Dockerfile
+      # build-arg: []
+    # add-host:
+    # hostname:
+    # link: []
+    # privileged: true
+    # memory: 1024m
+    rm: true
+    interactive: true
+    tty: true
+    ports:
+    - 8002:8000
+    workdir: /app/src
+    volume:
+    - "$PWD:/app/code" # change it for "$PWD:/app", if you want to share the source code with the container
+    - "./shared/data:/data"
+    - "./shared/conf.d:/app/conf.d"
+    #- "/tmp/.X11-unix:/tmp/.X11-unix:ro"
+    #- "$XAUTHORITY:/root/.Xauthority"
+    # entrypoint: ""
+    cmd: ["/bin/bash"]
+
+groups:
+  default:
+  - aile 
+  py2:
+  - py2-ml
+  py3:
+  - py3-ml
+
+accelerated-mounts:
+  "/tmp/.X11-unix:/tmp/.X11-unix:ro":
+    uid: 1000
+    gid: 1000
+  "$XAUTHORITY:/root/.Xauthority":
+    uid: 1000
+    gid: 1000
+  "$PWD:/app/src":
+    uid: 1000
+    gid: 1000

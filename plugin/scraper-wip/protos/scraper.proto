@@ -1,0 +1,77 @@
+// Draft
+
+/*
+	Snippets:
+	- Docker
+	  - Test proto file:
+	    - $ docker run -it --rm -p 8080:8080 -v `pwd`/protos:/var/letmegrpc/protos -e PROTO_FILE music.proto roscopecoltran/letmegrpc:alpine
+*/
+
+syntax = "proto3";
+
+package serve;
+
+enum Selector {
+	Css = 0;
+	Xpath = 1;
+	Json = 2;
+	MxjJson = 3;
+	MxjXml = 4;
+	SwaggerJson = 5;
+	SwaggerYaml = 6;
+}
+
+message Provider {
+	//Pick something original
+	string Name = 1;
+	Selector Engine = 2;
+}
+
+message SelectorPath {
+	string Path = 1;
+}
+
+message Details {
+	repeated SelectorPath Title = 1;
+	repeated SelectorPath Desc = 2;
+	repeated SelectorPath Url = 3;
+	repeated SelectorPath Tags = 4;
+}
+
+message Block {
+	string Items = 1;
+	string Count = 2;
+	repeated Details Details = 3;
+}
+
+message List {
+	string Name = 1;
+	Block Block = 2;
+}
+
+message Page {
+	string Name = 1;
+	bool Disabled = 2;
+	bool Debug = 3;
+	string Route = 4;
+	string BaseURL = 5;
+	string PatternURL = 6;
+	uint64 Timeout = 7;
+	Selector Selector = 8;
+	repeated List List = 9;
+}
+
+message EndLess {
+	Tree Tree = 1;
+}
+
+message Tree {
+	string Value = 1;
+	Tree Left = 2;
+	Tree Right = 3;
+}
+
+service Scraper {
+	rpc Engine(Page) returns (Page);
+	rpc Loop(EndLess) returns (EndLess);
+}

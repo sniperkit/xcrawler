@@ -1,0 +1,87 @@
+#errors stdout
+
+
+0.0.0.0:5081/ {
+
+    filemanager
+
+    oauth {
+        client_id       caddy-dev
+        client_secret   Bs3Ul5fnkWkxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+        
+        extra_scopes    user:email,user:name
+        redirect_url    http://localhost:5080/_iyo_callback
+
+        authentication_required  /login
+
+        #triggercmd "/opt/go_proj/src/github.com/itsyouonline/filemanager/trigger/git-manager.py"
+        root /tmp/
+
+    }
+}
+
+0.0.0.0:5080/ {
+
+    oauth {
+        # itsyou.online client ID
+        client_id       caddy-dev
+
+        # itsyou.online client secret
+        client_secret   Bs3Ul5fnkWkxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+        # oauth auth url
+        # leave it blank for default value
+        # default value : https://itsyou.online/v1/oauth/authorize
+        auth_url        https://itsyou.online/v1/oauth/authorize
+
+        # oauth2 access token URL
+        # leave it blank for default value
+        # default value : https://itsyou.online/v1/oauth/access_token
+        token_url       https://itsyou.online/v1/oauth/access_token
+
+        # jwt from oauth URL
+        # leave it blank for default value
+        # default value : https://itsyou.online/v1/oauth/jwt
+        jwt_url         https://itsyou.online/v1/oauth/jwt
+
+        # oauth2 redirect URL
+        redirect_url    http://localhost:5080/_iyo_callback
+
+        # Organizations allowed to access the protected paths
+        # leave it blank if you want to ignore it
+        organizations   /  greenitglobe
+        organizations   /developer  greenitglobe
+        #organizations   /manager    mylab.manager
+
+        # usernames allowed to access this protected paths
+        # leave it blank to allow all usernames
+        # - each username need to be separated with `,`
+        # - you can specify it in multiple lines
+        #usernames       /manager    iwan
+
+        # Everyone is allowed to access this path but authentication is required.
+        # It is possible to specify this multiple times.
+        authentication_required /
+
+        # login_page to which the user will be redirected when trying to access authentication_required pages
+        # leave blank if you need the users to be redirected to IYO page directly
+        #login_page  /login
+
+        # login url is the URL that will redirect the user to itsyou.online login page
+        # it can be used if you need to create login button
+        #login_url   /oauth
+
+        # logout url is the URL that will logout the user and redirect him to "/"
+        # it can be used if you need to create logout button
+        logout_url   /logout
+
+        # Allow specific files even if they are set in authentication_required
+        # It is possible to specify this multiple times
+        # typically used with static files (css, js, etc...) for login page
+        allow_extension css
+
+        # comma separated extra scopes to be requested from IYO, it can be blank
+        extra_scopes user:address,user:email,user:phone
+    }    
+
+}

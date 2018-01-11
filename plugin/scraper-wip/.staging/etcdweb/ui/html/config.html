@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>etcd web</title>
+    <script src="http://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/datatables/1.10.13/js/jquery.dataTables.min.js"></script>
+    <script src="http://cdn.bootcss.com/datatables/1.10.15/js/dataTables.semanticui.js"></script>
+    <script src="http://cdn.bootcss.com/semantic-ui/2.2.10/semantic.min.js"></script>
+    <link href="http://cdn.bootcss.com/semantic-ui/2.2.10/semantic.min.css" rel="stylesheet">
+    <link href="http://cdn.bootcss.com/datatables/1.10.13/css/dataTables.semanticui.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="ui inverted huge menu">
+        <a class="green item" href="/">Config </a>
+        <a class="green item" href="/web//">Root </a>
+    </div>
+
+    <form class="ui form" action="/config" method="post">
+        <div class="field">
+            <label>Etcd Endpoint</label>
+            <input type="text" name="endpoint" placeholder="etcd endpoint example: http://127.0.0.1:2379">
+        </div>
+        <div class="two fields">
+            <div class="field">
+                <label>CACert</label>
+                <textarea name="cacert" placeholder="CACert" type="text"></textarea>
+            </div>
+            <div class="field">
+                <label>ClientKey</label>
+                <textarea name="clientkey" placeholder="ClientKey" type="text"></textarea>
+            </div>
+            <div class="field">
+                <label>ClientCert</label>
+                <textarea name="clientcert" placeholder="ClientCert" type="text"></textarea>
+            </div>
+        </div>
+        <button class="ui button" type="submit">Submit</button>
+    </form>
+</body>
+
+</html>

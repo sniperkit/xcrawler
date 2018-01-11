@@ -1,0 +1,31 @@
+References
+- Python:
+    + github.com/salestock/fastText.py
+    + https://github.com/topics/text-classification
+    + https://github.com/meta-toolkit/meta
+    + https://github.com/richliao/textClassifier
+    + https://github.com/jiegzhan/multi-class-text-classification-cnn
+    + https://github.com/giacbrd/ShallowLearn
+    + https://github.com/yassersouri/classify-text
+    + https://github.com/the-new-sky/Kadot
+    + https://github.com/richliao/textClassifier
+    + https://github.com/rriva002/DTC-Classifier
+    + https://github.com/MichaelSchra/Wikipedia-Article-Text-Classifier
+    + https://github.com/akshaypai/tfClassifier/blob/master/text_classification/data.json
+    + https://github.com/luilom/NeuralNetworkForText
+    + https://github.com/andressotov/News-Categorization-MNB
+    + https://github.com/MarioGordon/topic_classifier
+    + https://github.com/mjaidev/fake_news_detector
+    + https://github.com/safeisnotanoption/NewsClassifier
+    + https://github.com/Crisismap/new_brave_world
+    + https://github.com/gergelyBognar/text_classifier_autoencoder
+    + https://github.com/kexir/CapNews
+    + https://github.com/Alexixu/nlp_toolbox
+    + https://github.com/AnnPe/morph/tree/ed2db76c6ead3e84f052f6e26068e899dcb3a56b
+    + https://github.com/AlexGidiotis/Document-Classifier-LSTM
+    + https://github.com/siyuan-li/erNews
+    + https://github.com/liaozh02/news_aggregation
+    + https://github.com/thundergolfer/arXie-Bot
+    + https://github.com/AnnPe/kazakh
+    + https://github.com/iarroyof/nlp-pipeline
+    + 

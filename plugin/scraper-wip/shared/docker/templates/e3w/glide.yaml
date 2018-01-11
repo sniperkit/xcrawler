@@ -1,0 +1,104 @@
+package: github.com/roscopecoltran/e3w
+import:
+- package: github.com/Onefootball/entity-rest-api
+  subpackages:
+  - api
+  - manager
+- package: github.com/ant0ine/go-json-rest
+  subpackages:
+  - rest
+- package: github.com/mattn/go-sqlite3
+- package: github.com/astaxie/beego
+- package: github.com/jinzhu/gorm
+  subpackages:
+  - dialects/mysql
+  - dialects/postgres
+  - dialects/sqlite
+- package: github.com/qor/admin
+- package: github.com/qor/qor
+- package: github.com/k0kubun/pp
+- package: github.com/roscopecoltran/configor
+- package: github.com/jinzhu/configor
+- package: google.golang.org/grpc
+  version: v1.5.x # v1.6.x
+  subpackages:
+  - codes
+  - grpclog
+  - status
+  - metadata
+  - credentials
+- package: github.com/coreos/etcd
+  version: v3.2.7
+  subpackages:
+  - alarm
+  - auth
+  - auth/authpb
+  - client
+  - clientv3
+  - compactor
+  - discovery
+  - embed
+  - error
+  - etcdserver
+  - etcdserver/api
+  - etcdserver/api/v2http
+  - etcdserver/api/v2http/httptypes
+  - etcdserver/api/v3rpc
+  - etcdserver/api/v3rpc/rpctypes
+  - etcdserver/auth
+  - etcdserver/etcdserverpb
+  - etcdserver/membership
+  - etcdserver/stats
+  - lease
+  - lease/leasehttp
+  - lease/leasepb
+  - mvcc
+  - mvcc/backend
+  - mvcc/mvccpb
+  - pkg/adt
+  - pkg/contention
+  - pkg/cors
+  - pkg/crc
+  - pkg/fileutil
+  - pkg/httputil
+  - pkg/idutil
+  - pkg/ioutil
+  - pkg/logutil
+  - pkg/netutil
+  - pkg/pathutil
+  - pkg/pbutil
+  - pkg/runtime
+  - pkg/schedule
+  - pkg/tlsutil
+  - pkg/transport
+  - pkg/types
+  - pkg/wait
+  - raft
+  - raft/raftpb
+  - rafthttp
+  - snap
+  - snap/snappb
+  - store
+  - version
+  - wal
+  - wal/walpb
+  - clientv3/concurrency
+  - clientv3/clientv3util
+  - clientv3/naming
+  - clientv3/ordering
+  - clientv3/yaml
+  - clientv3/leasing
+  - clientv3/mirror
+  - clientv3/integration
+- package: github.com/gin-gonic/gin
+- package: github.com/soyking/e3ch
+- package: golang.org/x/net
+  version: release-branch.go1.9
+  subpackages:
+  - context
+  - html
+  - html/atom
+  - webdav
+  - http2
+  - http2/hpack
+- package: gopkg.in/ini.v1

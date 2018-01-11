@@ -1,0 +1,223 @@
+# Compiled Object files, Static and Dynamic libs (Shared Objects)
+*.o
+*.a
+*.so
+
+config.default.ini
+
+dist/grawler
+dist/scraper-*
+
+proto/
+
+# Folders
+_obj
+_test
+
+LICENSE
+*.md
+*-example
+docker-compose.yml
+*.dockerfile
+
+# Architecture specific extensions/prefixes
+*.[568vq]
+[568vq].out
+
+bower_components
+bower_components/
+bower_components/**
+
+*.cgo1.go
+*.cgo2.c
+_cgo_defun.c
+_cgo_gotypes.go
+_cgo_export.*
+
+_testmain.go
+
+*-dockerfile
+docker-compose.*
+docker-compose-*
+
+*.exe
+*.test
+*.prof
+
+vendor
+vendor/
+vendor/**
+
+dist/grawler-*
+dist/scraper-*
+bin/scraper
+bin/server
+
+shared/docker/templates
+shared/docker/templates/
+shared/docker/templates/**
+
+shared/cache/
+shared/cache/**
+
+shared/data/deepdetect/
+shared/data/deepdetect/**
+
+shared/data/elasticsearch/
+shared/data/elasticsearch/**
+
+*.pyc
+*.html
+*.png
+*.so
+*.c
+*.egg-info/
+*#
+*~
+build/
+*-example
+vendor
+vendor/
+vendor/**
+
+.DS_Store
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+.static_storage/
+.media/
+local_settings.py
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# celery beat schedule file
+celerybeat-schedule
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+
+docker-compose.yml
+crane.yml
+*.dockerfile
+
+server.rsa.crt
+server.rsa.key
+
+panicparse
+
+static/node_modules
+static/node_modules/
+static/node_modules/**
+
+shared/data/etcd
+shared/data/etcd/
+shared/data/etcd/**
+
+shared/data/influxdb/data
+shared/data/influxdb/meta
+shared/data/influxdb/wal
+
+shared/data/grafana/lib
+shared/data/grafana/log
+
+shared/data/etcd/member
+
+node_modules
+node_modules/
+node_modules/**
+
+static/node_modules
+static/node_modules/
+static/node_modules/**
+

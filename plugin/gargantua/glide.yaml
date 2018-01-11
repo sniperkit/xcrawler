@@ -1,0 +1,5 @@
+package: github.com/sniperkit/gargantua
+import:
+- package: github.com/PuerkitoBio/goquery
+- package: github.com/gizak/termui
+- package: gopkg.in/alecthomas/kingpin.v2

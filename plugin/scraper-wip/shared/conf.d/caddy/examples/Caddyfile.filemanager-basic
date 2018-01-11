@@ -1,0 +1,18 @@
+
+localhost:8080/test/ {
+   gzip
+   log access.log
+   
+   #REMARK: the basic auth does not work with this plugin
+   #basicauth test guest passwd
+
+   filemanager / ./test {
+      database tf_fm.db
+      #no_auth
+      allow_commands false
+      allow_edit true
+      allow_new true
+      allow_publish true
+      commands git
+   }
+}

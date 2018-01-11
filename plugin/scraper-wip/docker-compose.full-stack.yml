@@ -1,0 +1,239 @@
+---
+version: '3'
+services:
+
+  nginx:
+    image: nginx:1.12-alpine
+    volumes:
+    - "./shared/www/service:/var/www/service"
+    - "./shared/conf.d/nginx:/etc/nginx/conf.d"
+    ports:
+    - 192.168.1.200:80:80
+    dns:
+    - 192.168.1.56
+    restart: always
+
+  mysql:
+    image: mysql:5.7
+    ports:
+    - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+    volumes:
+    - "./shared/data/mysql/:/var/lib/mysql"
+    restart: always
+
+  mongo:
+    image: mongo:3.4.4
+    ports:
+    - 27017:27017
+    volumes:
+    - "./shared/data/mongo/:/data/db"
+    restart: always
+
+  gogs:
+    image: gogs/gogs
+    volumes:
+    - "./shared/data/gogs/gogs:/data/gogs"
+    - "./shared/data/gogs/git:/data/git"
+    ports:
+    - '10022:22'
+    - 10080:3000
+    dns:
+    - 192.168.1.56
+    restart: always
+
+  drone-server:
+    image: drone/drone:0.8.0
+    ports:
+    - 8000:8000
+    volumes:
+    - "./shared/data/drone:/var/lib/drone/"
+    restart: always
+    environment:
+    - DRONE_OPEN=true
+    - DRONE_HOST=192.168.1.200
+    - DRONE_GOGS=true
+    - DRONE_GOGS_URL=http://192.168.1.200:10080
+    - DRONE_SECRET=3a029f04d76d32e79367c4b3255dda4d
+
+  drone-agent:
+    image: drone/drone:0.8.0
+    command: agent
+    restart: always
+    depends_on:
+    - drone-server
+    volumes:
+    - "/var/run/docker.sock:/var/run/docker.sock"
+    environment:
+    - DRONE_HOST=192.168.1.200
+    - DRONE_GOGS=true
+    - DRONE_GOGS_URL=http://192.168.1.200:10080
+    - DRONE_SERVER=ws://192.168.1.200:8000/ws/broker
+    - DRONE_SECRET=3a029f04d76d32e79367c4b3255dda4d
+
+  cockroach1:
+    image: cockroachdb/cockroach:v1.0.3
+    hostname: cockroach1
+    ports:
+    - 26257:26257
+    - 8080:8080
+    volumes:
+    - "./shared/data/cockroach/roach1:/cockroach/cockroach-data"
+    command: start --insecure
+    networks:
+    - cocknetwork
+    restart: always
+
+  cockroach2:
+    image: cockroachdb/cockroach:v1.0.3
+    hostname: cockroach2
+    volumes:
+    - "./shared/data/cockroach/roach2:/cockroach/cockroach-data"
+    command: start --insecure --join=cockroach1
+    networks:
+    - cocknetwork
+    restart: always
+
+  cockroach3:
+    image: cockroachdb/cockroach:v1.0.3
+    hostname: cockroach3
+    volumes:
+    - "./shared/data/cockroach/roach3:/cockroach/cockroach-data"
+    command: start --insecure --join=cockroach1
+    networks:
+    - cocknetwork
+    restart: always
+
+  etcd1:
+    image: edwin/etcd:3.2.4
+    hostname: etcd1
+    ports:
+    - 2379:2379
+    - 2380:2380
+    volumes:
+    - "./shared/data/etcd/etcd1:/etcd-data"
+    restart: always
+    environment:
+    - ETCD_NAME=etcd1
+    - ETCD_INITIAL_ADVERTISE_PEER_URLS=http://192.168.1.200:2380
+    - ETCD_LISTEN_PEER_URLS=http://0.0.0.0:2380
+    - ETCD_ADVERTISE_CLIENT_URLS=http://192.168.1.200:2379
+    - ETCD_LISTEN_CLIENT_URLS=http://0.0.0.0:2379
+    - ETCD_INITIAL_CLUSTER=etcd1=http://192.168.1.200:2380
+    - ETCD_DATA_DIR=/etcd-data
+    - ETCD_INITIAL_CLUSTER_TOKEN=etcd-cluster-1
+    - ETCD_INITIAL_CLUSTER_STATE=new
+
+  influxdb:
+    container_name: influxdb
+    image: influxdb:1.3-alpine
+    volumes:
+    - ./shared/data/influxdb:/var/lib/influxdb
+    # volumes_from:
+    # - applications
+    ports:
+    - 8083:8083
+    - 8086:8086
+    privileged: true
+
+  grafana:
+    container_name: grafana
+    image: grafana/grafana:4.5.2
+    # volumes_from:
+    # - applications
+    volumes:
+    - "./shared/conf.d/grafana/grafana.ini:/etc/grafana/grafana.ini"
+    - ./shared/data/grafana/lib:/var/lib/grafana
+    - ./shared/data/grafana/lib/plugins:/var/lib/grafana/plugins
+    - ./shared/data/grafana/log:/var/log/grafana
+    links:
+    - influxdb:influxdb
+    environment:
+    - GF_INSTALL_PLUGINS=grafana-clock-panel
+    ports:
+    - 3000:3000
+    depends_on:
+    - influxdb
+    privileged: true
+
+
+  prometheus:
+    image: prom/prometheus
+    volumes:
+    - "./shared/data/prometheus:/etc/prometheus"
+    ports:
+    - 9090:9090
+    restart: always
+
+  opentracing:
+    image: jaegertracing/all-in-one
+    ports:
+    - 16686:16686
+    - 5775/udp:5775/udp
+    restart: always
+
+  zookeeper:
+    image: wurstmeister/zookeeper
+    ports:
+    - 2181:2181
+    restart: always
+
+  kafka:
+    image: wurstmeister/kafka
+    ports:
+    - 9092:9092
+    environment:
+      KAFKA_ADVERTISED_HOST_NAME: 192.168.1.200
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+    volumes:
+    - "/var/run/docker.sock:/var/run/docker.sock"
+    restart: always
+
+  nsqlookupd:
+    image: nsqio/nsq:v1.0.0-compat
+    container_name: nsqlookupd
+    command: >-
+      /nsqlookupd --broadcast-address="localhost"
+    ports:
+      - '4160-4161:4160-4161'
+    restart: always
+    networks:
+      - nsq_strategies
+    # command: /nsqlookupd
+  
+  nsqd:
+    image: nsqio/nsq:v1.0.0-compat
+    container_name: nsqd
+    command: >-
+      /nsqd --broadcast-address="localhost"
+      --lookupd-tcp-address="nsqlookupd:4160"
+    ports:
+      - '4150-4151:4150-4151'
+    links:
+      - 'nsqlookupd:nsqlookupd'
+    restart: always
+    networks:
+      - nsq_strategies
+    # command: /nsqd --lookupd-tcp-address=nsqlookupd:4160
+
+  nsqadmin:
+    image: nsqio/nsq:v1.0.0-compat
+    container_name: nsqadmin
+    command: >-
+      /nsqadmin
+      --lookupd-http-address="nsqlookupd:4161"
+    ports:
+      - '4170-4171:4170-4171'
+    links:
+      - 'nsqlookupd:nsqlookupd'
+      - 'nsqd:nsqd'
+    restart: always
+    networks:
+      - nsq_strategies
+    # /nsqadmin --lookupd-http-address=nsqlookupd:4161
+
+networks:
+  nsq_strategies:
+  cocknetwork:
+    driver: bridge
