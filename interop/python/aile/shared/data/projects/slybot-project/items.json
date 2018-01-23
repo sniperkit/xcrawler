@@ -1,0 +1,170 @@
+{
+    "aile-item-0": {
+        "fields": {
+            "aile-item-0-field-0": {
+                "required": false, 
+                "type": "text", 
+                "vary": false
+            }, 
+            "aile-item-0-field-1": {
+                "required": false, 
+                "type": "url", 
+                "vary": false
+            }, 
+            "aile-item-0-field-10": {
+                "required": false, 
+                "type": "text", 
+                "vary": false
+            }, 
+            "aile-item-0-field-11": {
+                "required": false, 
+                "type": "text", 
+                "vary": false
+            }, 
+            "aile-item-0-field-12": {
+                "required": false, 
+                "type": "text", 
+                "vary": false
+            }, 
+            "aile-item-0-field-13": {
+                "required": false, 
+                "type": "text", 
+                "vary": false
+            }, 
+            "aile-item-0-field-14": {
+                "required": false, 
+                "type": "text", 
+                "vary": false
+            }, 
+            "aile-item-0-field-15": {
+                "required": false, 
+                "type": "text", 
+                "vary": false
+            }, 
+            "aile-item-0-field-2": {
+                "required": false, 
+                "type": "text", 
+                "vary": false
+            }, 
+            "aile-item-0-field-3": {
+                "required": false, 
+                "type": "text", 
+                "vary": false
+            }, 
+            "aile-item-0-field-4": {
+                "required": false, 
+                "type": "text", 
+                "vary": false
+            }, 
+            "aile-item-0-field-5": {
+                "required": false, 
+                "type": "text", 
+                "vary": false
+            }, 
+            "aile-item-0-field-6": {
+                "required": false, 
+                "type": "text", 
+                "vary": false
+            }, 
+            "aile-item-0-field-7": {
+                "required": false, 
+                "type": "text", 
+                "vary": false
+            }, 
+            "aile-item-0-field-8": {
+                "required": false, 
+                "type": "text", 
+                "vary": false
+            }, 
+            "aile-item-0-field-9": {
+                "required": false, 
+                "type": "text", 
+                "vary": false
+            }
+        }
+    }, 
+    "aile-item-1": {
+        "fields": {
+            "aile-item-1-field-0": {
+                "required": false, 
+                "type": "text", 
+                "vary": false
+            }, 
+            "aile-item-1-field-1": {
+                "required": false, 
+                "type": "url", 
+                "vary": false
+            }, 
+            "aile-item-1-field-10": {
+                "required": false, 
+                "type": "text", 
+                "vary": false
+            }, 
+            "aile-item-1-field-11": {
+                "required": false, 
+                "type": "text", 
+                "vary": false
+            }, 
+            "aile-item-1-field-12": {
+                "required": false, 
+                "type": "text", 
+                "vary": false
+            }, 
+            "aile-item-1-field-13": {
+                "required": false, 
+                "type": "text", 
+                "vary": false
+            }, 
+            "aile-item-1-field-14": {
+                "required": false, 
+                "type": "text", 
+                "vary": false
+            }, 
+            "aile-item-1-field-15": {
+                "required": false, 
+                "type": "text", 
+                "vary": false
+            }, 
+            "aile-item-1-field-2": {
+                "required": false, 
+                "type": "text", 
+                "vary": false
+            }, 
+            "aile-item-1-field-3": {
+                "required": false, 
+                "type": "text", 
+                "vary": false
+            }, 
+            "aile-item-1-field-4": {
+                "required": false, 
+                "type": "text", 
+                "vary": false
+            }, 
+            "aile-item-1-field-5": {
+                "required": false, 
+                "type": "text", 
+                "vary": false
+            }, 
+            "aile-item-1-field-6": {
+                "required": false, 
+                "type": "text", 
+                "vary": false
+            }, 
+            "aile-item-1-field-7": {
+                "required": false, 
+                "type": "text", 
+                "vary": false
+            }, 
+            "aile-item-1-field-8": {
+                "required": false, 
+                "type": "text", 
+                "vary": false
+            }, 
+            "aile-item-1-field-9": {
+                "required": false, 
+                "type": "text", 
+                "vary": false
+            }
+        }
+    }
+}

@@ -1,0 +1,7 @@
+# conda environments:
+#
+# explore                  /opt/conda/envs/explore
+# nlp                      /opt/conda/envs/nlp
+# panda-parallel        *  /opt/conda/envs/panda-parallel
+# tf-rnn                   /opt/conda/envs/tf-rnn
+# root                     /opt/conda

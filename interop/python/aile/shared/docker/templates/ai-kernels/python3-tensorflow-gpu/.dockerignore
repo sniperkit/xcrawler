@@ -1,0 +1,7 @@
+venv
+tensorflow_build
+*.so
+!patch-libs.so
+*.o
+*.c
+venv*

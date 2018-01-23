@@ -1,0 +1,12 @@
+# Memex (ref. https://github.com/darpamemex/program-index)
+git+https://github.com/TeamHG-Memex/arachnado.git
+git+https://github.com/TeamHG-Memex/html-text.git
+git+https://github.com/TeamHG-Memex/tensorboard_logger.git
+git+https://github.com/TeamHG-Memex/autologin-middleware.git
+git+https://github.com/TeamHG-Memex/eli5.git
+git+https://github.com/TeamHG-Memex/scrapy-cdr.git
+# git+https://github.com/TeamHG-Memex/deep-deep.git
+git+https://github.com/TeamHG-Memex/soft404.git
+git+https://github.com/TeamHG-Memex/url-summary.git
+git+https://github.com/TeamHG-Memex/autopager.git
+git+https://github.com/TeamHG-Memex/extract-html-diff.git

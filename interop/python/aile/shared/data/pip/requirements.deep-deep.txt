@@ -1,0 +1,17 @@
+# scrapy==1.4.0
+# networkx==1.11
+# scikit-learn==0.18.1
+# numpy
+joblib
+psutil
+formasaurus[with_deps]
+scrapy-cdr
+tldextract
+stop-words
+docopt==0.6.1
+tensorboard_logger>=0.0.3
+autopager>=0.2
+eli5>=0.6
+json-lines==0.3.1
+html-text==0.2.1
+proxy-middleware==0.2.0

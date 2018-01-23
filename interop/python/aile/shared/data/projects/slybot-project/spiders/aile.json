@@ -1,0 +1,11 @@
+{
+    "exclude_patterns": [], 
+    "follow_patterns": [], 
+    "links_to_follow": "none", 
+    "start_urls": [
+        "https://news.ycombinator.com"
+    ], 
+    "template_names": [
+        "template-0"
+    ]
+}

@@ -1,0 +1,36 @@
+# ref. https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html
+
+package:
+  name: aile
+  version: "0.0.1"
+
+source:
+  git_rev: master
+  git_url: https://github.com/roscopecoltran/aile.git
+
+#build:
+#  osx_is_app: True
+
+requirements:
+  build:
+    - cython 
+    - pillow 
+    - matplotlib 
+    - pandas 
+    - scikit-learn 
+    - jupyter 
+    - requests 
+    - networkx
+    - python2
+    - setuptools
+  run:
+    - python2
+
+#test:
+#  imports:
+#    - pyinstrument  
+
+about:
+  home: https://github.com/scrapinghub/aile
+  license: MIT
+  license_file: LICENSE

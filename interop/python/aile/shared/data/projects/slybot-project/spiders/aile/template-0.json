@@ -1,0 +1,784 @@
+{
+    "annotated_body": "<html op=\"news\"><head data-tagid=\"1\"><meta content=\"origin\" name=\"referrer\"><meta content=\"width=device-width, initial-scale=1.0\" name=\"viewport\"><link href=\"news.css?6EVvDlUk3VitS6Ys0wHs\" type=\"text/css\" rel=\"stylesheet\">\n        <link href=\"favicon.ico\" rel=\"shortcut icon\">\n          <link href=\"rss\" type=\"application/rss+xml\" rel=\"alternate\" title=\"RSS\">\n        <title data-tagid=\"7\">Hacker News</title></head><body data-tagid=\"8\"><center data-tagid=\"9\"><table bgcolor=\"#f6f6ef\" border=\"0\" width=\"85%\" cellpadding=\"0\" cellspacing=\"0\" id=\"hnmain\">\n        <tr data-tagid=\"11\"><td bgcolor=\"#ff6600\"><table style=\"padding:2px\" border=\"0\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\"><tr data-tagid=\"14\"><td style=\"width:18px;padding-right:4px\"><a href=\"https://news.ycombinator.com\"><img src=\"y18.gif\" style=\"border:1px white solid;\" width=\"18\" height=\"18\"></a></td>\n                  <td style=\"line-height:12pt; height:10px;\"><span class=\"pagetop\"><b class=\"hnname\"><a href=\"news\">Hacker News</a></b>\n              <a href=\"newest\">new</a> | <a href=\"newcomments\">comments</a> | <a href=\"show\">show</a> | <a href=\"ask\">ask</a> | <a href=\"jobs\">jobs</a> | <a href=\"submit\">submit</a>            </span></td><td style=\"text-align:right;padding-right:4px;\"><span class=\"pagetop\">\n                              <a href=\"login?goto=news\">login</a>\n                          </span></td>\n              </tr></table></td></tr>\n<tr style=\"height:10px\"></tr><tr data-tagid=\"32\"><td data-tagid=\"33\"><table cellspacing=\"0\" class=\"itemlist\" cellpadding=\"0\" border=\"0\" data-scrapy-annotate=\"[{&quot;xpath&quot;: null, &quot;max_separator&quot;: -1, &quot;item_container&quot;: true, &quot;required_fields&quot;: [], &quot;required&quot;: [], &quot;variant&quot;: 0, &quot;schema_id&quot;: null, &quot;annotations&quot;: {&quot;#portia-content&quot;: &quot;#dummy&quot;}, &quot;field&quot;: null, &quot;generated&quot;: false, &quot;min_jump&quot;: -1, &quot;selection_mode&quot;: null, &quot;siblings&quot;: null, &quot;text-content&quot;: &quot;#portia-content&quot;, &quot;selector&quot;: null, &quot;repeated&quot;: null, &quot;id&quot;: &quot;aile-container-aile-item-0|aile-container-aile-item-1&quot;, &quot;container_id&quot;: null}]\">\n              <tr id=\"15630646\" data-scrapy-annotate=\"[{&quot;xpath&quot;: null, &quot;max_separator&quot;: 0, &quot;item_container&quot;: true, &quot;required_fields&quot;: [], &quot;required&quot;: [], &quot;variant&quot;: 0, &quot;schema_id&quot;: null, &quot;annotations&quot;: {&quot;#portia-content&quot;: &quot;#dummy&quot;}, &quot;field&quot;: null, &quot;generated&quot;: false, &quot;min_jump&quot;: 1, &quot;selection_mode&quot;: null, &quot;siblings&quot;: 2, &quot;text-content&quot;: &quot;#portia-content&quot;, &quot;selector&quot;: null, &quot;repeated&quot;: true, &quot;id&quot;: &quot;aile-item-0-first-instance|aile-item-1-first-instance&quot;, &quot;container_id&quot;: &quot;aile-container-aile-item-0|aile-container-aile-item-1&quot;}]\" class=\"athing\">\n      <td align=\"right\" class=\"title\" valign=\"top\"><span data-scrapy-annotate=\"[{&quot;xpath&quot;: null, &quot;max_separator&quot;: -1, &quot;item_container&quot;: false, &quot;required_fields&quot;: [], &quot;required&quot;: [], &quot;variant&quot;: 0, &quot;schema_id&quot;: &quot;aile-item-0&quot;, &quot;annotations&quot;: {&quot;content&quot;: [{&quot;extractors&quot;: [], &quot;attribute&quot;: &quot;content&quot;, &quot;required&quot;: false, &quot;id&quot;: &quot;aile-item-0-field-0-instance-0|aile-item-0-field-0-37&quot;, &quot;field&quot;: &quot;aile-item-0-field-0&quot;}]}, &quot;field&quot;: null, &quot;generated&quot;: false, &quot;min_jump&quot;: -1, &quot;selection_mode&quot;: null, &quot;siblings&quot;: null, &quot;text-content&quot;: &quot;content&quot;, &quot;selector&quot;: null, &quot;repeated&quot;: null, &quot;id&quot;: &quot;aile-item-0-field-0-instance-0&quot;, &quot;container_id&quot;: &quot;aile-item-0-first-instance|aile-item-1-first-instance&quot;}, {&quot;xpath&quot;: null, &quot;max_separator&quot;: -1, &quot;item_container&quot;: false, &quot;required_fields&quot;: [], &quot;required&quot;: [], &quot;variant&quot;: 0, &quot;schema_id&quot;: &quot;aile-item-1&quot;, &quot;annotations&quot;: {&quot;content&quot;: [{&quot;extractors&quot;: [], &quot;attribute&quot;: &quot;content&quot;, &quot;required&quot;: false, &quot;id&quot;: &quot;aile-item-1-field-0-instance-0|aile-item-1-field-0-37&quot;, &quot;field&quot;: &quot;aile-item-1-field-0&quot;}]}, &quot;field&quot;: null, &quot;generated&quot;: false, &quot;min_jump&quot;: -1, &quot;selection_mode&quot;: null, &quot;siblings&quot;: null, &quot;text-content&quot;: &quot;content&quot;, &quot;selector&quot;: null, &quot;repeated&quot;: null, &quot;id&quot;: &quot;aile-item-1-field-0-instance-0&quot;, &quot;container_id&quot;: &quot;aile-item-0-first-instance|aile-item-1-first-instance&quot;}]\" class=\"rank\">1.</span></td>      <td class=\"votelinks\" valign=\"top\"><center data-tagid=\"39\"><a href=\"vote?id=15630646&amp;how=up&amp;goto=news\" data-scrapy-annotate=\"[{&quot;xpath&quot;: null, &quot;max_separator&quot;: -1, &quot;item_container&quot;: false, &quot;required_fields&quot;: [], &quot;required&quot;: [], &quot;variant&quot;: 0, &quot;schema_id&quot;: &quot;aile-item-0&quot;, &quot;annotations&quot;: {&quot;href&quot;: [{&quot;extractors&quot;: [], &quot;attribute&quot;: &quot;href&quot;, &quot;required&quot;: false, &quot;id&quot;: &quot;aile-item-0-field-1-instance-0|aile-item-0-field-1-40&quot;, &quot;field&quot;: &quot;aile-item-0-field-1&quot;}]}, &quot;field&quot;: null, &quot;generated&quot;: false, &quot;min_jump&quot;: -1, &quot;selection_mode&quot;: null, &quot;siblings&quot;: null, &quot;text-content&quot;: &quot;content&quot;, &quot;selector&quot;: null, &quot;repeated&quot;: null, &quot;id&quot;: &quot;aile-item-0-field-1-instance-0&quot;, &quot;container_id&quot;: &quot;aile-item-0-first-instance|aile-item-1-first-instance&quot;}, {&quot;xpath&quot;: null, &quot;max_separator&quot;: -1, &quot;item_container&quot;: false, &quot;required_fields&quot;: [], &quot;required&quot;: [], &quot;variant&quot;: 0, &quot;schema_id&quot;: &quot;aile-item-1&quot;, &quot;annotations&quot;: {&quot;href&quot;: [{&quot;extractors&quot;: [], &quot;attribute&quot;: &quot;href&quot;, &quot;required&quot;: false, &quot;id&quot;: &quot;aile-item-1-field-1-instance-0|aile-item-1-field-1-40&quot;, &quot;field&quot;: &quot;aile-item-1-field-1&quot;}]}, &quot;field&quot;: null, &quot;generated&quot;: false, &quot;min_jump&quot;: -1, &quot;selection_mode&quot;: null, &quot;siblings&quot;: null, &quot;text-content&quot;: &quot;content&quot;, &quot;selector&quot;: null, &quot;repeated&quot;: null, &quot;id&quot;: &quot;aile-item-1-field-1-instance-0&quot;, &quot;container_id&quot;: &quot;aile-item-0-first-instance|aile-item-1-first-instance&quot;}]\" id=\"up_15630646\"><div class=\"votearrow\" title=\"upvote\"></div></a></center></td><td class=\"title\"><a href=\"https://www.icij.org/investigations/paradise-papers/\" data-scrapy-annotate=\"[{&quot;xpath&quot;: null, &quot;max_separator&quot;: -1, &quot;item_container&quot;: false, &quot;required_fields&quot;: [], &quot;required&quot;: [], &quot;variant&quot;: 0, &quot;schema_id&quot;: &quot;aile-item-0&quot;, &quot;annotations&quot;: {&quot;content&quot;: [{&quot;extractors&quot;: [], &quot;attribute&quot;: &quot;content&quot;, &quot;required&quot;: false, &quot;id&quot;: &quot;aile-item-0-field-2-instance-0|aile-item-0-field-3-43&quot;, &quot;field&quot;: &quot;aile-item-0-field-3&quot;}], &quot;href&quot;: [{&quot;extractors&quot;: [], &quot;attribute&quot;: &quot;href&quot;, &quot;required&quot;: false, &quot;id&quot;: &quot;aile-item-0-field-2-instance-0|aile-item-0-field-2-43&quot;, &quot;field&quot;: &quot;aile-item-0-field-2&quot;}]}, &quot;field&quot;: null, &quot;generated&quot;: false, &quot;min_jump&quot;: -1, &quot;selection_mode&quot;: null, &quot;siblings&quot;: null, &quot;text-content&quot;: &quot;content&quot;, &quot;selector&quot;: null, &quot;repeated&quot;: null, &quot;id&quot;: &quot;aile-item-0-field-2-instance-0&quot;, &quot;container_id&quot;: &quot;aile-item-0-first-instance|aile-item-1-first-instance&quot;}, {&quot;xpath&quot;: null, &quot;max_separator&quot;: -1, &quot;item_container&quot;: false, &quot;required_fields&quot;: [], &quot;required&quot;: [], &quot;variant&quot;: 0, &quot;schema_id&quot;: &quot;aile-item-1&quot;, &quot;annotations&quot;: {&quot;content&quot;: [{&quot;extractors&quot;: [], &quot;attribute&quot;: &quot;content&quot;, &quot;required&quot;: false, &quot;id&quot;: &quot;aile-item-1-field-2-instance-0|aile-item-1-field-3-43&quot;, &quot;field&quot;: &quot;aile-item-1-field-3&quot;}], &quot;href&quot;: [{&quot;extractors&quot;: [], &quot;attribute&quot;: &quot;href&quot;, &quot;required&quot;: false, &quot;id&quot;: &quot;aile-item-1-field-2-instance-0|aile-item-1-field-2-43&quot;, &quot;field&quot;: &quot;aile-item-1-field-2&quot;}]}, &quot;field&quot;: null, &quot;generated&quot;: false, &quot;min_jump&quot;: -1, &quot;selection_mode&quot;: null, &quot;siblings&quot;: null, &quot;text-content&quot;: &quot;content&quot;, &quot;selector&quot;: null, &quot;repeated&quot;: null, &quot;id&quot;: &quot;aile-item-1-field-2-instance-0&quot;, &quot;container_id&quot;: &quot;aile-item-0-first-instance|aile-item-1-first-instance&quot;}]\" class=\"storylink\">Paradise Papers: Secrets of the Global Elite</a><span data-scrapy-annotate=\"[{&quot;xpath&quot;: null, &quot;max_separator&quot;: -1, &quot;item_container&quot;: false, &quot;required_fields&quot;: [], &quot;required&quot;: [], &quot;variant&quot;: 0, &quot;schema_id&quot;: &quot;aile-item-0&quot;, &quot;annotations&quot;: {&quot;content&quot;: [{&quot;extractors&quot;: [], &quot;attribute&quot;: &quot;content&quot;, &quot;required&quot;: false, &quot;id&quot;: &quot;aile-item-0-field-4-instance-0|aile-item-0-field-4-44&quot;, &quot;field&quot;: &quot;aile-item-0-field-4&quot;}, {&quot;extractors&quot;: [], &quot;attribute&quot;: &quot;content&quot;, &quot;required&quot;: false, &quot;id&quot;: &quot;aile-item-0-field-4-instance-0|aile-item-0-field-7-44&quot;, &quot;field&quot;: &quot;aile-item-0-field-7&quot;}]}, &quot;field&quot;: null, &quot;generated&quot;: false, &quot;min_jump&quot;: -1, &quot;selection_mode&quot;: null, &quot;siblings&quot;: null, &quot;text-content&quot;: &quot;content&quot;, &quot;selector&quot;: null, &quot;repeated&quot;: null, &quot;id&quot;: &quot;aile-item-0-field-4-instance-0&quot;, &quot;container_id&quot;: &quot;aile-item-0-first-instance|aile-item-1-first-instance&quot;}, {&quot;xpath&quot;: null, &quot;max_separator&quot;: -1, &quot;item_container&quot;: false, &quot;required_fields&quot;: [], &quot;required&quot;: [], &quot;variant&quot;: 0, &quot;schema_id&quot;: &quot;aile-item-1&quot;, &quot;annotations&quot;: {&quot;content&quot;: [{&quot;extractors&quot;: [], &quot;attribute&quot;: &quot;content&quot;, &quot;required&quot;: false, &quot;id&quot;: &quot;aile-item-1-field-4-instance-0|aile-item-1-field-4-44&quot;, &quot;field&quot;: &quot;aile-item-1-field-4&quot;}, {&quot;extractors&quot;: [], &quot;attribute&quot;: &quot;content&quot;, &quot;required&quot;: false, &quot;id&quot;: &quot;aile-item-1-field-4-instance-0|aile-item-1-field-7-44&quot;, &quot;field&quot;: &quot;aile-item-1-field-7&quot;}]}, &quot;field&quot;: null, &quot;generated&quot;: false, &quot;min_jump&quot;: -1, &quot;selection_mode&quot;: null, &quot;siblings&quot;: null, &quot;text-content&quot;: &quot;content&quot;, &quot;selector&quot;: null, &quot;repeated&quot;: null, &quot;id&quot;: &quot;aile-item-1-field-4-instance-0&quot;, &quot;container_id&quot;: &quot;aile-item-0-first-instance|aile-item-1-first-instance&quot;}]\" class=\"sitebit comhead\"> (<a href=\"from?site=icij.org\" data-scrapy-annotate=\"[{&quot;xpath&quot;: null, &quot;max_separator&quot;: -1, &quot;item_container&quot;: false, &quot;required_fields&quot;: [], &quot;required&quot;: [], &quot;variant&quot;: 0, &quot;schema_id&quot;: &quot;aile-item-0&quot;, &quot;annotations&quot;: {&quot;href&quot;: [{&quot;extractors&quot;: [], &quot;attribute&quot;: &quot;href&quot;, &quot;required&quot;: false, &quot;id&quot;: &quot;aile-item-0-field-5-instance-0|aile-item-0-field-5-45&quot;, &quot;field&quot;: &quot;aile-item-0-field-5&quot;}]}, &quot;field&quot;: null, &quot;generated&quot;: false, &quot;min_jump&quot;: -1, &quot;selection_mode&quot;: null, &quot;siblings&quot;: null, &quot;text-content&quot;: &quot;content&quot;, &quot;selector&quot;: null, &quot;repeated&quot;: null, &quot;id&quot;: &quot;aile-item-0-field-5-instance-0&quot;, &quot;container_id&quot;: &quot;aile-item-0-first-instance|aile-item-1-first-instance&quot;}, {&quot;xpath&quot;: null, &quot;max_separator&quot;: -1, &quot;item_container&quot;: false, &quot;required_fields&quot;: [], &quot;required&quot;: [], &quot;variant&quot;: 0, &quot;schema_id&quot;: &quot;aile-item-1&quot;, &quot;annotations&quot;: {&quot;href&quot;: [{&quot;extractors&quot;: [], &quot;attribute&quot;: &quot;href&quot;, &quot;required&quot;: false, &quot;id&quot;: &quot;aile-item-1-field-5-instance-0|aile-item-1-field-5-45&quot;, &quot;field&quot;: &quot;aile-item-1-field-5&quot;}]}, &quot;field&quot;: null, &quot;generated&quot;: false, &quot;min_jump&quot;: -1, &quot;selection_mode&quot;: null, &quot;siblings&quot;: null, &quot;text-content&quot;: &quot;content&quot;, &quot;selector&quot;: null, &quot;repeated&quot;: null, &quot;id&quot;: &quot;aile-item-1-field-5-instance-0&quot;, &quot;container_id&quot;: &quot;aile-item-0-first-instance|aile-item-1-first-instance&quot;}]\"><span data-scrapy-annotate=\"[{&quot;xpath&quot;: null, &quot;max_separator&quot;: -1, &quot;item_container&quot;: false, &quot;required_fields&quot;: [], &quot;required&quot;: [], &quot;variant&quot;: 0, &quot;schema_id&quot;: &quot;aile-item-0&quot;, &quot;annotations&quot;: {&quot;content&quot;: [{&quot;extractors&quot;: [], &quot;attribute&quot;: &quot;content&quot;, &quot;required&quot;: false, &quot;id&quot;: &quot;aile-item-0-field-6-instance-0|aile-item-0-field-6-46&quot;, &quot;field&quot;: &quot;aile-item-0-field-6&quot;}]}, &quot;field&quot;: null, &quot;generated&quot;: false, &quot;min_jump&quot;: -1, &quot;selection_mode&quot;: null, &quot;siblings&quot;: null, &quot;text-content&quot;: &quot;content&quot;, &quot;selector&quot;: null, &quot;repeated&quot;: null, &quot;id&quot;: &quot;aile-item-0-field-6-instance-0&quot;, &quot;container_id&quot;: &quot;aile-item-0-first-instance|aile-item-1-first-instance&quot;}, {&quot;xpath&quot;: null, &quot;max_separator&quot;: -1, &quot;item_container&quot;: false, &quot;required_fields&quot;: [], &quot;required&quot;: [], &quot;variant&quot;: 0, &quot;schema_id&quot;: &quot;aile-item-1&quot;, &quot;annotations&quot;: {&quot;content&quot;: [{&quot;extractors&quot;: [], &quot;attribute&quot;: &quot;content&quot;, &quot;required&quot;: false, &quot;id&quot;: &quot;aile-item-1-field-6-instance-0|aile-item-1-field-6-46&quot;, &quot;field&quot;: &quot;aile-item-1-field-6&quot;}]}, &quot;field&quot;: null, &quot;generated&quot;: false, &quot;min_jump&quot;: -1, &quot;selection_mode&quot;: null, &quot;siblings&quot;: null, &quot;text-content&quot;: &quot;content&quot;, &quot;selector&quot;: null, &quot;repeated&quot;: null, &quot;id&quot;: &quot;aile-item-1-field-6-instance-0&quot;, &quot;container_id&quot;: &quot;aile-item-0-first-instance|aile-item-1-first-instance&quot;}]\" class=\"sitestr\">icij.org</span></a>)</span></td></tr><tr data-tagid=\"47\"><td colspan=\"2\"></td><td data-scrapy-annotate=\"[{&quot;xpath&quot;: null, &quot;max_separator&quot;: -1, &quot;item_container&quot;: false, &quot;required_fields&quot;: [], &quot;required&quot;: [], &quot;variant&quot;: 0, &quot;schema_id&quot;: &quot;aile-item-0&quot;, &quot;annotations&quot;: {&quot;content&quot;: [{&quot;extractors&quot;: [], &quot;attribute&quot;: &quot;content&quot;, &quot;required&quot;: false, &quot;id&quot;: &quot;aile-item-0-field-8-instance-0|aile-item-0-field-8-49&quot;, &quot;field&quot;: &quot;aile-item-0-field-8&quot;}, {&quot;extractors&quot;: [], &quot;attribute&quot;: &quot;content&quot;, &quot;required&quot;: false, &quot;id&quot;: &quot;aile-item-0-field-8-instance-0|aile-item-0-field-13-49&quot;, &quot;field&quot;: &quot;aile-item-0-field-13&quot;}, {&quot;extractors&quot;: [], &quot;attribute&quot;: &quot;content&quot;, &quot;required&quot;: false, &quot;id&quot;: &quot;aile-item-0-field-8-instance-0|aile-item-0-field-10-49&quot;, &quot;field&quot;: &quot;aile-item-0-field-10&quot;}]}, &quot;field&quot;: null, &quot;generated&quot;: false, &quot;min_jump&quot;: -1, &quot;selection_mode&quot;: null, &quot;siblings&quot;: null, &quot;text-content&quot;: &quot;content&quot;, &quot;selector&quot;: null, &quot;repeated&quot;: null, &quot;id&quot;: &quot;aile-item-0-field-8-instance-0&quot;, &quot;container_id&quot;: &quot;aile-item-0-first-instance|aile-item-1-first-instance&quot;}, {&quot;xpath&quot;: null, &quot;max_separator&quot;: -1, &quot;item_container&quot;: false, &quot;required_fields&quot;: [], &quot;required&quot;: [], &quot;variant&quot;: 0, &quot;schema_id&quot;: &quot;aile-item-1&quot;, &quot;annotations&quot;: {&quot;content&quot;: [{&quot;extractors&quot;: [], &quot;attribute&quot;: &quot;content&quot;, &quot;required&quot;: false, &quot;id&quot;: &quot;aile-item-1-field-8-instance-0|aile-item-1-field-10-49&quot;, &quot;field&quot;: &quot;aile-item-1-field-10&quot;}, {&quot;extractors&quot;: [], &quot;attribute&quot;: &quot;content&quot;, &quot;required&quot;: false, &quot;id&quot;: &quot;aile-item-1-field-8-instance-0|aile-item-1-field-8-49&quot;, &quot;field&quot;: &quot;aile-item-1-field-8&quot;}, {&quot;extractors&quot;: [], &quot;attribute&quot;: &quot;content&quot;, &quot;required&quot;: false, &quot;id&quot;: &quot;aile-item-1-field-8-instance-0|aile-item-1-field-13-49&quot;, &quot;field&quot;: &quot;aile-item-1-field-13&quot;}]}, &quot;field&quot;: null, &quot;generated&quot;: false, &quot;min_jump&quot;: -1, &quot;selection_mode&quot;: null, &quot;siblings&quot;: null, &quot;text-content&quot;: &quot;content&quot;, &quot;selector&quot;: null, &quot;repeated&quot;: null, &quot;id&quot;: &quot;aile-item-1-field-8-instance-0&quot;, &quot;container_id&quot;: &quot;aile-item-0-first-instance|aile-item-1-first-instance&quot;}]\" class=\"subtext\">\n        <span class=\"score\" id=\"score_15630646\">144 points</span> by <a href=\"user?id=martgnz\" class=\"hnuser\">martgnz</a> <span class=\"age\"><a href=\"item?id=15630646\" data-scrapy-annotate=\"[{&quot;xpath&quot;: null, &quot;max_separator&quot;: -1, &quot;item_container&quot;: false, &quot;required_fields&quot;: [], &quot;required&quot;: [], &quot;variant&quot;: 0, &quot;schema_id&quot;: &quot;aile-item-0&quot;, &quot;annotations&quot;: {&quot;content&quot;: [{&quot;extractors&quot;: [], &quot;attribute&quot;: &quot;content&quot;, &quot;required&quot;: false, &quot;id&quot;: &quot;aile-item-0-field-9-instance-0|aile-item-0-field-9-53&quot;, &quot;field&quot;: &quot;aile-item-0-field-9&quot;}]}, &quot;field&quot;: null, &quot;generated&quot;: false, &quot;min_jump&quot;: -1, &quot;selection_mode&quot;: null, &quot;siblings&quot;: null, &quot;text-content&quot;: &quot;content&quot;, &quot;selector&quot;: null, &quot;repeated&quot;: null, &quot;id&quot;: &quot;aile-item-0-field-9-instance-0&quot;, &quot;container_id&quot;: &quot;aile-item-0-first-instance|aile-item-1-first-instance&quot;}, {&quot;xpath&quot;: null, &quot;max_separator&quot;: -1, &quot;item_container&quot;: false, &quot;required_fields&quot;: [], &quot;required&quot;: [], &quot;variant&quot;: 0, &quot;schema_id&quot;: &quot;aile-item-1&quot;, &quot;annotations&quot;: {&quot;content&quot;: [{&quot;extractors&quot;: [], &quot;attribute&quot;: &quot;content&quot;, &quot;required&quot;: false, &quot;id&quot;: &quot;aile-item-1-field-9-instance-0|aile-item-1-field-9-53&quot;, &quot;field&quot;: &quot;aile-item-1-field-9&quot;}]}, &quot;field&quot;: null, &quot;generated&quot;: false, &quot;min_jump&quot;: -1, &quot;selection_mode&quot;: null, &quot;siblings&quot;: null, &quot;text-content&quot;: &quot;content&quot;, &quot;selector&quot;: null, &quot;repeated&quot;: null, &quot;id&quot;: &quot;aile-item-1-field-9-instance-0&quot;, &quot;container_id&quot;: &quot;aile-item-0-first-instance|aile-item-1-first-instance&quot;}]\">1 hour ago</a></span> <span id=\"unv_15630646\"></span> | <a href=\"hide?id=15630646&amp;goto=news\" data-scrapy-annotate=\"[{&quot;xpath&quot;: null, &quot;max_separator&quot;: -1, &quot;item_container&quot;: false, &quot;required_fields&quot;: [], &quot;required&quot;: [], &quot;variant&quot;: 0, &quot;schema_id&quot;: &quot;aile-item-0&quot;, &quot;annotations&quot;: {&quot;content&quot;: [{&quot;extractors&quot;: [], &quot;attribute&quot;: &quot;content&quot;, &quot;required&quot;: false, &quot;id&quot;: &quot;aile-item-0-field-11-instance-0|aile-item-0-field-12-55&quot;, &quot;field&quot;: &quot;aile-item-0-field-12&quot;}], &quot;href&quot;: [{&quot;extractors&quot;: [], &quot;attribute&quot;: &quot;href&quot;, &quot;required&quot;: false, &quot;id&quot;: &quot;aile-item-0-field-11-instance-0|aile-item-0-field-11-55&quot;, &quot;field&quot;: &quot;aile-item-0-field-11&quot;}]}, &quot;field&quot;: null, &quot;generated&quot;: false, &quot;min_jump&quot;: -1, &quot;selection_mode&quot;: null, &quot;siblings&quot;: null, &quot;text-content&quot;: &quot;content&quot;, &quot;selector&quot;: null, &quot;repeated&quot;: null, &quot;id&quot;: &quot;aile-item-0-field-11-instance-0&quot;, &quot;container_id&quot;: &quot;aile-item-0-first-instance|aile-item-1-first-instance&quot;}, {&quot;xpath&quot;: null, &quot;max_separator&quot;: -1, &quot;item_container&quot;: false, &quot;required_fields&quot;: [], &quot;required&quot;: [], &quot;variant&quot;: 0, &quot;schema_id&quot;: &quot;aile-item-1&quot;, &quot;annotations&quot;: {&quot;content&quot;: [{&quot;extractors&quot;: [], &quot;attribute&quot;: &quot;content&quot;, &quot;required&quot;: false, &quot;id&quot;: &quot;aile-item-1-field-11-instance-0|aile-item-1-field-12-55&quot;, &quot;field&quot;: &quot;aile-item-1-field-12&quot;}], &quot;href&quot;: [{&quot;extractors&quot;: [], &quot;attribute&quot;: &quot;href&quot;, &quot;required&quot;: false, &quot;id&quot;: &quot;aile-item-1-field-11-instance-0|aile-item-1-field-11-55&quot;, &quot;field&quot;: &quot;aile-item-1-field-11&quot;}]}, &quot;field&quot;: null, &quot;generated&quot;: false, &quot;min_jump&quot;: -1, &quot;selection_mode&quot;: null, &quot;siblings&quot;: null, &quot;text-content&quot;: &quot;content&quot;, &quot;selector&quot;: null, &quot;repeated&quot;: null, &quot;id&quot;: &quot;aile-item-1-field-11-instance-0&quot;, &quot;container_id&quot;: &quot;aile-item-0-first-instance|aile-item-1-first-instance&quot;}]\">hide</a> | <a href=\"item?id=15630646\" data-scrapy-annotate=\"[{&quot;xpath&quot;: null, &quot;max_separator&quot;: -1, &quot;item_container&quot;: false, &quot;required_fields&quot;: [], &quot;required&quot;: [], &quot;variant&quot;: 0, &quot;schema_id&quot;: &quot;aile-item-0&quot;, &quot;annotations&quot;: {&quot;content&quot;: [{&quot;extractors&quot;: [], &quot;attribute&quot;: &quot;content&quot;, &quot;required&quot;: false, &quot;id&quot;: &quot;aile-item-0-field-14-instance-0|aile-item-0-field-15-56&quot;, &quot;field&quot;: &quot;aile-item-0-field-15&quot;}], &quot;href&quot;: [{&quot;extractors&quot;: [], &quot;attribute&quot;: &quot;href&quot;, &quot;required&quot;: false, &quot;id&quot;: &quot;aile-item-0-field-14-instance-0|aile-item-0-field-14-56&quot;, &quot;field&quot;: &quot;aile-item-0-field-14&quot;}]}, &quot;field&quot;: null, &quot;generated&quot;: false, &quot;min_jump&quot;: -1, &quot;selection_mode&quot;: null, &quot;siblings&quot;: null, &quot;text-content&quot;: &quot;content&quot;, &quot;selector&quot;: null, &quot;repeated&quot;: null, &quot;id&quot;: &quot;aile-item-0-field-14-instance-0&quot;, &quot;container_id&quot;: &quot;aile-item-0-first-instance|aile-item-1-first-instance&quot;}, {&quot;xpath&quot;: null, &quot;max_separator&quot;: -1, &quot;item_container&quot;: false, &quot;required_fields&quot;: [], &quot;required&quot;: [], &quot;variant&quot;: 0, &quot;schema_id&quot;: &quot;aile-item-1&quot;, &quot;annotations&quot;: {&quot;content&quot;: [{&quot;extractors&quot;: [], &quot;attribute&quot;: &quot;content&quot;, &quot;required&quot;: false, &quot;id&quot;: &quot;aile-item-1-field-14-instance-0|aile-item-1-field-15-56&quot;, &quot;field&quot;: &quot;aile-item-1-field-15&quot;}], &quot;href&quot;: [{&quot;extractors&quot;: [], &quot;attribute&quot;: &quot;href&quot;, &quot;required&quot;: false, &quot;id&quot;: &quot;aile-item-1-field-14-instance-0|aile-item-1-field-14-56&quot;, &quot;field&quot;: &quot;aile-item-1-field-14&quot;}]}, &quot;field&quot;: null, &quot;generated&quot;: false, &quot;min_jump&quot;: -1, &quot;selection_mode&quot;: null, &quot;siblings&quot;: null, &quot;text-content&quot;: &quot;content&quot;, &quot;selector&quot;: null, &quot;repeated&quot;: null, &quot;id&quot;: &quot;aile-item-1-field-14-instance-0&quot;, &quot;container_id&quot;: &quot;aile-item-0-first-instance|aile-item-1-first-instance&quot;}]\">19&nbsp;comments</a>              </td></tr>\n      <tr style=\"height:5px\" class=\"spacer\"></tr>\n                <tr class=\"athing\" id=\"15629308\">\n      <td align=\"right\" class=\"title\" valign=\"top\"><span class=\"rank\">2.</span></td>      <td class=\"votelinks\" valign=\"top\"><center data-tagid=\"62\"><a href=\"vote?id=15629308&amp;how=up&amp;goto=news\" id=\"up_15629308\"><div class=\"votearrow\" title=\"upvote\"></div></a></center></td><td class=\"title\"><a href=\"https://aws.amazon.com/earth/\" class=\"storylink\">Earth on AWS \u2013 Open geospatial data</a><span class=\"sitebit comhead\"> (<a href=\"from?site=amazon.com\"><span class=\"sitestr\">amazon.com</span></a>)</span></td></tr><tr data-tagid=\"70\"><td colspan=\"2\"></td><td class=\"subtext\">\n        <span class=\"score\" id=\"score_15629308\">339 points</span> by <a href=\"user?id=thecodeboy\" class=\"hnuser\">thecodeboy</a> <span class=\"age\"><a href=\"item?id=15629308\">6 hours ago</a></span> <span id=\"unv_15629308\"></span> | <a href=\"hide?id=15629308&amp;goto=news\">hide</a> | <a href=\"item?id=15629308\">43&nbsp;comments</a>              </td></tr>\n      <tr style=\"height:5px\" class=\"spacer\"></tr>\n                <tr class=\"athing\" id=\"15630640\">\n      <td align=\"right\" class=\"title\" valign=\"top\"><span class=\"rank\">3.</span></td>      <td class=\"votelinks\" valign=\"top\"><center data-tagid=\"85\"><a href=\"vote?id=15630640&amp;how=up&amp;goto=news\" id=\"up_15630640\"><div class=\"votearrow\" title=\"upvote\"></div></a></center></td><td class=\"title\"><a href=\"https://chrisbolman.com/strategy-develop-effective-framework/\" class=\"storylink\">Strategy: How to Develop, Structure and Shape a Winning System</a><span class=\"sitebit comhead\"> (<a href=\"from?site=chrisbolman.com\"><span class=\"sitestr\">chrisbolman.com</span></a>)</span></td></tr><tr data-tagid=\"93\"><td colspan=\"2\"></td><td class=\"subtext\">\n        <span class=\"score\" id=\"score_15630640\">33 points</span> by <a href=\"user?id=bolmn\" class=\"hnuser\">bolmn</a> <span class=\"age\"><a href=\"item?id=15630640\">1 hour ago</a></span> <span id=\"unv_15630640\"></span> | <a href=\"hide?id=15630640&amp;goto=news\">hide</a> | <a href=\"item?id=15630640\">4&nbsp;comments</a>              </td></tr>\n      <tr style=\"height:5px\" class=\"spacer\"></tr>\n                <tr class=\"athing\" id=\"15630581\">\n      <td align=\"right\" class=\"title\" valign=\"top\"><span class=\"rank\">4.</span></td>      <td class=\"votelinks\" valign=\"top\"><center data-tagid=\"108\"><a href=\"vote?id=15630581&amp;how=up&amp;goto=news\" id=\"up_15630581\"><div class=\"votearrow\" title=\"upvote\"></div></a></center></td><td class=\"title\"><a href=\"https://theconversation.com/guy-fawkes-nights-oddest-traditions-are-due-to-a-1606-law-33750\" class=\"storylink\">Guy Fawkes night\u2019s oddest traditions are due to a 1606 law (2014)</a><span class=\"sitebit comhead\"> (<a href=\"from?site=theconversation.com\"><span class=\"sitestr\">theconversation.com</span></a>)</span></td></tr><tr data-tagid=\"116\"><td colspan=\"2\"></td><td class=\"subtext\">\n        <span class=\"score\" id=\"score_15630581\">22 points</span> by <a href=\"user?id=pepys\" class=\"hnuser\">pepys</a> <span class=\"age\"><a href=\"item?id=15630581\">1 hour ago</a></span> <span id=\"unv_15630581\"></span> | <a href=\"hide?id=15630581&amp;goto=news\">hide</a> | <a href=\"item?id=15630581\">2&nbsp;comments</a>              </td></tr>\n      <tr style=\"height:5px\" class=\"spacer\"></tr>\n                <tr class=\"athing\" id=\"15628839\">\n      <td align=\"right\" class=\"title\" valign=\"top\"><span class=\"rank\">5.</span></td>      <td class=\"votelinks\" valign=\"top\"><center data-tagid=\"131\"><a href=\"vote?id=15628839&amp;how=up&amp;goto=news\" id=\"up_15628839\"><div class=\"votearrow\" title=\"upvote\"></div></a></center></td><td class=\"title\"><a href=\"http://www.cbc.ca/cbcdocspov/m/features/the-hogan-twins-share-a-brain-and-see-out-of-each-others-eyes\" class=\"storylink\">Craniopagus Twins Share a Brain and See Out of Each Others Eyes</a><span class=\"sitebit comhead\"> (<a href=\"from?site=cbc.ca\"><span class=\"sitestr\">cbc.ca</span></a>)</span></td></tr><tr data-tagid=\"139\"><td colspan=\"2\"></td><td class=\"subtext\">\n        <span class=\"score\" id=\"score_15628839\">208 points</span> by <a href=\"user?id=Osiris30\" class=\"hnuser\">Osiris30</a> <span class=\"age\"><a href=\"item?id=15628839\">9 hours ago</a></span> <span id=\"unv_15628839\"></span> | <a href=\"hide?id=15628839&amp;goto=news\">hide</a> | <a href=\"item?id=15628839\">76&nbsp;comments</a>              </td></tr>\n      <tr style=\"height:5px\" class=\"spacer\"></tr>\n                <tr class=\"athing\" id=\"15629162\">\n      <td align=\"right\" class=\"title\" valign=\"top\"><span class=\"rank\">6.</span></td>      <td class=\"votelinks\" valign=\"top\"><center data-tagid=\"154\"><a href=\"vote?id=15629162&amp;how=up&amp;goto=news\" id=\"up_15629162\"><div class=\"votearrow\" title=\"upvote\"></div></a></center></td><td class=\"title\"><a href=\"https://sekao.net/lightmod/\" class=\"storylink\">Lightmod \u2013 A beginner-friendly, all-in-one tool for full stack Clojure</a><span class=\"sitebit comhead\"> (<a href=\"from?site=sekao.net\"><span class=\"sitestr\">sekao.net</span></a>)</span></td></tr><tr data-tagid=\"162\"><td colspan=\"2\"></td><td class=\"subtext\">\n        <span class=\"score\" id=\"score_15629162\">80 points</span> by <a href=\"user?id=malloryerik\" class=\"hnuser\">malloryerik</a> <span class=\"age\"><a href=\"item?id=15629162\">7 hours ago</a></span> <span id=\"unv_15629162\"></span> | <a href=\"hide?id=15629162&amp;goto=news\">hide</a> | <a href=\"item?id=15629162\">5&nbsp;comments</a>              </td></tr>\n      <tr style=\"height:5px\" class=\"spacer\"></tr>\n                <tr class=\"athing\" id=\"15628869\">\n      <td align=\"right\" class=\"title\" valign=\"top\"><span class=\"rank\">7.</span></td>      <td class=\"votelinks\" valign=\"top\"><center data-tagid=\"177\"><a href=\"vote?id=15628869&amp;how=up&amp;goto=news\" id=\"up_15628869\"><div class=\"votearrow\" title=\"upvote\"></div></a></center></td><td class=\"title\"><a href=\"http://www.math.tamu.edu/~cyan/Rota/mitless.html\" class=\"storylink\">Lessons of an MIT Education</a><span class=\"sitebit comhead\"> (<a href=\"from?site=tamu.edu\"><span class=\"sitestr\">tamu.edu</span></a>)</span></td></tr><tr data-tagid=\"185\"><td colspan=\"2\"></td><td class=\"subtext\">\n        <span class=\"score\" id=\"score_15628869\">233 points</span> by <a href=\"user?id=funkylexoo\" class=\"hnuser\">funkylexoo</a> <span class=\"age\"><a href=\"item?id=15628869\">9 hours ago</a></span> <span id=\"unv_15628869\"></span> | <a href=\"hide?id=15628869&amp;goto=news\">hide</a> | <a href=\"item?id=15628869\">157&nbsp;comments</a>              </td></tr>\n      <tr style=\"height:5px\" class=\"spacer\"></tr>\n                <tr class=\"athing\" id=\"15628925\">\n      <td align=\"right\" class=\"title\" valign=\"top\"><span class=\"rank\">8.</span></td>      <td class=\"votelinks\" valign=\"top\"><center data-tagid=\"200\"><a href=\"vote?id=15628925&amp;how=up&amp;goto=news\" id=\"up_15628925\"><div class=\"votearrow\" title=\"upvote\"></div></a></center></td><td class=\"title\"><a href=\"http://www.bbc.com/news/world-asia-india-41813389\" class=\"storylink\">A man who built a plane on his Mumbai rooftop</a><span class=\"sitebit comhead\"> (<a href=\"from?site=bbc.com\"><span class=\"sitestr\">bbc.com</span></a>)</span></td></tr><tr data-tagid=\"208\"><td colspan=\"2\"></td><td class=\"subtext\">\n        <span class=\"score\" id=\"score_15628925\">91 points</span> by <a href=\"user?id=dnyanesh\" class=\"hnuser\">dnyanesh</a> <span class=\"age\"><a href=\"item?id=15628925\">8 hours ago</a></span> <span id=\"unv_15628925\"></span> | <a href=\"hide?id=15628925&amp;goto=news\">hide</a> | <a href=\"item?id=15628925\">33&nbsp;comments</a>              </td></tr>\n      <tr style=\"height:5px\" class=\"spacer\"></tr>\n                <tr class=\"athing\" id=\"15630694\">\n      <td align=\"right\" class=\"title\" valign=\"top\"><span class=\"rank\">9.</span></td>      <td class=\"votelinks\" valign=\"top\"><center data-tagid=\"223\"><a href=\"vote?id=15630694&amp;how=up&amp;goto=news\" id=\"up_15630694\"><div class=\"votearrow\" title=\"upvote\"></div></a></center></td><td class=\"title\"><a href=\"https://www.theguardian.com/news/series/paradise-papers\" class=\"storylink\">Paradise Papers: A Special Investigation \u2013 Paradise-Papers \u2013 The Guardian</a><span class=\"sitebit comhead\"> (<a href=\"from?site=theguardian.com\"><span class=\"sitestr\">theguardian.com</span></a>)</span></td></tr><tr data-tagid=\"231\"><td colspan=\"2\"></td><td class=\"subtext\">\n        <span class=\"score\" id=\"score_15630694\">82 points</span> by <a href=\"user?id=yread\" class=\"hnuser\">yread</a> <span class=\"age\"><a href=\"item?id=15630694\">1 hour ago</a></span> <span id=\"unv_15630694\"></span> | <a href=\"hide?id=15630694&amp;goto=news\">hide</a> | <a href=\"item?id=15630694\">13&nbsp;comments</a>              </td></tr>\n      <tr style=\"height:5px\" class=\"spacer\"></tr>\n                <tr class=\"athing\" id=\"15629272\">\n      <td align=\"right\" class=\"title\" valign=\"top\"><span class=\"rank\">10.</span></td>      <td class=\"votelinks\" valign=\"top\"><center data-tagid=\"246\"><a href=\"vote?id=15629272&amp;how=up&amp;goto=news\" id=\"up_15629272\"><div class=\"votearrow\" title=\"upvote\"></div></a></center></td><td class=\"title\"><a href=\"https://reiinakano.github.io/gan-playground\" class=\"storylink\">Show HN: GAN Playground \u2013 Play with Generative Adversarial Neural Nets In-Browser</a><span class=\"sitebit comhead\"> (<a href=\"from?site=reiinakano.github.io\"><span class=\"sitestr\">reiinakano.github.io</span></a>)</span></td></tr><tr data-tagid=\"254\"><td colspan=\"2\"></td><td class=\"subtext\">\n        <span class=\"score\" id=\"score_15629272\">52 points</span> by <a href=\"user?id=reiinakano\" class=\"hnuser\">reiinakano</a> <span class=\"age\"><a href=\"item?id=15629272\">6 hours ago</a></span> <span id=\"unv_15629272\"></span> | <a href=\"hide?id=15629272&amp;goto=news\">hide</a> | <a href=\"item?id=15629272\">6&nbsp;comments</a>              </td></tr>\n      <tr style=\"height:5px\" class=\"spacer\"></tr>\n                <tr class=\"athing\" id=\"15629253\">\n      <td align=\"right\" class=\"title\" valign=\"top\"><span class=\"rank\">11.</span></td>      <td class=\"votelinks\" valign=\"top\"><center data-tagid=\"269\"><a href=\"vote?id=15629253&amp;how=up&amp;goto=news\" id=\"up_15629253\"><div class=\"votearrow\" title=\"upvote\"></div></a></center></td><td class=\"title\"><a href=\"https://github.com/shivylp/pyschemes\" class=\"storylink\">Show HN: PySchemes \u2013 A library for validating data structures in Python</a><span class=\"sitebit comhead\"> (<a href=\"from?site=github.com\"><span class=\"sitestr\">github.com</span></a>)</span></td></tr><tr data-tagid=\"277\"><td colspan=\"2\"></td><td class=\"subtext\">\n        <span class=\"score\" id=\"score_15629253\">62 points</span> by <a href=\"user?id=shivaprasad\" class=\"hnuser\">shivaprasad</a> <span class=\"age\"><a href=\"item?id=15629253\">6 hours ago</a></span> <span id=\"unv_15629253\"></span> | <a href=\"hide?id=15629253&amp;goto=news\">hide</a> | <a href=\"item?id=15629253\">27&nbsp;comments</a>              </td></tr>\n      <tr style=\"height:5px\" class=\"spacer\"></tr>\n                <tr class=\"athing\" id=\"15629309\">\n      <td align=\"right\" class=\"title\" valign=\"top\"><span class=\"rank\">12.</span></td>      <td class=\"votelinks\" valign=\"top\"><center data-tagid=\"292\"><a href=\"vote?id=15629309&amp;how=up&amp;goto=news\" id=\"up_15629309\"><div class=\"votearrow\" title=\"upvote\"></div></a></center></td><td class=\"title\"><a href=\"item?id=15629309\" class=\"storylink\">Ask HN: How do you manage multiple learning projects?</a></td></tr><tr data-tagid=\"297\"><td colspan=\"2\"></td><td class=\"subtext\">\n        <span class=\"score\" id=\"score_15629309\">91 points</span> by <a href=\"user?id=jansho\" class=\"hnuser\">jansho</a> <span class=\"age\"><a href=\"item?id=15629309\">6 hours ago</a></span> <span id=\"unv_15629309\"></span> | <a href=\"hide?id=15629309&amp;goto=news\">hide</a> | <a href=\"item?id=15629309\">49&nbsp;comments</a>              </td></tr>\n      <tr style=\"height:5px\" class=\"spacer\"></tr>\n                <tr class=\"athing\" id=\"15628997\">\n      <td align=\"right\" class=\"title\" valign=\"top\"><span class=\"rank\">13.</span></td>      <td class=\"votelinks\" valign=\"top\"><center data-tagid=\"312\"><a href=\"vote?id=15628997&amp;how=up&amp;goto=news\" id=\"up_15628997\"><div class=\"votearrow\" title=\"upvote\"></div></a></center></td><td class=\"title\"><a href=\"http://occasionalplanet.org/2014/09/09/trying-to-make-sense-of-colombias-strata-economic-system/\" class=\"storylink\">Trying to make sense of Colombia\u2019s \u201cStrata\u201d economic system (2014)</a><span class=\"sitebit comhead\"> (<a href=\"from?site=occasionalplanet.org\"><span class=\"sitestr\">occasionalplanet.org</span></a>)</span></td></tr><tr data-tagid=\"320\"><td colspan=\"2\"></td><td class=\"subtext\">\n        <span class=\"score\" id=\"score_15628997\">45 points</span> by <a href=\"user?id=imartin2k\" class=\"hnuser\">imartin2k</a> <span class=\"age\"><a href=\"item?id=15628997\">8 hours ago</a></span> <span id=\"unv_15628997\"></span> | <a href=\"hide?id=15628997&amp;goto=news\">hide</a> | <a href=\"item?id=15628997\">13&nbsp;comments</a>              </td></tr>\n      <tr style=\"height:5px\" class=\"spacer\"></tr>\n                <tr class=\"athing\" id=\"15629496\">\n      <td align=\"right\" class=\"title\" valign=\"top\"><span class=\"rank\">14.</span></td>      <td class=\"votelinks\" valign=\"top\"><center data-tagid=\"335\"><a href=\"vote?id=15629496&amp;how=up&amp;goto=news\" id=\"up_15629496\"><div class=\"votearrow\" title=\"upvote\"></div></a></center></td><td class=\"title\"><a href=\"https://speakerdeck.com/farslan/go-at-digitalocean\" class=\"storylink\">Go at Digital Ocean</a><span class=\"sitebit comhead\"> (<a href=\"from?site=speakerdeck.com\"><span class=\"sitestr\">speakerdeck.com</span></a>)</span></td></tr><tr data-tagid=\"343\"><td colspan=\"2\"></td><td class=\"subtext\">\n        <span class=\"score\" id=\"score_15629496\">115 points</span> by <a href=\"user?id=dcu\" class=\"hnuser\">dcu</a> <span class=\"age\"><a href=\"item?id=15629496\">5 hours ago</a></span> <span id=\"unv_15629496\"></span> | <a href=\"hide?id=15629496&amp;goto=news\">hide</a> | <a href=\"item?id=15629496\">26&nbsp;comments</a>              </td></tr>\n      <tr style=\"height:5px\" class=\"spacer\"></tr>\n                <tr class=\"athing\" id=\"15630742\">\n      <td align=\"right\" class=\"title\" valign=\"top\"><span class=\"rank\">15.</span></td>      <td data-tagid=\"357\"></td><td class=\"title\"><a href=\"https://www.nextravel.com/jobs/senior\" class=\"storylink\" rel=\"nofollow\">NexTravel (YC W15) Is Hiring a Senior Engineer (San Francisco)</a><span class=\"sitebit comhead\"> (<a href=\"from?site=nextravel.com\"><span class=\"sitestr\">nextravel.com</span></a>)</span></td></tr><tr data-tagid=\"363\"><td colspan=\"2\"></td><td class=\"subtext\">\n        <span class=\"age\"><a href=\"item?id=15630742\">1 hour ago</a></span> | <a href=\"hide?id=15630742&amp;goto=news\">hide</a>      </td></tr>\n      <tr style=\"height:5px\" class=\"spacer\"></tr>\n                <tr class=\"athing\" id=\"15631034\">\n      <td align=\"right\" class=\"title\" valign=\"top\"><span class=\"rank\">16.</span></td>      <td class=\"votelinks\" valign=\"top\"><center data-tagid=\"374\"><a href=\"vote?id=15631034&amp;how=up&amp;goto=news\" id=\"up_15631034\"><div class=\"votearrow\" title=\"upvote\"></div></a></center></td><td class=\"title\"><a href=\"https://www.msn.com/en-us/money/companies/28-year-old-makes-millions-buying-from-walmart-selling-on-amazon/ar-AAupB8i\" class=\"storylink\" rel=\"nofollow\">28-year-old makes millions buying from Walmart, selling on Amazon</a><span class=\"sitebit comhead\"> (<a href=\"from?site=msn.com\"><span class=\"sitestr\">msn.com</span></a>)</span></td></tr><tr data-tagid=\"382\"><td colspan=\"2\"></td><td class=\"subtext\">\n        <span class=\"score\" id=\"score_15631034\">5 points</span> by <a href=\"user?id=kolbe\" class=\"hnuser\">kolbe</a> <span class=\"age\"><a href=\"item?id=15631034\">32 minutes ago</a></span> <span id=\"unv_15631034\"></span> | <a href=\"hide?id=15631034&amp;goto=news\">hide</a> | <a href=\"item?id=15631034\">2&nbsp;comments</a>              </td></tr>\n      <tr style=\"height:5px\" class=\"spacer\"></tr>\n                <tr class=\"athing\" id=\"15626703\">\n      <td align=\"right\" class=\"title\" valign=\"top\"><span class=\"rank\">17.</span></td>      <td class=\"votelinks\" valign=\"top\"><center data-tagid=\"397\"><a href=\"vote?id=15626703&amp;how=up&amp;goto=news\" id=\"up_15626703\"><div class=\"votearrow\" title=\"upvote\"></div></a></center></td><td class=\"title\"><a href=\"https://www.atlasobscura.com/articles/singles-news-1970s-personal-ads-dating\" class=\"storylink\">The Dramatically Different World of \u201970s Dating Ads</a><span class=\"sitebit comhead\"> (<a href=\"from?site=atlasobscura.com\"><span class=\"sitestr\">atlasobscura.com</span></a>)</span></td></tr><tr data-tagid=\"405\"><td colspan=\"2\"></td><td class=\"subtext\">\n        <span class=\"score\" id=\"score_15626703\">22 points</span> by <a href=\"user?id=pepys\" class=\"hnuser\">pepys</a> <span class=\"age\"><a href=\"item?id=15626703\">6 hours ago</a></span> <span id=\"unv_15626703\"></span> | <a href=\"hide?id=15626703&amp;goto=news\">hide</a> | <a href=\"item?id=15626703\">6&nbsp;comments</a>              </td></tr>\n      <tr style=\"height:5px\" class=\"spacer\"></tr>\n                <tr class=\"athing\" id=\"15629729\">\n      <td align=\"right\" class=\"title\" valign=\"top\"><span class=\"rank\">18.</span></td>      <td class=\"votelinks\" valign=\"top\"><center data-tagid=\"420\"><a href=\"vote?id=15629729&amp;how=up&amp;goto=news\" id=\"up_15629729\"><div class=\"votearrow\" title=\"upvote\"></div></a></center></td><td class=\"title\"><a href=\"https://www.scientificamerican.com/article/gut-microbes-can-shape-responses-to-cancer-immunotherapy/\" class=\"storylink\" rel=\"nofollow\">Gut Microbes Can Shape Responses to Cancer Immunotherapy</a><span class=\"sitebit comhead\"> (<a href=\"from?site=scientificamerican.com\"><span class=\"sitestr\">scientificamerican.com</span></a>)</span></td></tr><tr data-tagid=\"428\"><td colspan=\"2\"></td><td class=\"subtext\">\n        <span class=\"score\" id=\"score_15629729\">7 points</span> by <a href=\"user?id=daegloe\" class=\"hnuser\">daegloe</a> <span class=\"age\"><a href=\"item?id=15629729\">4 hours ago</a></span> <span id=\"unv_15629729\"></span> | <a href=\"hide?id=15629729&amp;goto=news\">hide</a> | <a href=\"item?id=15629729\">discuss</a>              </td></tr>\n      <tr style=\"height:5px\" class=\"spacer\"></tr>\n                <tr class=\"athing\" id=\"15629914\">\n      <td align=\"right\" class=\"title\" valign=\"top\"><span class=\"rank\">19.</span></td>      <td class=\"votelinks\" valign=\"top\"><center data-tagid=\"443\"><a href=\"vote?id=15629914&amp;how=up&amp;goto=news\" id=\"up_15629914\"><div class=\"votearrow\" title=\"upvote\"></div></a></center></td><td class=\"title\"><a href=\"https://www.nature.com/articles/srep34774?error=cookies_not_supported&amp;code=01085646-d8e1-4d84-b74f-893382c8aeb5\" class=\"storylink\" rel=\"nofollow\">Cosmic radiation exposure and persistent cognitive dysfunction</a><span class=\"sitebit comhead\"> (<a href=\"from?site=nature.com\"><span class=\"sitestr\">nature.com</span></a>)</span></td></tr><tr data-tagid=\"451\"><td colspan=\"2\"></td><td class=\"subtext\">\n        <span class=\"score\" id=\"score_15629914\">6 points</span> by <a href=\"user?id=pwg\" class=\"hnuser\">pwg</a> <span class=\"age\"><a href=\"item?id=15629914\">3 hours ago</a></span> <span id=\"unv_15629914\"></span> | <a href=\"hide?id=15629914&amp;goto=news\">hide</a> | <a href=\"item?id=15629914\">discuss</a>              </td></tr>\n      <tr style=\"height:5px\" class=\"spacer\"></tr>\n                <tr class=\"athing\" id=\"15627597\">\n      <td align=\"right\" class=\"title\" valign=\"top\"><span class=\"rank\">20.</span></td>      <td class=\"votelinks\" valign=\"top\"><center data-tagid=\"466\"><a href=\"vote?id=15627597&amp;how=up&amp;goto=news\" id=\"up_15627597\"><div class=\"votearrow\" title=\"upvote\"></div></a></center></td><td class=\"title\"><a href=\"http://www.wqxr.org/story/listen-these-knives-can-carry-tune/\" class=\"storylink\">Knives that can carry a tune</a><span class=\"sitebit comhead\"> (<a href=\"from?site=wqxr.org\"><span class=\"sitestr\">wqxr.org</span></a>)</span></td></tr><tr data-tagid=\"474\"><td colspan=\"2\"></td><td class=\"subtext\">\n        <span class=\"score\" id=\"score_15627597\">10 points</span> by <a href=\"user?id=tintinnabula\" class=\"hnuser\">tintinnabula</a> <span class=\"age\"><a href=\"item?id=15627597\">6 hours ago</a></span> <span id=\"unv_15627597\"></span> | <a href=\"hide?id=15627597&amp;goto=news\">hide</a> | <a href=\"item?id=15627597\">discuss</a>              </td></tr>\n      <tr style=\"height:5px\" class=\"spacer\"></tr>\n                <tr class=\"athing\" id=\"15628786\">\n      <td align=\"right\" class=\"title\" valign=\"top\"><span class=\"rank\">21.</span></td>      <td class=\"votelinks\" valign=\"top\"><center data-tagid=\"489\"><a href=\"vote?id=15628786&amp;how=up&amp;goto=news\" id=\"up_15628786\"><div class=\"votearrow\" title=\"upvote\"></div></a></center></td><td class=\"title\"><a href=\"https://github.com/FredrikNoren/ungit/issues/974\" class=\"storylink\">Changing the Ungit license from MIT to Faircode</a><span class=\"sitebit comhead\"> (<a href=\"from?site=github.com\"><span class=\"sitestr\">github.com</span></a>)</span></td></tr><tr data-tagid=\"497\"><td colspan=\"2\"></td><td class=\"subtext\">\n        <span class=\"score\" id=\"score_15628786\">102 points</span> by <a href=\"user?id=bakkerthehacker\" class=\"hnuser\">bakkerthehacker</a> <span class=\"age\"><a href=\"item?id=15628786\">10 hours ago</a></span> <span id=\"unv_15628786\"></span> | <a href=\"hide?id=15628786&amp;goto=news\">hide</a> | <a href=\"item?id=15628786\">75&nbsp;comments</a>              </td></tr>\n      <tr style=\"height:5px\" class=\"spacer\"></tr>\n                <tr class=\"athing\" id=\"15630684\">\n      <td align=\"right\" class=\"title\" valign=\"top\"><span class=\"rank\">22.</span></td>      <td class=\"votelinks\" valign=\"top\"><center data-tagid=\"512\"><a href=\"vote?id=15630684&amp;how=up&amp;goto=news\" id=\"up_15630684\"><div class=\"votearrow\" title=\"upvote\"></div></a></center></td><td class=\"title\"><a href=\"http://www.bbc.com/news/uk-41876942\" class=\"storylink\">Paradise Papers: New leak from offshore finance firm</a><span class=\"sitebit comhead\"> (<a href=\"from?site=bbc.com\"><span class=\"sitestr\">bbc.com</span></a>)</span></td></tr><tr data-tagid=\"520\"><td colspan=\"2\"></td><td class=\"subtext\">\n        <span class=\"score\" id=\"score_15630684\">99 points</span> by <a href=\"user?id=farseer\" class=\"hnuser\">farseer</a> <span class=\"age\"><a href=\"item?id=15630684\">1 hour ago</a></span> <span id=\"unv_15630684\"></span> | <a href=\"hide?id=15630684&amp;goto=news\">hide</a> | <a href=\"item?id=15630684\">24&nbsp;comments</a>              </td></tr>\n      <tr style=\"height:5px\" class=\"spacer\"></tr>\n                <tr class=\"athing\" id=\"15627340\">\n      <td align=\"right\" class=\"title\" valign=\"top\"><span class=\"rank\">23.</span></td>      <td class=\"votelinks\" valign=\"top\"><center data-tagid=\"535\"><a href=\"vote?id=15627340&amp;how=up&amp;goto=news\" id=\"up_15627340\"><div class=\"votearrow\" title=\"upvote\"></div></a></center></td><td class=\"title\"><a href=\"http://tim.hibal.org/blog/alpha-zero-how-and-why-it-works/\" class=\"storylink\">Alpha Go Zero: How and Why It Works</a><span class=\"sitebit comhead\"> (<a href=\"from?site=hibal.org\"><span class=\"sitestr\">hibal.org</span></a>)</span></td></tr><tr data-tagid=\"543\"><td colspan=\"2\"></td><td class=\"subtext\">\n        <span class=\"score\" id=\"score_15627340\">307 points</span> by <a href=\"user?id=Mageek\" class=\"hnuser\">Mageek</a> <span class=\"age\"><a href=\"item?id=15627340\">20 hours ago</a></span> <span id=\"unv_15627340\"></span> | <a href=\"hide?id=15627340&amp;goto=news\">hide</a> | <a href=\"item?id=15627340\">96&nbsp;comments</a>              </td></tr>\n      <tr style=\"height:5px\" class=\"spacer\"></tr>\n                <tr class=\"athing\" id=\"15629332\">\n      <td align=\"right\" class=\"title\" valign=\"top\"><span class=\"rank\">24.</span></td>      <td class=\"votelinks\" valign=\"top\"><center data-tagid=\"558\"><a href=\"vote?id=15629332&amp;how=up&amp;goto=news\" id=\"up_15629332\"><div class=\"votearrow\" title=\"upvote\"></div></a></center></td><td class=\"title\"><a href=\"https://www.youtube.com/watch?v=p0ASFxKS9sg\" class=\"storylink\">Information Theory [video]</a><span class=\"sitebit comhead\"> (<a href=\"from?site=youtube.com\"><span class=\"sitestr\">youtube.com</span></a>)</span></td></tr><tr data-tagid=\"566\"><td colspan=\"2\"></td><td class=\"subtext\">\n        <span class=\"score\" id=\"score_15629332\">32 points</span> by <a href=\"user?id=azizsaya\" class=\"hnuser\">azizsaya</a> <span class=\"age\"><a href=\"item?id=15629332\">6 hours ago</a></span> <span id=\"unv_15629332\"></span> | <a href=\"hide?id=15629332&amp;goto=news\">hide</a> | <a href=\"item?id=15629332\">4&nbsp;comments</a>              </td></tr>\n      <tr style=\"height:5px\" class=\"spacer\"></tr>\n                <tr class=\"athing\" id=\"15625330\">\n      <td align=\"right\" class=\"title\" valign=\"top\"><span class=\"rank\">25.</span></td>      <td class=\"votelinks\" valign=\"top\"><center data-tagid=\"581\"><a href=\"vote?id=15625330&amp;how=up&amp;goto=news\" id=\"up_15625330\"><div class=\"votearrow\" title=\"upvote\"></div></a></center></td><td class=\"title\"><a href=\"https://www.youtube.com/watch?v=Ilg3gGewQ5U\" class=\"storylink\">What is backpropagation and what is it doing? [video]</a><span class=\"sitebit comhead\"> (<a href=\"from?site=youtube.com\"><span class=\"sitestr\">youtube.com</span></a>)</span></td></tr><tr data-tagid=\"589\"><td colspan=\"2\"></td><td class=\"subtext\">\n        <span class=\"score\" id=\"score_15625330\">579 points</span> by <a href=\"user?id=adamnemecek\" class=\"hnuser\">adamnemecek</a> <span class=\"age\"><a href=\"item?id=15625330\">1 day ago</a></span> <span id=\"unv_15625330\"></span> | <a href=\"hide?id=15625330&amp;goto=news\">hide</a> | <a href=\"item?id=15625330\">94&nbsp;comments</a>              </td></tr>\n      <tr style=\"height:5px\" class=\"spacer\"></tr>\n                <tr class=\"athing\" id=\"15628774\">\n      <td align=\"right\" class=\"title\" valign=\"top\"><span class=\"rank\">26.</span></td>      <td class=\"votelinks\" valign=\"top\"><center data-tagid=\"604\"><a href=\"vote?id=15628774&amp;how=up&amp;goto=news\" id=\"up_15628774\"><div class=\"votearrow\" title=\"upvote\"></div></a></center></td><td class=\"title\"><a href=\"https://medium.com/open-collective/funding-open-source-how-webpack-reached-400k-year-dfb6d8384e19\" class=\"storylink\">Funding Open Source: How Webpack Reached $400k+/year</a><span class=\"sitebit comhead\"> (<a href=\"from?site=medium.com\"><span class=\"sitestr\">medium.com</span></a>)</span></td></tr><tr data-tagid=\"612\"><td colspan=\"2\"></td><td class=\"subtext\">\n        <span class=\"score\" id=\"score_15628774\">88 points</span> by <a href=\"user?id=naspeh\" class=\"hnuser\">naspeh</a> <span class=\"age\"><a href=\"item?id=15628774\">10 hours ago</a></span> <span id=\"unv_15628774\"></span> | <a href=\"hide?id=15628774&amp;goto=news\">hide</a> | <a href=\"item?id=15628774\">38&nbsp;comments</a>              </td></tr>\n      <tr style=\"height:5px\" class=\"spacer\"></tr>\n                <tr class=\"athing\" id=\"15628471\">\n      <td align=\"right\" class=\"title\" valign=\"top\"><span class=\"rank\">27.</span></td>      <td class=\"votelinks\" valign=\"top\"><center data-tagid=\"627\"><a href=\"vote?id=15628471&amp;how=up&amp;goto=news\" id=\"up_15628471\"><div class=\"votearrow\" title=\"upvote\"></div></a></center></td><td class=\"title\"><a href=\"https://www.wired.com/story/net-states-rule-the-world-we-need-to-recognize-their-power/?mbid=social_fb\" class=\"storylink\">Facebook and Google Are Actually Net States. And They Rule the World</a><span class=\"sitebit comhead\"> (<a href=\"from?site=wired.com\"><span class=\"sitestr\">wired.com</span></a>)</span></td></tr><tr data-tagid=\"635\"><td colspan=\"2\"></td><td class=\"subtext\">\n        <span class=\"score\" id=\"score_15628471\">118 points</span> by <a href=\"user?id=kensai\" class=\"hnuser\">kensai</a> <span class=\"age\"><a href=\"item?id=15628471\">12 hours ago</a></span> <span id=\"unv_15628471\"></span> | <a href=\"hide?id=15628471&amp;goto=news\">hide</a> | <a href=\"item?id=15628471\">29&nbsp;comments</a>              </td></tr>\n      <tr style=\"height:5px\" class=\"spacer\"></tr>\n                <tr class=\"athing\" id=\"15628317\">\n      <td align=\"right\" class=\"title\" valign=\"top\"><span class=\"rank\">28.</span></td>      <td class=\"votelinks\" valign=\"top\"><center data-tagid=\"650\"><a href=\"vote?id=15628317&amp;how=up&amp;goto=news\" id=\"up_15628317\"><div class=\"votearrow\" title=\"upvote\"></div></a></center></td><td class=\"title\"><a href=\"https://www.washingtonpost.com/graphics/2017/national/health-science/monkeypox/?hpid=hp_hp-top-table-main_monkeypox%3Ahomepage%2Fstory\" class=\"storylink\">CDC scientists pursue deadly monkeypox virus in Africa</a><span class=\"sitebit comhead\"> (<a href=\"from?site=washingtonpost.com\"><span class=\"sitestr\">washingtonpost.com</span></a>)</span></td></tr><tr data-tagid=\"658\"><td colspan=\"2\"></td><td class=\"subtext\">\n        <span class=\"score\" id=\"score_15628317\">91 points</span> by <a href=\"user?id=whyenot\" class=\"hnuser\">whyenot</a> <span class=\"age\"><a href=\"item?id=15628317\">14 hours ago</a></span> <span id=\"unv_15628317\"></span> | <a href=\"hide?id=15628317&amp;goto=news\">hide</a> | <a href=\"item?id=15628317\">17&nbsp;comments</a>              </td></tr>\n      <tr style=\"height:5px\" class=\"spacer\"></tr>\n                <tr class=\"athing\" id=\"15625325\">\n      <td align=\"right\" class=\"title\" valign=\"top\"><span class=\"rank\">29.</span></td>      <td class=\"votelinks\" valign=\"top\"><center data-tagid=\"673\"><a href=\"vote?id=15625325&amp;how=up&amp;goto=news\" id=\"up_15625325\"><div class=\"votearrow\" title=\"upvote\"></div></a></center></td><td class=\"title\"><a href=\"https://bigishdata.com/2017/11/02/build-your-own-blockchain-part-3-writing-nodes-that-mine/\" class=\"storylink\">How to Build Your Own Blockchain Part 3 \u2013 Writing Nodes That Mine and Talk</a><span class=\"sitebit comhead\"> (<a href=\"from?site=bigishdata.com\"><span class=\"sitestr\">bigishdata.com</span></a>)</span></td></tr><tr data-tagid=\"681\"><td colspan=\"2\"></td><td class=\"subtext\">\n        <span class=\"score\" id=\"score_15625325\">256 points</span> by <a href=\"user?id=sidcool\" class=\"hnuser\">sidcool</a> <span class=\"age\"><a href=\"item?id=15625325\">1 day ago</a></span> <span id=\"unv_15625325\"></span> | <a href=\"hide?id=15625325&amp;goto=news\">hide</a> | <a href=\"item?id=15625325\">20&nbsp;comments</a>              </td></tr>\n      <tr style=\"height:5px\" class=\"spacer\"></tr>\n                <tr class=\"athing\" id=\"15624438\">\n      <td align=\"right\" class=\"title\" valign=\"top\"><span class=\"rank\">30.</span></td>      <td class=\"votelinks\" valign=\"top\"><center data-tagid=\"696\"><a href=\"vote?id=15624438&amp;how=up&amp;goto=news\" id=\"up_15624438\"><div class=\"votearrow\" title=\"upvote\"></div></a></center></td><td class=\"title\"><a href=\"http://www.integralist.co.uk/posts/profiling-go/\" class=\"storylink\">Profiling Go</a><span class=\"sitebit comhead\"> (<a href=\"from?site=integralist.co.uk\"><span class=\"sitestr\">integralist.co.uk</span></a>)</span></td></tr><tr data-tagid=\"704\"><td colspan=\"2\"></td><td class=\"subtext\">\n        <span class=\"score\" id=\"score_15624438\">156 points</span> by <a href=\"user?id=rayascott\" class=\"hnuser\">rayascott</a> <span class=\"age\"><a href=\"item?id=15624438\">1 day ago</a></span> <span id=\"unv_15624438\"></span> | <a href=\"hide?id=15624438&amp;goto=news\">hide</a> | <a href=\"item?id=15624438\">8&nbsp;comments</a>              </td></tr>\n      <tr style=\"height:5px\" class=\"spacer\"></tr>\n            <tr style=\"height:10px\" class=\"morespace\"></tr><tr data-tagid=\"716\"><td colspan=\"2\"></td><td class=\"title\"><a href=\"news?p=2\" class=\"morelink\" rel=\"nofollow\">More</a></td></tr>\n  </table>\n</td></tr>\n<tr data-tagid=\"720\"><td data-tagid=\"721\"><img src=\"s.gif\" height=\"10\" width=\"0\"><table cellpadding=\"1\" width=\"100%\" cellspacing=\"0\"><tr data-tagid=\"724\"><td bgcolor=\"#ff6600\"></td></tr></table><br data-tagid=\"726\"><center data-tagid=\"727\"><span class=\"yclinks\"><a href=\"newsguidelines.html\">Guidelines</a>\n        | <a href=\"newsfaq.html\">FAQ</a>\n        | <a href=\"mailto:hn@ycombinator.com\">Support</a>\n        | <a href=\"https://github.com/HackerNews/API\">API</a>\n        | <a href=\"security.html\">Security</a>\n        | <a href=\"lists\">Lists</a>\n        | <a href=\"bookmarklet.html\" rel=\"nofollow\">Bookmarklet</a>\n        | <a href=\"dmca.html\">DMCA</a>\n        | <a href=\"http://www.ycombinator.com/apply/\">Apply to YC</a>\n        | <a href=\"mailto:hn@ycombinator.com\">Contact</a></span><br data-tagid=\"739\"><br data-tagid=\"740\"><form action=\"//hn.algolia.com/\" method=\"get\">Search:\n          <input spellcheck=\"false\" name=\"q\" autocorrect=\"off\" value autocomplete=\"false\" autocapitalize=\"off\" type=\"text\" size=\"17\"></form>\n            </center></td></tr>      </table></center></body><script src=\"hn.js?6EVvDlUk3VitS6Ys0wHs\" type=\"text/javascript\"></script>\n  </html>\n\n", 
+    "extractors": {}, 
+    "id": "template-0", 
+    "name": "template-0", 
+    "original_body": "<html op=\"news\"><head><meta name=\"referrer\" content=\"origin\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><link rel=\"stylesheet\" type=\"text/css\" href=\"news.css?6EVvDlUk3VitS6Ys0wHs\">\n        <link rel=\"shortcut icon\" href=\"favicon.ico\">\n          <link rel=\"alternate\" type=\"application/rss+xml\" title=\"RSS\" href=\"rss\">\n        <title>Hacker News</title></head><body><center><table id=\"hnmain\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"85%\" bgcolor=\"#f6f6ef\">\n        <tr><td bgcolor=\"#ff6600\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"padding:2px\"><tr><td style=\"width:18px;padding-right:4px\"><a href=\"https://news.ycombinator.com\"><img src=\"y18.gif\" width=\"18\" height=\"18\" style=\"border:1px white solid;\"></a></td>\n                  <td style=\"line-height:12pt; height:10px;\"><span class=\"pagetop\"><b class=\"hnname\"><a href=\"news\">Hacker News</a></b>\n              <a href=\"newest\">new</a> | <a href=\"newcomments\">comments</a> | <a href=\"show\">show</a> | <a href=\"ask\">ask</a> | <a href=\"jobs\">jobs</a> | <a href=\"submit\">submit</a>            </span></td><td style=\"text-align:right;padding-right:4px;\"><span class=\"pagetop\">\n                              <a href=\"login?goto=news\">login</a>\n                          </span></td>\n              </tr></table></td></tr>\n<tr style=\"height:10px\"></tr><tr><td><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"itemlist\">\n              <tr class='athing' id='15630646'>\n      <td align=\"right\" valign=\"top\" class=\"title\"><span class=\"rank\">1.</span></td>      <td valign=\"top\" class=\"votelinks\"><center><a id='up_15630646' href='vote?id=15630646&amp;how=up&amp;goto=news'><div class='votearrow' title='upvote'></div></a></center></td><td class=\"title\"><a href=\"https://www.icij.org/investigations/paradise-papers/\" class=\"storylink\">Paradise Papers: Secrets of the Global Elite</a><span class=\"sitebit comhead\"> (<a href=\"from?site=icij.org\"><span class=\"sitestr\">icij.org</span></a>)</span></td></tr><tr><td colspan=\"2\"></td><td class=\"subtext\">\n        <span class=\"score\" id=\"score_15630646\">144 points</span> by <a href=\"user?id=martgnz\" class=\"hnuser\">martgnz</a> <span class=\"age\"><a href=\"item?id=15630646\">1 hour ago</a></span> <span id=\"unv_15630646\"></span> | <a href=\"hide?id=15630646&amp;goto=news\">hide</a> | <a href=\"item?id=15630646\">19&nbsp;comments</a>              </td></tr>\n      <tr class=\"spacer\" style=\"height:5px\"></tr>\n                <tr class='athing' id='15629308'>\n      <td align=\"right\" valign=\"top\" class=\"title\"><span class=\"rank\">2.</span></td>      <td valign=\"top\" class=\"votelinks\"><center><a id='up_15629308' href='vote?id=15629308&amp;how=up&amp;goto=news'><div class='votearrow' title='upvote'></div></a></center></td><td class=\"title\"><a href=\"https://aws.amazon.com/earth/\" class=\"storylink\">Earth on AWS \u2013 Open geospatial data</a><span class=\"sitebit comhead\"> (<a href=\"from?site=amazon.com\"><span class=\"sitestr\">amazon.com</span></a>)</span></td></tr><tr><td colspan=\"2\"></td><td class=\"subtext\">\n        <span class=\"score\" id=\"score_15629308\">339 points</span> by <a href=\"user?id=thecodeboy\" class=\"hnuser\">thecodeboy</a> <span class=\"age\"><a href=\"item?id=15629308\">6 hours ago</a></span> <span id=\"unv_15629308\"></span> | <a href=\"hide?id=15629308&amp;goto=news\">hide</a> | <a href=\"item?id=15629308\">43&nbsp;comments</a>              </td></tr>\n      <tr class=\"spacer\" style=\"height:5px\"></tr>\n                <tr class='athing' id='15630640'>\n      <td align=\"right\" valign=\"top\" class=\"title\"><span class=\"rank\">3.</span></td>      <td valign=\"top\" class=\"votelinks\"><center><a id='up_15630640' href='vote?id=15630640&amp;how=up&amp;goto=news'><div class='votearrow' title='upvote'></div></a></center></td><td class=\"title\"><a href=\"https://chrisbolman.com/strategy-develop-effective-framework/\" class=\"storylink\">Strategy: How to Develop, Structure and Shape a Winning System</a><span class=\"sitebit comhead\"> (<a href=\"from?site=chrisbolman.com\"><span class=\"sitestr\">chrisbolman.com</span></a>)</span></td></tr><tr><td colspan=\"2\"></td><td class=\"subtext\">\n        <span class=\"score\" id=\"score_15630640\">33 points</span> by <a href=\"user?id=bolmn\" class=\"hnuser\">bolmn</a> <span class=\"age\"><a href=\"item?id=15630640\">1 hour ago</a></span> <span id=\"unv_15630640\"></span> | <a href=\"hide?id=15630640&amp;goto=news\">hide</a> | <a href=\"item?id=15630640\">4&nbsp;comments</a>              </td></tr>\n      <tr class=\"spacer\" style=\"height:5px\"></tr>\n                <tr class='athing' id='15630581'>\n      <td align=\"right\" valign=\"top\" class=\"title\"><span class=\"rank\">4.</span></td>      <td valign=\"top\" class=\"votelinks\"><center><a id='up_15630581' href='vote?id=15630581&amp;how=up&amp;goto=news'><div class='votearrow' title='upvote'></div></a></center></td><td class=\"title\"><a href=\"https://theconversation.com/guy-fawkes-nights-oddest-traditions-are-due-to-a-1606-law-33750\" class=\"storylink\">Guy Fawkes night\u2019s oddest traditions are due to a 1606 law (2014)</a><span class=\"sitebit comhead\"> (<a href=\"from?site=theconversation.com\"><span class=\"sitestr\">theconversation.com</span></a>)</span></td></tr><tr><td colspan=\"2\"></td><td class=\"subtext\">\n        <span class=\"score\" id=\"score_15630581\">22 points</span> by <a href=\"user?id=pepys\" class=\"hnuser\">pepys</a> <span class=\"age\"><a href=\"item?id=15630581\">1 hour ago</a></span> <span id=\"unv_15630581\"></span> | <a href=\"hide?id=15630581&amp;goto=news\">hide</a> | <a href=\"item?id=15630581\">2&nbsp;comments</a>              </td></tr>\n      <tr class=\"spacer\" style=\"height:5px\"></tr>\n                <tr class='athing' id='15628839'>\n      <td align=\"right\" valign=\"top\" class=\"title\"><span class=\"rank\">5.</span></td>      <td valign=\"top\" class=\"votelinks\"><center><a id='up_15628839' href='vote?id=15628839&amp;how=up&amp;goto=news'><div class='votearrow' title='upvote'></div></a></center></td><td class=\"title\"><a href=\"http://www.cbc.ca/cbcdocspov/m/features/the-hogan-twins-share-a-brain-and-see-out-of-each-others-eyes\" class=\"storylink\">Craniopagus Twins Share a Brain and See Out of Each Others Eyes</a><span class=\"sitebit comhead\"> (<a href=\"from?site=cbc.ca\"><span class=\"sitestr\">cbc.ca</span></a>)</span></td></tr><tr><td colspan=\"2\"></td><td class=\"subtext\">\n        <span class=\"score\" id=\"score_15628839\">208 points</span> by <a href=\"user?id=Osiris30\" class=\"hnuser\">Osiris30</a> <span class=\"age\"><a href=\"item?id=15628839\">9 hours ago</a></span> <span id=\"unv_15628839\"></span> | <a href=\"hide?id=15628839&amp;goto=news\">hide</a> | <a href=\"item?id=15628839\">76&nbsp;comments</a>              </td></tr>\n      <tr class=\"spacer\" style=\"height:5px\"></tr>\n                <tr class='athing' id='15629162'>\n      <td align=\"right\" valign=\"top\" class=\"title\"><span class=\"rank\">6.</span></td>      <td valign=\"top\" class=\"votelinks\"><center><a id='up_15629162' href='vote?id=15629162&amp;how=up&amp;goto=news'><div class='votearrow' title='upvote'></div></a></center></td><td class=\"title\"><a href=\"https://sekao.net/lightmod/\" class=\"storylink\">Lightmod \u2013 A beginner-friendly, all-in-one tool for full stack Clojure</a><span class=\"sitebit comhead\"> (<a href=\"from?site=sekao.net\"><span class=\"sitestr\">sekao.net</span></a>)</span></td></tr><tr><td colspan=\"2\"></td><td class=\"subtext\">\n        <span class=\"score\" id=\"score_15629162\">80 points</span> by <a href=\"user?id=malloryerik\" class=\"hnuser\">malloryerik</a> <span class=\"age\"><a href=\"item?id=15629162\">7 hours ago</a></span> <span id=\"unv_15629162\"></span> | <a href=\"hide?id=15629162&amp;goto=news\">hide</a> | <a href=\"item?id=15629162\">5&nbsp;comments</a>              </td></tr>\n      <tr class=\"spacer\" style=\"height:5px\"></tr>\n                <tr class='athing' id='15628869'>\n      <td align=\"right\" valign=\"top\" class=\"title\"><span class=\"rank\">7.</span></td>      <td valign=\"top\" class=\"votelinks\"><center><a id='up_15628869' href='vote?id=15628869&amp;how=up&amp;goto=news'><div class='votearrow' title='upvote'></div></a></center></td><td class=\"title\"><a href=\"http://www.math.tamu.edu/~cyan/Rota/mitless.html\" class=\"storylink\">Lessons of an MIT Education</a><span class=\"sitebit comhead\"> (<a href=\"from?site=tamu.edu\"><span class=\"sitestr\">tamu.edu</span></a>)</span></td></tr><tr><td colspan=\"2\"></td><td class=\"subtext\">\n        <span class=\"score\" id=\"score_15628869\">233 points</span> by <a href=\"user?id=funkylexoo\" class=\"hnuser\">funkylexoo</a> <span class=\"age\"><a href=\"item?id=15628869\">9 hours ago</a></span> <span id=\"unv_15628869\"></span> | <a href=\"hide?id=15628869&amp;goto=news\">hide</a> | <a href=\"item?id=15628869\">157&nbsp;comments</a>              </td></tr>\n      <tr class=\"spacer\" style=\"height:5px\"></tr>\n                <tr class='athing' id='15628925'>\n      <td align=\"right\" valign=\"top\" class=\"title\"><span class=\"rank\">8.</span></td>      <td valign=\"top\" class=\"votelinks\"><center><a id='up_15628925' href='vote?id=15628925&amp;how=up&amp;goto=news'><div class='votearrow' title='upvote'></div></a></center></td><td class=\"title\"><a href=\"http://www.bbc.com/news/world-asia-india-41813389\" class=\"storylink\">A man who built a plane on his Mumbai rooftop</a><span class=\"sitebit comhead\"> (<a href=\"from?site=bbc.com\"><span class=\"sitestr\">bbc.com</span></a>)</span></td></tr><tr><td colspan=\"2\"></td><td class=\"subtext\">\n        <span class=\"score\" id=\"score_15628925\">91 points</span> by <a href=\"user?id=dnyanesh\" class=\"hnuser\">dnyanesh</a> <span class=\"age\"><a href=\"item?id=15628925\">8 hours ago</a></span> <span id=\"unv_15628925\"></span> | <a href=\"hide?id=15628925&amp;goto=news\">hide</a> | <a href=\"item?id=15628925\">33&nbsp;comments</a>              </td></tr>\n      <tr class=\"spacer\" style=\"height:5px\"></tr>\n                <tr class='athing' id='15630694'>\n      <td align=\"right\" valign=\"top\" class=\"title\"><span class=\"rank\">9.</span></td>      <td valign=\"top\" class=\"votelinks\"><center><a id='up_15630694' href='vote?id=15630694&amp;how=up&amp;goto=news'><div class='votearrow' title='upvote'></div></a></center></td><td class=\"title\"><a href=\"https://www.theguardian.com/news/series/paradise-papers\" class=\"storylink\">Paradise Papers: A Special Investigation \u2013 Paradise-Papers \u2013 The Guardian</a><span class=\"sitebit comhead\"> (<a href=\"from?site=theguardian.com\"><span class=\"sitestr\">theguardian.com</span></a>)</span></td></tr><tr><td colspan=\"2\"></td><td class=\"subtext\">\n        <span class=\"score\" id=\"score_15630694\">82 points</span> by <a href=\"user?id=yread\" class=\"hnuser\">yread</a> <span class=\"age\"><a href=\"item?id=15630694\">1 hour ago</a></span> <span id=\"unv_15630694\"></span> | <a href=\"hide?id=15630694&amp;goto=news\">hide</a> | <a href=\"item?id=15630694\">13&nbsp;comments</a>              </td></tr>\n      <tr class=\"spacer\" style=\"height:5px\"></tr>\n                <tr class='athing' id='15629272'>\n      <td align=\"right\" valign=\"top\" class=\"title\"><span class=\"rank\">10.</span></td>      <td valign=\"top\" class=\"votelinks\"><center><a id='up_15629272' href='vote?id=15629272&amp;how=up&amp;goto=news'><div class='votearrow' title='upvote'></div></a></center></td><td class=\"title\"><a href=\"https://reiinakano.github.io/gan-playground\" class=\"storylink\">Show HN: GAN Playground \u2013 Play with Generative Adversarial Neural Nets In-Browser</a><span class=\"sitebit comhead\"> (<a href=\"from?site=reiinakano.github.io\"><span class=\"sitestr\">reiinakano.github.io</span></a>)</span></td></tr><tr><td colspan=\"2\"></td><td class=\"subtext\">\n        <span class=\"score\" id=\"score_15629272\">52 points</span> by <a href=\"user?id=reiinakano\" class=\"hnuser\">reiinakano</a> <span class=\"age\"><a href=\"item?id=15629272\">6 hours ago</a></span> <span id=\"unv_15629272\"></span> | <a href=\"hide?id=15629272&amp;goto=news\">hide</a> | <a href=\"item?id=15629272\">6&nbsp;comments</a>              </td></tr>\n      <tr class=\"spacer\" style=\"height:5px\"></tr>\n                <tr class='athing' id='15629253'>\n      <td align=\"right\" valign=\"top\" class=\"title\"><span class=\"rank\">11.</span></td>      <td valign=\"top\" class=\"votelinks\"><center><a id='up_15629253' href='vote?id=15629253&amp;how=up&amp;goto=news'><div class='votearrow' title='upvote'></div></a></center></td><td class=\"title\"><a href=\"https://github.com/shivylp/pyschemes\" class=\"storylink\">Show HN: PySchemes \u2013 A library for validating data structures in Python</a><span class=\"sitebit comhead\"> (<a href=\"from?site=github.com\"><span class=\"sitestr\">github.com</span></a>)</span></td></tr><tr><td colspan=\"2\"></td><td class=\"subtext\">\n        <span class=\"score\" id=\"score_15629253\">62 points</span> by <a href=\"user?id=shivaprasad\" class=\"hnuser\">shivaprasad</a> <span class=\"age\"><a href=\"item?id=15629253\">6 hours ago</a></span> <span id=\"unv_15629253\"></span> | <a href=\"hide?id=15629253&amp;goto=news\">hide</a> | <a href=\"item?id=15629253\">27&nbsp;comments</a>              </td></tr>\n      <tr class=\"spacer\" style=\"height:5px\"></tr>\n                <tr class='athing' id='15629309'>\n      <td align=\"right\" valign=\"top\" class=\"title\"><span class=\"rank\">12.</span></td>      <td valign=\"top\" class=\"votelinks\"><center><a id='up_15629309' href='vote?id=15629309&amp;how=up&amp;goto=news'><div class='votearrow' title='upvote'></div></a></center></td><td class=\"title\"><a href=\"item?id=15629309\" class=\"storylink\">Ask HN: How do you manage multiple learning projects?</a></td></tr><tr><td colspan=\"2\"></td><td class=\"subtext\">\n        <span class=\"score\" id=\"score_15629309\">91 points</span> by <a href=\"user?id=jansho\" class=\"hnuser\">jansho</a> <span class=\"age\"><a href=\"item?id=15629309\">6 hours ago</a></span> <span id=\"unv_15629309\"></span> | <a href=\"hide?id=15629309&amp;goto=news\">hide</a> | <a href=\"item?id=15629309\">49&nbsp;comments</a>              </td></tr>\n      <tr class=\"spacer\" style=\"height:5px\"></tr>\n                <tr class='athing' id='15628997'>\n      <td align=\"right\" valign=\"top\" class=\"title\"><span class=\"rank\">13.</span></td>      <td valign=\"top\" class=\"votelinks\"><center><a id='up_15628997' href='vote?id=15628997&amp;how=up&amp;goto=news'><div class='votearrow' title='upvote'></div></a></center></td><td class=\"title\"><a href=\"http://occasionalplanet.org/2014/09/09/trying-to-make-sense-of-colombias-strata-economic-system/\" class=\"storylink\">Trying to make sense of Colombia\u2019s \u201cStrata\u201d economic system (2014)</a><span class=\"sitebit comhead\"> (<a href=\"from?site=occasionalplanet.org\"><span class=\"sitestr\">occasionalplanet.org</span></a>)</span></td></tr><tr><td colspan=\"2\"></td><td class=\"subtext\">\n        <span class=\"score\" id=\"score_15628997\">45 points</span> by <a href=\"user?id=imartin2k\" class=\"hnuser\">imartin2k</a> <span class=\"age\"><a href=\"item?id=15628997\">8 hours ago</a></span> <span id=\"unv_15628997\"></span> | <a href=\"hide?id=15628997&amp;goto=news\">hide</a> | <a href=\"item?id=15628997\">13&nbsp;comments</a>              </td></tr>\n      <tr class=\"spacer\" style=\"height:5px\"></tr>\n                <tr class='athing' id='15629496'>\n      <td align=\"right\" valign=\"top\" class=\"title\"><span class=\"rank\">14.</span></td>      <td valign=\"top\" class=\"votelinks\"><center><a id='up_15629496' href='vote?id=15629496&amp;how=up&amp;goto=news'><div class='votearrow' title='upvote'></div></a></center></td><td class=\"title\"><a href=\"https://speakerdeck.com/farslan/go-at-digitalocean\" class=\"storylink\">Go at Digital Ocean</a><span class=\"sitebit comhead\"> (<a href=\"from?site=speakerdeck.com\"><span class=\"sitestr\">speakerdeck.com</span></a>)</span></td></tr><tr><td colspan=\"2\"></td><td class=\"subtext\">\n        <span class=\"score\" id=\"score_15629496\">115 points</span> by <a href=\"user?id=dcu\" class=\"hnuser\">dcu</a> <span class=\"age\"><a href=\"item?id=15629496\">5 hours ago</a></span> <span id=\"unv_15629496\"></span> | <a href=\"hide?id=15629496&amp;goto=news\">hide</a> | <a href=\"item?id=15629496\">26&nbsp;comments</a>              </td></tr>\n      <tr class=\"spacer\" style=\"height:5px\"></tr>\n                <tr class='athing' id='15630742'>\n      <td align=\"right\" valign=\"top\" class=\"title\"><span class=\"rank\">15.</span></td>      <td></td><td class=\"title\"><a href=\"https://www.nextravel.com/jobs/senior\" class=\"storylink\" rel=\"nofollow\">NexTravel (YC W15) Is Hiring a Senior Engineer (San Francisco)</a><span class=\"sitebit comhead\"> (<a href=\"from?site=nextravel.com\"><span class=\"sitestr\">nextravel.com</span></a>)</span></td></tr><tr><td colspan=\"2\"></td><td class=\"subtext\">\n        <span class=\"age\"><a href=\"item?id=15630742\">1 hour ago</a></span> | <a href=\"hide?id=15630742&amp;goto=news\">hide</a>      </td></tr>\n      <tr class=\"spacer\" style=\"height:5px\"></tr>\n                <tr class='athing' id='15631034'>\n      <td align=\"right\" valign=\"top\" class=\"title\"><span class=\"rank\">16.</span></td>      <td valign=\"top\" class=\"votelinks\"><center><a id='up_15631034' href='vote?id=15631034&amp;how=up&amp;goto=news'><div class='votearrow' title='upvote'></div></a></center></td><td class=\"title\"><a href=\"https://www.msn.com/en-us/money/companies/28-year-old-makes-millions-buying-from-walmart-selling-on-amazon/ar-AAupB8i\" class=\"storylink\" rel=\"nofollow\">28-year-old makes millions buying from Walmart, selling on Amazon</a><span class=\"sitebit comhead\"> (<a href=\"from?site=msn.com\"><span class=\"sitestr\">msn.com</span></a>)</span></td></tr><tr><td colspan=\"2\"></td><td class=\"subtext\">\n        <span class=\"score\" id=\"score_15631034\">5 points</span> by <a href=\"user?id=kolbe\" class=\"hnuser\">kolbe</a> <span class=\"age\"><a href=\"item?id=15631034\">32 minutes ago</a></span> <span id=\"unv_15631034\"></span> | <a href=\"hide?id=15631034&amp;goto=news\">hide</a> | <a href=\"item?id=15631034\">2&nbsp;comments</a>              </td></tr>\n      <tr class=\"spacer\" style=\"height:5px\"></tr>\n                <tr class='athing' id='15626703'>\n      <td align=\"right\" valign=\"top\" class=\"title\"><span class=\"rank\">17.</span></td>      <td valign=\"top\" class=\"votelinks\"><center><a id='up_15626703' href='vote?id=15626703&amp;how=up&amp;goto=news'><div class='votearrow' title='upvote'></div></a></center></td><td class=\"title\"><a href=\"https://www.atlasobscura.com/articles/singles-news-1970s-personal-ads-dating\" class=\"storylink\">The Dramatically Different World of \u201970s Dating Ads</a><span class=\"sitebit comhead\"> (<a href=\"from?site=atlasobscura.com\"><span class=\"sitestr\">atlasobscura.com</span></a>)</span></td></tr><tr><td colspan=\"2\"></td><td class=\"subtext\">\n        <span class=\"score\" id=\"score_15626703\">22 points</span> by <a href=\"user?id=pepys\" class=\"hnuser\">pepys</a> <span class=\"age\"><a href=\"item?id=15626703\">6 hours ago</a></span> <span id=\"unv_15626703\"></span> | <a href=\"hide?id=15626703&amp;goto=news\">hide</a> | <a href=\"item?id=15626703\">6&nbsp;comments</a>              </td></tr>\n      <tr class=\"spacer\" style=\"height:5px\"></tr>\n                <tr class='athing' id='15629729'>\n      <td align=\"right\" valign=\"top\" class=\"title\"><span class=\"rank\">18.</span></td>      <td valign=\"top\" class=\"votelinks\"><center><a id='up_15629729' href='vote?id=15629729&amp;how=up&amp;goto=news'><div class='votearrow' title='upvote'></div></a></center></td><td class=\"title\"><a href=\"https://www.scientificamerican.com/article/gut-microbes-can-shape-responses-to-cancer-immunotherapy/\" class=\"storylink\" rel=\"nofollow\">Gut Microbes Can Shape Responses to Cancer Immunotherapy</a><span class=\"sitebit comhead\"> (<a href=\"from?site=scientificamerican.com\"><span class=\"sitestr\">scientificamerican.com</span></a>)</span></td></tr><tr><td colspan=\"2\"></td><td class=\"subtext\">\n        <span class=\"score\" id=\"score_15629729\">7 points</span> by <a href=\"user?id=daegloe\" class=\"hnuser\">daegloe</a> <span class=\"age\"><a href=\"item?id=15629729\">4 hours ago</a></span> <span id=\"unv_15629729\"></span> | <a href=\"hide?id=15629729&amp;goto=news\">hide</a> | <a href=\"item?id=15629729\">discuss</a>              </td></tr>\n      <tr class=\"spacer\" style=\"height:5px\"></tr>\n                <tr class='athing' id='15629914'>\n      <td align=\"right\" valign=\"top\" class=\"title\"><span class=\"rank\">19.</span></td>      <td valign=\"top\" class=\"votelinks\"><center><a id='up_15629914' href='vote?id=15629914&amp;how=up&amp;goto=news'><div class='votearrow' title='upvote'></div></a></center></td><td class=\"title\"><a href=\"https://www.nature.com/articles/srep34774?error=cookies_not_supported&amp;code=01085646-d8e1-4d84-b74f-893382c8aeb5\" class=\"storylink\" rel=\"nofollow\">Cosmic radiation exposure and persistent cognitive dysfunction</a><span class=\"sitebit comhead\"> (<a href=\"from?site=nature.com\"><span class=\"sitestr\">nature.com</span></a>)</span></td></tr><tr><td colspan=\"2\"></td><td class=\"subtext\">\n        <span class=\"score\" id=\"score_15629914\">6 points</span> by <a href=\"user?id=pwg\" class=\"hnuser\">pwg</a> <span class=\"age\"><a href=\"item?id=15629914\">3 hours ago</a></span> <span id=\"unv_15629914\"></span> | <a href=\"hide?id=15629914&amp;goto=news\">hide</a> | <a href=\"item?id=15629914\">discuss</a>              </td></tr>\n      <tr class=\"spacer\" style=\"height:5px\"></tr>\n                <tr class='athing' id='15627597'>\n      <td align=\"right\" valign=\"top\" class=\"title\"><span class=\"rank\">20.</span></td>      <td valign=\"top\" class=\"votelinks\"><center><a id='up_15627597' href='vote?id=15627597&amp;how=up&amp;goto=news'><div class='votearrow' title='upvote'></div></a></center></td><td class=\"title\"><a href=\"http://www.wqxr.org/story/listen-these-knives-can-carry-tune/\" class=\"storylink\">Knives that can carry a tune</a><span class=\"sitebit comhead\"> (<a href=\"from?site=wqxr.org\"><span class=\"sitestr\">wqxr.org</span></a>)</span></td></tr><tr><td colspan=\"2\"></td><td class=\"subtext\">\n        <span class=\"score\" id=\"score_15627597\">10 points</span> by <a href=\"user?id=tintinnabula\" class=\"hnuser\">tintinnabula</a> <span class=\"age\"><a href=\"item?id=15627597\">6 hours ago</a></span> <span id=\"unv_15627597\"></span> | <a href=\"hide?id=15627597&amp;goto=news\">hide</a> | <a href=\"item?id=15627597\">discuss</a>              </td></tr>\n      <tr class=\"spacer\" style=\"height:5px\"></tr>\n                <tr class='athing' id='15628786'>\n      <td align=\"right\" valign=\"top\" class=\"title\"><span class=\"rank\">21.</span></td>      <td valign=\"top\" class=\"votelinks\"><center><a id='up_15628786' href='vote?id=15628786&amp;how=up&amp;goto=news'><div class='votearrow' title='upvote'></div></a></center></td><td class=\"title\"><a href=\"https://github.com/FredrikNoren/ungit/issues/974\" class=\"storylink\">Changing the Ungit license from MIT to Faircode</a><span class=\"sitebit comhead\"> (<a href=\"from?site=github.com\"><span class=\"sitestr\">github.com</span></a>)</span></td></tr><tr><td colspan=\"2\"></td><td class=\"subtext\">\n        <span class=\"score\" id=\"score_15628786\">102 points</span> by <a href=\"user?id=bakkerthehacker\" class=\"hnuser\">bakkerthehacker</a> <span class=\"age\"><a href=\"item?id=15628786\">10 hours ago</a></span> <span id=\"unv_15628786\"></span> | <a href=\"hide?id=15628786&amp;goto=news\">hide</a> | <a href=\"item?id=15628786\">75&nbsp;comments</a>              </td></tr>\n      <tr class=\"spacer\" style=\"height:5px\"></tr>\n                <tr class='athing' id='15630684'>\n      <td align=\"right\" valign=\"top\" class=\"title\"><span class=\"rank\">22.</span></td>      <td valign=\"top\" class=\"votelinks\"><center><a id='up_15630684' href='vote?id=15630684&amp;how=up&amp;goto=news'><div class='votearrow' title='upvote'></div></a></center></td><td class=\"title\"><a href=\"http://www.bbc.com/news/uk-41876942\" class=\"storylink\">Paradise Papers: New leak from offshore finance firm</a><span class=\"sitebit comhead\"> (<a href=\"from?site=bbc.com\"><span class=\"sitestr\">bbc.com</span></a>)</span></td></tr><tr><td colspan=\"2\"></td><td class=\"subtext\">\n        <span class=\"score\" id=\"score_15630684\">99 points</span> by <a href=\"user?id=farseer\" class=\"hnuser\">farseer</a> <span class=\"age\"><a href=\"item?id=15630684\">1 hour ago</a></span> <span id=\"unv_15630684\"></span> | <a href=\"hide?id=15630684&amp;goto=news\">hide</a> | <a href=\"item?id=15630684\">24&nbsp;comments</a>              </td></tr>\n      <tr class=\"spacer\" style=\"height:5px\"></tr>\n                <tr class='athing' id='15627340'>\n      <td align=\"right\" valign=\"top\" class=\"title\"><span class=\"rank\">23.</span></td>      <td valign=\"top\" class=\"votelinks\"><center><a id='up_15627340' href='vote?id=15627340&amp;how=up&amp;goto=news'><div class='votearrow' title='upvote'></div></a></center></td><td class=\"title\"><a href=\"http://tim.hibal.org/blog/alpha-zero-how-and-why-it-works/\" class=\"storylink\">Alpha Go Zero: How and Why It Works</a><span class=\"sitebit comhead\"> (<a href=\"from?site=hibal.org\"><span class=\"sitestr\">hibal.org</span></a>)</span></td></tr><tr><td colspan=\"2\"></td><td class=\"subtext\">\n        <span class=\"score\" id=\"score_15627340\">307 points</span> by <a href=\"user?id=Mageek\" class=\"hnuser\">Mageek</a> <span class=\"age\"><a href=\"item?id=15627340\">20 hours ago</a></span> <span id=\"unv_15627340\"></span> | <a href=\"hide?id=15627340&amp;goto=news\">hide</a> | <a href=\"item?id=15627340\">96&nbsp;comments</a>              </td></tr>\n      <tr class=\"spacer\" style=\"height:5px\"></tr>\n                <tr class='athing' id='15629332'>\n      <td align=\"right\" valign=\"top\" class=\"title\"><span class=\"rank\">24.</span></td>      <td valign=\"top\" class=\"votelinks\"><center><a id='up_15629332' href='vote?id=15629332&amp;how=up&amp;goto=news'><div class='votearrow' title='upvote'></div></a></center></td><td class=\"title\"><a href=\"https://www.youtube.com/watch?v=p0ASFxKS9sg\" class=\"storylink\">Information Theory [video]</a><span class=\"sitebit comhead\"> (<a href=\"from?site=youtube.com\"><span class=\"sitestr\">youtube.com</span></a>)</span></td></tr><tr><td colspan=\"2\"></td><td class=\"subtext\">\n        <span class=\"score\" id=\"score_15629332\">32 points</span> by <a href=\"user?id=azizsaya\" class=\"hnuser\">azizsaya</a> <span class=\"age\"><a href=\"item?id=15629332\">6 hours ago</a></span> <span id=\"unv_15629332\"></span> | <a href=\"hide?id=15629332&amp;goto=news\">hide</a> | <a href=\"item?id=15629332\">4&nbsp;comments</a>              </td></tr>\n      <tr class=\"spacer\" style=\"height:5px\"></tr>\n                <tr class='athing' id='15625330'>\n      <td align=\"right\" valign=\"top\" class=\"title\"><span class=\"rank\">25.</span></td>      <td valign=\"top\" class=\"votelinks\"><center><a id='up_15625330' href='vote?id=15625330&amp;how=up&amp;goto=news'><div class='votearrow' title='upvote'></div></a></center></td><td class=\"title\"><a href=\"https://www.youtube.com/watch?v=Ilg3gGewQ5U\" class=\"storylink\">What is backpropagation and what is it doing? [video]</a><span class=\"sitebit comhead\"> (<a href=\"from?site=youtube.com\"><span class=\"sitestr\">youtube.com</span></a>)</span></td></tr><tr><td colspan=\"2\"></td><td class=\"subtext\">\n        <span class=\"score\" id=\"score_15625330\">579 points</span> by <a href=\"user?id=adamnemecek\" class=\"hnuser\">adamnemecek</a> <span class=\"age\"><a href=\"item?id=15625330\">1 day ago</a></span> <span id=\"unv_15625330\"></span> | <a href=\"hide?id=15625330&amp;goto=news\">hide</a> | <a href=\"item?id=15625330\">94&nbsp;comments</a>              </td></tr>\n      <tr class=\"spacer\" style=\"height:5px\"></tr>\n                <tr class='athing' id='15628774'>\n      <td align=\"right\" valign=\"top\" class=\"title\"><span class=\"rank\">26.</span></td>      <td valign=\"top\" class=\"votelinks\"><center><a id='up_15628774' href='vote?id=15628774&amp;how=up&amp;goto=news'><div class='votearrow' title='upvote'></div></a></center></td><td class=\"title\"><a href=\"https://medium.com/open-collective/funding-open-source-how-webpack-reached-400k-year-dfb6d8384e19\" class=\"storylink\">Funding Open Source: How Webpack Reached $400k+/year</a><span class=\"sitebit comhead\"> (<a href=\"from?site=medium.com\"><span class=\"sitestr\">medium.com</span></a>)</span></td></tr><tr><td colspan=\"2\"></td><td class=\"subtext\">\n        <span class=\"score\" id=\"score_15628774\">88 points</span> by <a href=\"user?id=naspeh\" class=\"hnuser\">naspeh</a> <span class=\"age\"><a href=\"item?id=15628774\">10 hours ago</a></span> <span id=\"unv_15628774\"></span> | <a href=\"hide?id=15628774&amp;goto=news\">hide</a> | <a href=\"item?id=15628774\">38&nbsp;comments</a>              </td></tr>\n      <tr class=\"spacer\" style=\"height:5px\"></tr>\n                <tr class='athing' id='15628471'>\n      <td align=\"right\" valign=\"top\" class=\"title\"><span class=\"rank\">27.</span></td>      <td valign=\"top\" class=\"votelinks\"><center><a id='up_15628471' href='vote?id=15628471&amp;how=up&amp;goto=news'><div class='votearrow' title='upvote'></div></a></center></td><td class=\"title\"><a href=\"https://www.wired.com/story/net-states-rule-the-world-we-need-to-recognize-their-power/?mbid=social_fb\" class=\"storylink\">Facebook and Google Are Actually Net States. And They Rule the World</a><span class=\"sitebit comhead\"> (<a href=\"from?site=wired.com\"><span class=\"sitestr\">wired.com</span></a>)</span></td></tr><tr><td colspan=\"2\"></td><td class=\"subtext\">\n        <span class=\"score\" id=\"score_15628471\">118 points</span> by <a href=\"user?id=kensai\" class=\"hnuser\">kensai</a> <span class=\"age\"><a href=\"item?id=15628471\">12 hours ago</a></span> <span id=\"unv_15628471\"></span> | <a href=\"hide?id=15628471&amp;goto=news\">hide</a> | <a href=\"item?id=15628471\">29&nbsp;comments</a>              </td></tr>\n      <tr class=\"spacer\" style=\"height:5px\"></tr>\n                <tr class='athing' id='15628317'>\n      <td align=\"right\" valign=\"top\" class=\"title\"><span class=\"rank\">28.</span></td>      <td valign=\"top\" class=\"votelinks\"><center><a id='up_15628317' href='vote?id=15628317&amp;how=up&amp;goto=news'><div class='votearrow' title='upvote'></div></a></center></td><td class=\"title\"><a href=\"https://www.washingtonpost.com/graphics/2017/national/health-science/monkeypox/?hpid=hp_hp-top-table-main_monkeypox%3Ahomepage%2Fstory\" class=\"storylink\">CDC scientists pursue deadly monkeypox virus in Africa</a><span class=\"sitebit comhead\"> (<a href=\"from?site=washingtonpost.com\"><span class=\"sitestr\">washingtonpost.com</span></a>)</span></td></tr><tr><td colspan=\"2\"></td><td class=\"subtext\">\n        <span class=\"score\" id=\"score_15628317\">91 points</span> by <a href=\"user?id=whyenot\" class=\"hnuser\">whyenot</a> <span class=\"age\"><a href=\"item?id=15628317\">14 hours ago</a></span> <span id=\"unv_15628317\"></span> | <a href=\"hide?id=15628317&amp;goto=news\">hide</a> | <a href=\"item?id=15628317\">17&nbsp;comments</a>              </td></tr>\n      <tr class=\"spacer\" style=\"height:5px\"></tr>\n                <tr class='athing' id='15625325'>\n      <td align=\"right\" valign=\"top\" class=\"title\"><span class=\"rank\">29.</span></td>      <td valign=\"top\" class=\"votelinks\"><center><a id='up_15625325' href='vote?id=15625325&amp;how=up&amp;goto=news'><div class='votearrow' title='upvote'></div></a></center></td><td class=\"title\"><a href=\"https://bigishdata.com/2017/11/02/build-your-own-blockchain-part-3-writing-nodes-that-mine/\" class=\"storylink\">How to Build Your Own Blockchain Part 3 \u2013 Writing Nodes That Mine and Talk</a><span class=\"sitebit comhead\"> (<a href=\"from?site=bigishdata.com\"><span class=\"sitestr\">bigishdata.com</span></a>)</span></td></tr><tr><td colspan=\"2\"></td><td class=\"subtext\">\n        <span class=\"score\" id=\"score_15625325\">256 points</span> by <a href=\"user?id=sidcool\" class=\"hnuser\">sidcool</a> <span class=\"age\"><a href=\"item?id=15625325\">1 day ago</a></span> <span id=\"unv_15625325\"></span> | <a href=\"hide?id=15625325&amp;goto=news\">hide</a> | <a href=\"item?id=15625325\">20&nbsp;comments</a>              </td></tr>\n      <tr class=\"spacer\" style=\"height:5px\"></tr>\n                <tr class='athing' id='15624438'>\n      <td align=\"right\" valign=\"top\" class=\"title\"><span class=\"rank\">30.</span></td>      <td valign=\"top\" class=\"votelinks\"><center><a id='up_15624438' href='vote?id=15624438&amp;how=up&amp;goto=news'><div class='votearrow' title='upvote'></div></a></center></td><td class=\"title\"><a href=\"http://www.integralist.co.uk/posts/profiling-go/\" class=\"storylink\">Profiling Go</a><span class=\"sitebit comhead\"> (<a href=\"from?site=integralist.co.uk\"><span class=\"sitestr\">integralist.co.uk</span></a>)</span></td></tr><tr><td colspan=\"2\"></td><td class=\"subtext\">\n        <span class=\"score\" id=\"score_15624438\">156 points</span> by <a href=\"user?id=rayascott\" class=\"hnuser\">rayascott</a> <span class=\"age\"><a href=\"item?id=15624438\">1 day ago</a></span> <span id=\"unv_15624438\"></span> | <a href=\"hide?id=15624438&amp;goto=news\">hide</a> | <a href=\"item?id=15624438\">8&nbsp;comments</a>              </td></tr>\n      <tr class=\"spacer\" style=\"height:5px\"></tr>\n            <tr class=\"morespace\" style=\"height:10px\"></tr><tr><td colspan=\"2\"></td><td class=\"title\"><a href=\"news?p=2\" class=\"morelink\" rel=\"nofollow\">More</a></td></tr>\n  </table>\n</td></tr>\n<tr><td><img src=\"s.gif\" height=\"10\" width=\"0\"><table width=\"100%\" cellspacing=\"0\" cellpadding=\"1\"><tr><td bgcolor=\"#ff6600\"></td></tr></table><br><center><span class=\"yclinks\"><a href=\"newsguidelines.html\">Guidelines</a>\n        | <a href=\"newsfaq.html\">FAQ</a>\n        | <a href=\"mailto:hn@ycombinator.com\">Support</a>\n        | <a href=\"https://github.com/HackerNews/API\">API</a>\n        | <a href=\"security.html\">Security</a>\n        | <a href=\"lists\">Lists</a>\n        | <a href=\"bookmarklet.html\" rel=\"nofollow\">Bookmarklet</a>\n        | <a href=\"dmca.html\">DMCA</a>\n        | <a href=\"http://www.ycombinator.com/apply/\">Apply to YC</a>\n        | <a href=\"mailto:hn@ycombinator.com\">Contact</a></span><br><br><form method=\"get\" action=\"//hn.algolia.com/\">Search:\n          <input type=\"text\" name=\"q\" value=\"\" size=\"17\" autocorrect=\"off\" spellcheck=\"false\" autocapitalize=\"off\" autocomplete=\"false\"></form>\n            </center></td></tr>      </table></center></body><script type='text/javascript' src='hn.js?6EVvDlUk3VitS6Ys0wHs'></script>\n  </html>\n", 
+    "page_id": "859d7836100ff05d02dd676b92bf6afc", 
+    "page_type": "item", 
+    "plugins": {
+        "annotations-plugin": {
+            "extracts": [
+                {
+                    "annotations": {
+                        "content": [
+                            {
+                                "attribute": "content", 
+                                "extractors": [], 
+                                "field": "aile-item-0-field-0", 
+                                "id": "aile-item-0-field-0-instance-0|aile-item-0-field-0-37", 
+                                "required": false
+                            }
+                        ]
+                    }, 
+                    "container_id": "aile-item-0-first-instance|aile-item-1-first-instance", 
+                    "data": {
+                        "aile-item-0-field-0-37": {
+                            "attribute": "content", 
+                            "extractors": [], 
+                            "field": "aile-item-0-field-0", 
+                            "id": "aile-item-0-field-0-instance-0|aile-item-0-field-0-37", 
+                            "required": false
+                        }
+                    }, 
+                    "id": "aile-item-0-field-0-instance-0", 
+                    "item_container": false, 
+                    "ptree_node": 52, 
+                    "schema_id": "aile-item-0", 
+                    "tagid": 37
+                }, 
+                {
+                    "annotations": {
+                        "href": [
+                            {
+                                "attribute": "href", 
+                                "extractors": [], 
+                                "field": "aile-item-0-field-1", 
+                                "id": "aile-item-0-field-1-instance-0|aile-item-0-field-1-40", 
+                                "required": false
+                            }
+                        ]
+                    }, 
+                    "container_id": "aile-item-0-first-instance|aile-item-1-first-instance", 
+                    "data": {
+                        "aile-item-0-field-1-40": {
+                            "attribute": "href", 
+                            "extractors": [], 
+                            "field": "aile-item-0-field-1", 
+                            "id": "aile-item-0-field-1-instance-0|aile-item-0-field-1-40", 
+                            "required": false
+                        }
+                    }, 
+                    "id": "aile-item-0-field-1-instance-0", 
+                    "item_container": false, 
+                    "ptree_node": 55, 
+                    "schema_id": "aile-item-0", 
+                    "tagid": 40
+                }, 
+                {
+                    "annotations": {
+                        "content": [
+                            {
+                                "attribute": "content", 
+                                "extractors": [], 
+                                "field": "aile-item-0-field-3", 
+                                "id": "aile-item-0-field-2-instance-0|aile-item-0-field-3-43", 
+                                "required": false
+                            }
+                        ], 
+                        "href": [
+                            {
+                                "attribute": "href", 
+                                "extractors": [], 
+                                "field": "aile-item-0-field-2", 
+                                "id": "aile-item-0-field-2-instance-0|aile-item-0-field-2-43", 
+                                "required": false
+                            }
+                        ]
+                    }, 
+                    "container_id": "aile-item-0-first-instance|aile-item-1-first-instance", 
+                    "data": {
+                        "aile-item-0-field-2-43": {
+                            "attribute": "href", 
+                            "extractors": [], 
+                            "field": "aile-item-0-field-2", 
+                            "id": "aile-item-0-field-2-instance-0|aile-item-0-field-2-43", 
+                            "required": false
+                        }, 
+                        "aile-item-0-field-3-43": {
+                            "attribute": "content", 
+                            "extractors": [], 
+                            "field": "aile-item-0-field-3", 
+                            "id": "aile-item-0-field-2-instance-0|aile-item-0-field-3-43", 
+                            "required": false
+                        }
+                    }, 
+                    "id": "aile-item-0-field-2-instance-0", 
+                    "item_container": false, 
+                    "ptree_node": 58, 
+                    "schema_id": "aile-item-0", 
+                    "tagid": 43
+                }, 
+                {
+                    "annotations": {
+                        "content": [
+                            {
+                                "attribute": "content", 
+                                "extractors": [], 
+                                "field": "aile-item-0-field-4", 
+                                "id": "aile-item-0-field-4-instance-0|aile-item-0-field-4-44", 
+                                "required": false
+                            }, 
+                            {
+                                "attribute": "content", 
+                                "extractors": [], 
+                                "field": "aile-item-0-field-7", 
+                                "id": "aile-item-0-field-4-instance-0|aile-item-0-field-7-44", 
+                                "required": false
+                            }
+                        ]
+                    }, 
+                    "container_id": "aile-item-0-first-instance|aile-item-1-first-instance", 
+                    "data": {
+                        "aile-item-0-field-4-44": {
+                            "attribute": "content", 
+                            "extractors": [], 
+                            "field": "aile-item-0-field-4", 
+                            "id": "aile-item-0-field-4-instance-0|aile-item-0-field-4-44", 
+                            "required": false
+                        }, 
+                        "aile-item-0-field-7-44": {
+                            "attribute": "content", 
+                            "extractors": [], 
+                            "field": "aile-item-0-field-7", 
+                            "id": "aile-item-0-field-4-instance-0|aile-item-0-field-7-44", 
+                            "required": false
+                        }
+                    }, 
+                    "id": "aile-item-0-field-4-instance-0", 
+                    "item_container": false, 
+                    "ptree_node": 61, 
+                    "schema_id": "aile-item-0", 
+                    "tagid": 44
+                }, 
+                {
+                    "annotations": {
+                        "href": [
+                            {
+                                "attribute": "href", 
+                                "extractors": [], 
+                                "field": "aile-item-0-field-5", 
+                                "id": "aile-item-0-field-5-instance-0|aile-item-0-field-5-45", 
+                                "required": false
+                            }
+                        ]
+                    }, 
+                    "container_id": "aile-item-0-first-instance|aile-item-1-first-instance", 
+                    "data": {
+                        "aile-item-0-field-5-45": {
+                            "attribute": "href", 
+                            "extractors": [], 
+                            "field": "aile-item-0-field-5", 
+                            "id": "aile-item-0-field-5-instance-0|aile-item-0-field-5-45", 
+                            "required": false
+                        }
+                    }, 
+                    "id": "aile-item-0-field-5-instance-0", 
+                    "item_container": false, 
+                    "ptree_node": 62, 
+                    "schema_id": "aile-item-0", 
+                    "tagid": 45
+                }, 
+                {
+                    "annotations": {
+                        "content": [
+                            {
+                                "attribute": "content", 
+                                "extractors": [], 
+                                "field": "aile-item-0-field-6", 
+                                "id": "aile-item-0-field-6-instance-0|aile-item-0-field-6-46", 
+                                "required": false
+                            }
+                        ]
+                    }, 
+                    "container_id": "aile-item-0-first-instance|aile-item-1-first-instance", 
+                    "data": {
+                        "aile-item-0-field-6-46": {
+                            "attribute": "content", 
+                            "extractors": [], 
+                            "field": "aile-item-0-field-6", 
+                            "id": "aile-item-0-field-6-instance-0|aile-item-0-field-6-46", 
+                            "required": false
+                        }
+                    }, 
+                    "id": "aile-item-0-field-6-instance-0", 
+                    "item_container": false, 
+                    "ptree_node": 64, 
+                    "schema_id": "aile-item-0", 
+                    "tagid": 46
+                }, 
+                {
+                    "annotations": {
+                        "content": [
+                            {
+                                "attribute": "content", 
+                                "extractors": [], 
+                                "field": "aile-item-0-field-8", 
+                                "id": "aile-item-0-field-8-instance-0|aile-item-0-field-8-49", 
+                                "required": false
+                            }, 
+                            {
+                                "attribute": "content", 
+                                "extractors": [], 
+                                "field": "aile-item-0-field-13", 
+                                "id": "aile-item-0-field-8-instance-0|aile-item-0-field-13-49", 
+                                "required": false
+                            }, 
+                            {
+                                "attribute": "content", 
+                                "extractors": [], 
+                                "field": "aile-item-0-field-10", 
+                                "id": "aile-item-0-field-8-instance-0|aile-item-0-field-10-49", 
+                                "required": false
+                            }
+                        ]
+                    }, 
+                    "container_id": "aile-item-0-first-instance|aile-item-1-first-instance", 
+                    "data": {
+                        "aile-item-0-field-10-49": {
+                            "attribute": "content", 
+                            "extractors": [], 
+                            "field": "aile-item-0-field-10", 
+                            "id": "aile-item-0-field-8-instance-0|aile-item-0-field-10-49", 
+                            "required": false
+                        }, 
+                        "aile-item-0-field-13-49": {
+                            "attribute": "content", 
+                            "extractors": [], 
+                            "field": "aile-item-0-field-13", 
+                            "id": "aile-item-0-field-8-instance-0|aile-item-0-field-13-49", 
+                            "required": false
+                        }, 
+                        "aile-item-0-field-8-49": {
+                            "attribute": "content", 
+                            "extractors": [], 
+                            "field": "aile-item-0-field-8", 
+                            "id": "aile-item-0-field-8-instance-0|aile-item-0-field-8-49", 
+                            "required": false
+                        }
+                    }, 
+                    "id": "aile-item-0-field-8-instance-0", 
+                    "item_container": false, 
+                    "ptree_node": 71, 
+                    "schema_id": "aile-item-0", 
+                    "tagid": 49
+                }, 
+                {
+                    "annotations": {
+                        "content": [
+                            {
+                                "attribute": "content", 
+                                "extractors": [], 
+                                "field": "aile-item-0-field-9", 
+                                "id": "aile-item-0-field-9-instance-0|aile-item-0-field-9-53", 
+                                "required": false
+                            }
+                        ]
+                    }, 
+                    "container_id": "aile-item-0-first-instance|aile-item-1-first-instance", 
+                    "data": {
+                        "aile-item-0-field-9-53": {
+                            "attribute": "content", 
+                            "extractors": [], 
+                            "field": "aile-item-0-field-9", 
+                            "id": "aile-item-0-field-9-instance-0|aile-item-0-field-9-53", 
+                            "required": false
+                        }
+                    }, 
+                    "id": "aile-item-0-field-9-instance-0", 
+                    "item_container": false, 
+                    "ptree_node": 76, 
+                    "schema_id": "aile-item-0", 
+                    "tagid": 53
+                }, 
+                {
+                    "annotations": {
+                        "content": [
+                            {
+                                "attribute": "content", 
+                                "extractors": [], 
+                                "field": "aile-item-0-field-12", 
+                                "id": "aile-item-0-field-11-instance-0|aile-item-0-field-12-55", 
+                                "required": false
+                            }
+                        ], 
+                        "href": [
+                            {
+                                "attribute": "href", 
+                                "extractors": [], 
+                                "field": "aile-item-0-field-11", 
+                                "id": "aile-item-0-field-11-instance-0|aile-item-0-field-11-55", 
+                                "required": false
+                            }
+                        ]
+                    }, 
+                    "container_id": "aile-item-0-first-instance|aile-item-1-first-instance", 
+                    "data": {
+                        "aile-item-0-field-11-55": {
+                            "attribute": "href", 
+                            "extractors": [], 
+                            "field": "aile-item-0-field-11", 
+                            "id": "aile-item-0-field-11-instance-0|aile-item-0-field-11-55", 
+                            "required": false
+                        }, 
+                        "aile-item-0-field-12-55": {
+                            "attribute": "content", 
+                            "extractors": [], 
+                            "field": "aile-item-0-field-12", 
+                            "id": "aile-item-0-field-11-instance-0|aile-item-0-field-12-55", 
+                            "required": false
+                        }
+                    }, 
+                    "id": "aile-item-0-field-11-instance-0", 
+                    "item_container": false, 
+                    "ptree_node": 79, 
+                    "schema_id": "aile-item-0", 
+                    "tagid": 55
+                }, 
+                {
+                    "annotations": {
+                        "content": [
+                            {
+                                "attribute": "content", 
+                                "extractors": [], 
+                                "field": "aile-item-0-field-15", 
+                                "id": "aile-item-0-field-14-instance-0|aile-item-0-field-15-56", 
+                                "required": false
+                            }
+                        ], 
+                        "href": [
+                            {
+                                "attribute": "href", 
+                                "extractors": [], 
+                                "field": "aile-item-0-field-14", 
+                                "id": "aile-item-0-field-14-instance-0|aile-item-0-field-14-56", 
+                                "required": false
+                            }
+                        ]
+                    }, 
+                    "container_id": "aile-item-0-first-instance|aile-item-1-first-instance", 
+                    "data": {
+                        "aile-item-0-field-14-56": {
+                            "attribute": "href", 
+                            "extractors": [], 
+                            "field": "aile-item-0-field-14", 
+                            "id": "aile-item-0-field-14-instance-0|aile-item-0-field-14-56", 
+                            "required": false
+                        }, 
+                        "aile-item-0-field-15-56": {
+                            "attribute": "content", 
+                            "extractors": [], 
+                            "field": "aile-item-0-field-15", 
+                            "id": "aile-item-0-field-14-instance-0|aile-item-0-field-15-56", 
+                            "required": false
+                        }
+                    }, 
+                    "id": "aile-item-0-field-14-instance-0", 
+                    "item_container": false, 
+                    "ptree_node": 82, 
+                    "schema_id": "aile-item-0", 
+                    "tagid": 56
+                }, 
+                {
+                    "annotations": {
+                        "content": [
+                            {
+                                "attribute": "content", 
+                                "extractors": [], 
+                                "field": "aile-item-1-field-0", 
+                                "id": "aile-item-1-field-0-instance-0|aile-item-1-field-0-37", 
+                                "required": false
+                            }
+                        ]
+                    }, 
+                    "container_id": "aile-item-0-first-instance|aile-item-1-first-instance", 
+                    "data": {
+                        "aile-item-1-field-0-37": {
+                            "attribute": "content", 
+                            "extractors": [], 
+                            "field": "aile-item-1-field-0", 
+                            "id": "aile-item-1-field-0-instance-0|aile-item-1-field-0-37", 
+                            "required": false
+                        }
+                    }, 
+                    "id": "aile-item-1-field-0-instance-0", 
+                    "item_container": false, 
+                    "ptree_node": 52, 
+                    "schema_id": "aile-item-1", 
+                    "tagid": 37
+                }, 
+                {
+                    "annotations": {
+                        "href": [
+                            {
+                                "attribute": "href", 
+                                "extractors": [], 
+                                "field": "aile-item-1-field-1", 
+                                "id": "aile-item-1-field-1-instance-0|aile-item-1-field-1-40", 
+                                "required": false
+                            }
+                        ]
+                    }, 
+                    "container_id": "aile-item-0-first-instance|aile-item-1-first-instance", 
+                    "data": {
+                        "aile-item-1-field-1-40": {
+                            "attribute": "href", 
+                            "extractors": [], 
+                            "field": "aile-item-1-field-1", 
+                            "id": "aile-item-1-field-1-instance-0|aile-item-1-field-1-40", 
+                            "required": false
+                        }
+                    }, 
+                    "id": "aile-item-1-field-1-instance-0", 
+                    "item_container": false, 
+                    "ptree_node": 55, 
+                    "schema_id": "aile-item-1", 
+                    "tagid": 40
+                }, 
+                {
+                    "annotations": {
+                        "content": [
+                            {
+                                "attribute": "content", 
+                                "extractors": [], 
+                                "field": "aile-item-1-field-3", 
+                                "id": "aile-item-1-field-2-instance-0|aile-item-1-field-3-43", 
+                                "required": false
+                            }
+                        ], 
+                        "href": [
+                            {
+                                "attribute": "href", 
+                                "extractors": [], 
+                                "field": "aile-item-1-field-2", 
+                                "id": "aile-item-1-field-2-instance-0|aile-item-1-field-2-43", 
+                                "required": false
+                            }
+                        ]
+                    }, 
+                    "container_id": "aile-item-0-first-instance|aile-item-1-first-instance", 
+                    "data": {
+                        "aile-item-1-field-2-43": {
+                            "attribute": "href", 
+                            "extractors": [], 
+                            "field": "aile-item-1-field-2", 
+                            "id": "aile-item-1-field-2-instance-0|aile-item-1-field-2-43", 
+                            "required": false
+                        }, 
+                        "aile-item-1-field-3-43": {
+                            "attribute": "content", 
+                            "extractors": [], 
+                            "field": "aile-item-1-field-3", 
+                            "id": "aile-item-1-field-2-instance-0|aile-item-1-field-3-43", 
+                            "required": false
+                        }
+                    }, 
+                    "id": "aile-item-1-field-2-instance-0", 
+                    "item_container": false, 
+                    "ptree_node": 58, 
+                    "schema_id": "aile-item-1", 
+                    "tagid": 43
+                }, 
+                {
+                    "annotations": {
+                        "content": [
+                            {
+                                "attribute": "content", 
+                                "extractors": [], 
+                                "field": "aile-item-1-field-4", 
+                                "id": "aile-item-1-field-4-instance-0|aile-item-1-field-4-44", 
+                                "required": false
+                            }, 
+                            {
+                                "attribute": "content", 
+                                "extractors": [], 
+                                "field": "aile-item-1-field-7", 
+                                "id": "aile-item-1-field-4-instance-0|aile-item-1-field-7-44", 
+                                "required": false
+                            }
+                        ]
+                    }, 
+                    "container_id": "aile-item-0-first-instance|aile-item-1-first-instance", 
+                    "data": {
+                        "aile-item-1-field-4-44": {
+                            "attribute": "content", 
+                            "extractors": [], 
+                            "field": "aile-item-1-field-4", 
+                            "id": "aile-item-1-field-4-instance-0|aile-item-1-field-4-44", 
+                            "required": false
+                        }, 
+                        "aile-item-1-field-7-44": {
+                            "attribute": "content", 
+                            "extractors": [], 
+                            "field": "aile-item-1-field-7", 
+                            "id": "aile-item-1-field-4-instance-0|aile-item-1-field-7-44", 
+                            "required": false
+                        }
+                    }, 
+                    "id": "aile-item-1-field-4-instance-0", 
+                    "item_container": false, 
+                    "ptree_node": 61, 
+                    "schema_id": "aile-item-1", 
+                    "tagid": 44
+                }, 
+                {
+                    "annotations": {
+                        "href": [
+                            {
+                                "attribute": "href", 
+                                "extractors": [], 
+                                "field": "aile-item-1-field-5", 
+                                "id": "aile-item-1-field-5-instance-0|aile-item-1-field-5-45", 
+                                "required": false
+                            }
+                        ]
+                    }, 
+                    "container_id": "aile-item-0-first-instance|aile-item-1-first-instance", 
+                    "data": {
+                        "aile-item-1-field-5-45": {
+                            "attribute": "href", 
+                            "extractors": [], 
+                            "field": "aile-item-1-field-5", 
+                            "id": "aile-item-1-field-5-instance-0|aile-item-1-field-5-45", 
+                            "required": false
+                        }
+                    }, 
+                    "id": "aile-item-1-field-5-instance-0", 
+                    "item_container": false, 
+                    "ptree_node": 62, 
+                    "schema_id": "aile-item-1", 
+                    "tagid": 45
+                }, 
+                {
+                    "annotations": {
+                        "content": [
+                            {
+                                "attribute": "content", 
+                                "extractors": [], 
+                                "field": "aile-item-1-field-6", 
+                                "id": "aile-item-1-field-6-instance-0|aile-item-1-field-6-46", 
+                                "required": false
+                            }
+                        ]
+                    }, 
+                    "container_id": "aile-item-0-first-instance|aile-item-1-first-instance", 
+                    "data": {
+                        "aile-item-1-field-6-46": {
+                            "attribute": "content", 
+                            "extractors": [], 
+                            "field": "aile-item-1-field-6", 
+                            "id": "aile-item-1-field-6-instance-0|aile-item-1-field-6-46", 
+                            "required": false
+                        }
+                    }, 
+                    "id": "aile-item-1-field-6-instance-0", 
+                    "item_container": false, 
+                    "ptree_node": 64, 
+                    "schema_id": "aile-item-1", 
+                    "tagid": 46
+                }, 
+                {
+                    "annotations": {
+                        "content": [
+                            {
+                                "attribute": "content", 
+                                "extractors": [], 
+                                "field": "aile-item-1-field-10", 
+                                "id": "aile-item-1-field-8-instance-0|aile-item-1-field-10-49", 
+                                "required": false
+                            }, 
+                            {
+                                "attribute": "content", 
+                                "extractors": [], 
+                                "field": "aile-item-1-field-8", 
+                                "id": "aile-item-1-field-8-instance-0|aile-item-1-field-8-49", 
+                                "required": false
+                            }, 
+                            {
+                                "attribute": "content", 
+                                "extractors": [], 
+                                "field": "aile-item-1-field-13", 
+                                "id": "aile-item-1-field-8-instance-0|aile-item-1-field-13-49", 
+                                "required": false
+                            }
+                        ]
+                    }, 
+                    "container_id": "aile-item-0-first-instance|aile-item-1-first-instance", 
+                    "data": {
+                        "aile-item-1-field-10-49": {
+                            "attribute": "content", 
+                            "extractors": [], 
+                            "field": "aile-item-1-field-10", 
+                            "id": "aile-item-1-field-8-instance-0|aile-item-1-field-10-49", 
+                            "required": false
+                        }, 
+                        "aile-item-1-field-13-49": {
+                            "attribute": "content", 
+                            "extractors": [], 
+                            "field": "aile-item-1-field-13", 
+                            "id": "aile-item-1-field-8-instance-0|aile-item-1-field-13-49", 
+                            "required": false
+                        }, 
+                        "aile-item-1-field-8-49": {
+                            "attribute": "content", 
+                            "extractors": [], 
+                            "field": "aile-item-1-field-8", 
+                            "id": "aile-item-1-field-8-instance-0|aile-item-1-field-8-49", 
+                            "required": false
+                        }
+                    }, 
+                    "id": "aile-item-1-field-8-instance-0", 
+                    "item_container": false, 
+                    "ptree_node": 71, 
+                    "schema_id": "aile-item-1", 
+                    "tagid": 49
+                }, 
+                {
+                    "annotations": {
+                        "content": [
+                            {
+                                "attribute": "content", 
+                                "extractors": [], 
+                                "field": "aile-item-1-field-9", 
+                                "id": "aile-item-1-field-9-instance-0|aile-item-1-field-9-53", 
+                                "required": false
+                            }
+                        ]
+                    }, 
+                    "container_id": "aile-item-0-first-instance|aile-item-1-first-instance", 
+                    "data": {
+                        "aile-item-1-field-9-53": {
+                            "attribute": "content", 
+                            "extractors": [], 
+                            "field": "aile-item-1-field-9", 
+                            "id": "aile-item-1-field-9-instance-0|aile-item-1-field-9-53", 
+                            "required": false
+                        }
+                    }, 
+                    "id": "aile-item-1-field-9-instance-0", 
+                    "item_container": false, 
+                    "ptree_node": 76, 
+                    "schema_id": "aile-item-1", 
+                    "tagid": 53
+                }, 
+                {
+                    "annotations": {
+                        "content": [
+                            {
+                                "attribute": "content", 
+                                "extractors": [], 
+                                "field": "aile-item-1-field-12", 
+                                "id": "aile-item-1-field-11-instance-0|aile-item-1-field-12-55", 
+                                "required": false
+                            }
+                        ], 
+                        "href": [
+                            {
+                                "attribute": "href", 
+                                "extractors": [], 
+                                "field": "aile-item-1-field-11", 
+                                "id": "aile-item-1-field-11-instance-0|aile-item-1-field-11-55", 
+                                "required": false
+                            }
+                        ]
+                    }, 
+                    "container_id": "aile-item-0-first-instance|aile-item-1-first-instance", 
+                    "data": {
+                        "aile-item-1-field-11-55": {
+                            "attribute": "href", 
+                            "extractors": [], 
+                            "field": "aile-item-1-field-11", 
+                            "id": "aile-item-1-field-11-instance-0|aile-item-1-field-11-55", 
+                            "required": false
+                        }, 
+                        "aile-item-1-field-12-55": {
+                            "attribute": "content", 
+                            "extractors": [], 
+                            "field": "aile-item-1-field-12", 
+                            "id": "aile-item-1-field-11-instance-0|aile-item-1-field-12-55", 
+                            "required": false
+                        }
+                    }, 
+                    "id": "aile-item-1-field-11-instance-0", 
+                    "item_container": false, 
+                    "ptree_node": 79, 
+                    "schema_id": "aile-item-1", 
+                    "tagid": 55
+                }, 
+                {
+                    "annotations": {
+                        "content": [
+                            {
+                                "attribute": "content", 
+                                "extractors": [], 
+                                "field": "aile-item-1-field-15", 
+                                "id": "aile-item-1-field-14-instance-0|aile-item-1-field-15-56", 
+                                "required": false
+                            }
+                        ], 
+                        "href": [
+                            {
+                                "attribute": "href", 
+                                "extractors": [], 
+                                "field": "aile-item-1-field-14", 
+                                "id": "aile-item-1-field-14-instance-0|aile-item-1-field-14-56", 
+                                "required": false
+                            }
+                        ]
+                    }, 
+                    "container_id": "aile-item-0-first-instance|aile-item-1-first-instance", 
+                    "data": {
+                        "aile-item-1-field-14-56": {
+                            "attribute": "href", 
+                            "extractors": [], 
+                            "field": "aile-item-1-field-14", 
+                            "id": "aile-item-1-field-14-instance-0|aile-item-1-field-14-56", 
+                            "required": false
+                        }, 
+                        "aile-item-1-field-15-56": {
+                            "attribute": "content", 
+                            "extractors": [], 
+                            "field": "aile-item-1-field-15", 
+                            "id": "aile-item-1-field-14-instance-0|aile-item-1-field-15-56", 
+                            "required": false
+                        }
+                    }, 
+                    "id": "aile-item-1-field-14-instance-0", 
+                    "item_container": false, 
+                    "ptree_node": 82, 
+                    "schema_id": "aile-item-1", 
+                    "tagid": 56
+                }, 
+                {
+                    "annotations": {
+                        "#portia-content": "#dummy"
+                    }, 
+                    "id": "aile-container-aile-item-0|aile-container-aile-item-1", 
+                    "item_container": true, 
+                    "ptree_node": 48, 
+                    "tagid": 34, 
+                    "text-content": "#portia-content"
+                }, 
+                {
+                    "annotations": {
+                        "#portia-content": "#dummy"
+                    }, 
+                    "container_id": "aile-container-aile-item-0|aile-container-aile-item-1", 
+                    "id": "aile-item-0-first-instance|aile-item-1-first-instance", 
+                    "item_container": true, 
+                    "item_id": "aile-item-0", 
+                    "max_separator": 0, 
+                    "min_jump": 1, 
+                    "ptree_node": 49, 
+                    "repeated": true, 
+                    "siblings": 2, 
+                    "tagid": 35, 
+                    "text-content": "#portia-content"
+                }
+            ]
+        }
+    }, 
+    "scrapes": "aile-item-0", 
+    "url": "https://news.ycombinator.com", 
+    "version": "0.13.0"
+}
